@@ -1,0 +1,41 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: bezier - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP298.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/bezier.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\linux_lesson\opengl_demo\09-bezier2\09-bezier2\bezier.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP298.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP299.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib glut32.lib opengl32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/bezier.pdb" /debug /machine:I386 /out:"Debug/bezier.exe" /pdbtype:sept 
+".\Debug\bezier.obj"
+".\Debug\Data.obj"
+".\Debug\Exception_File.obj"
+".\Debug\Function.obj"
+".\Debug\Layer.obj"
+".\Debug\Matrix.obj"
+".\Debug\Model.obj"
+".\Debug\Ship.obj"
+".\Debug\Vector.obj"
+".\Debug\Norm.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP299.tmp"
+<h3>Output Window</h3>
+Compiling...
+bezier.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+bezier.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

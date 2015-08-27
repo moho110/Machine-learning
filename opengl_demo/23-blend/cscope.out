@@ -1,0 +1,17420 @@
+cscope 14 /cygdrive/e/linux_lesson/opengl_demo/23-blend               0000099467
+	@blend.c
+
+1 
+	~<GL/glut.h
+>
+
+3 
+	#TITLE
+ "bÀnd"
+
+	)
+
+4 
+	#WIDTH
+ 320
+
+	)
+
+5 
+	#HEIGHT
+ 240
+
+	)
+
+7 
+døwPﬁyg⁄
+();
+
+8 
+di•œy
+();
+
+9 
+£tOπho
+(
+w
+, 
+h
+);
+
+10 
+ªsh≠e
+(
+w
+, 
+h
+);
+
+11 
+idÀ
+();
+
+12 
+öô
+();
+
+14 
+	g™gÀ
+;
+
+17 
+	$døwPﬁyg⁄
+()
+
+19 
+	`glBegö
+(
+GL_POLYGON
+);
+
+20 
+	`glVîãx2f
+(-0.3, -0.5);
+
+21 
+	`glVîãx2f
+(0.3, -0.5);
+
+22 
+	`glVîãx2f
+(0.5, 0.);
+
+23 
+	`glVîãx2f
+(0., 0.45);
+
+24 
+	`glVîãx2f
+(-0.5, 0.);
+
+25 
+	`glEnd
+();
+
+26 
+	}
+}
+
+29 
+	$di•œy
+()
+
+31 
+	`glCÀ¨
+(
+GL_COLOR_BUFFER_BIT
+ | 
+GL_DEPTH_BUFFER_BIT
+);
+
+33 
+	`glPushM©rix
+();
+
+35 
+	`glRŸ©ef
+(
+™gÀ
+, 0., 1., 0.);
+
+37 
+	`glPushM©rix
+();
+
+38 
+	`glTøn¶©ef
+(-0.25, 0., 0.5);
+
+39 
+	`glCﬁ‹3f
+(0., 1., 0.);
+
+40 
+	`døwPﬁyg⁄
+();
+
+41 
+	`glP›M©rix
+();
+
+43 
+	`glPushM©rix
+();
+
+44 
+	`glTøn¶©ef
+(0.5, 0., -1.);
+
+45 
+	`glCﬁ‹3f
+(0., 1., 1.);
+
+46 
+	`døwPﬁyg⁄
+();
+
+47 
+	`glP›M©rix
+();
+
+49 
+	`glE«bÀ
+(
+GL_BLEND
+);
+
+50 
+	`glDïthMask
+(
+GL_FALSE
+);
+
+51 
+	`glBÀndFunc
+(
+GL_SRC_ALPHA
+, 
+GL_ONE_MINUS_SRC_ALPHA
+);
+
+53 
+	`glPushM©rix
+();
+
+54 
+	`glTøn¶©ef
+(-0.5, 0., 1.);
+
+55 
+	`glCﬁ‹4f
+(1., 0., 0., 0.5);
+
+56 
+	`døwPﬁyg⁄
+();
+
+57 
+	`glP›M©rix
+();
+
+59 
+	`glPushM©rix
+();
+
+60 
+	`glTøn¶©ef
+(0., 0., 0.);
+
+61 
+	`glCﬁ‹4f
+(0., 0., 1., 0.5);
+
+62 
+	`døwPﬁyg⁄
+();
+
+63 
+	`glP›M©rix
+();
+
+65 
+	`glPushM©rix
+();
+
+66 
+	`glTøn¶©ef
+(0.25, 0., -0.5);
+
+67 
+	`glCﬁ‹4f
+(1., 1., 0., 0.5);
+
+68 
+	`døwPﬁyg⁄
+();
+
+69 
+	`glP›M©rix
+();
+
+71 
+	`glDïthMask
+(
+GL_TRUE
+);
+
+72 
+	`glDißbÀ
+(
+GL_BLEND
+);
+
+74 
+	`glP›M©rix
+();
+
+76 
+	`glutSw≠Buf„rs
+();
+
+77 
+	}
+}
+
+80 
+	$£tOπho
+(
+	pw
+, 
+	ph
+)
+
+82 
+a•e˘
+;
+
+84 
+w
+ > 
+h
+){
+
+85 
+	=a•e˘
+ = ()
+w
+/
+h
+;
+
+86 
+	`glOπho
+(-
+a•e˘
+,áspect, -1., 1., 0.1, 100.);
+
+88 
+	=a•e˘
+ = ()
+h
+/
+w
+;
+
+89 
+	`glOπho
+(-1., 1., -
+a•e˘
+,áspect, 0.1, 100.);
+
+91 
+	}
+}
+
+94 
+	$ªsh≠e
+(
+	pw
+, 
+	ph
+)
+
+96 
+	`glVõwp‹t
+(0, 0, 
+w
+, 
+h
+);
+
+98 
+	`glM©rixMode
+(
+GL_PROJECTION
+);
+
+100 
+	`glLﬂdIdítôy
+();
+
+101 
+	`£tOπho
+(
+w
+, 
+h
+);
+
+103 
+	`glM©rixMode
+(
+GL_MODELVIEW
+);
+
+105 
+	`glLﬂdIdítôy
+();
+
+106 
+	`gluLookAt
+(0., 0., 2.5, 0., 0., 0., 0., 1., 0.);
+
+108 
+	`di•œy
+();
+
+109 
+	}
+}
+
+112 
+	$idÀ
+()
+
+114 
+	=™gÀ
+ += 0.1;
+
+116 
+™gÀ
+ > 360.Ë
+	=™gÀ
+ -= 360.;
+
+118 
+	`glutPo°Redi•œy
+();
+
+119 
+	}
+}
+
+122 
+	$öô
+()
+
+124 
+	`glCÀ¨Cﬁ‹
+(1., 1., 1., 1.);
+
+125 
+	`glShadeModñ
+(
+GL_SMOOTH
+);
+
+126 
+	`glE«bÀ
+(
+GL_DEPTH_TEST
+);
+
+127 
+	}
+}
+
+130 
+	$maö
+(
+	p¨gc
+, * 
+	p¨gv
+[])
+
+132 
+w
+, 
+h
+;
+
+134 
+	`glutInô
+(&
+¨gc
+, 
+¨gv
+);
+
+136 
+	=w
+ = 
+	`glutGë
+(
+GLUT_SCREEN_WIDTH
+);
+
+137 
+	=h
+ = 
+	`glutGë
+(
+GLUT_SCREEN_HEIGHT
+);
+
+139 
+	`glutInôWödowSize
+(
+WIDTH
+, 
+HEIGHT
+);
+
+140 
+	`glutInôWödowPosôi⁄
+((
+w
+ - 
+WIDTH
+)/2, (
+h
+ - 
+HEIGHT
+)/2);
+
+141 
+	`glutInôDi•œyMode
+(
+GLUT_DOUBLE
+ | 
+GLUT_RGBA
+ | 
+GLUT_DEPTH
+);
+
+142 
+	`glutCª©eWödow
+(
+TITLE
+);
+
+144 
+	`glutDi•œyFunc
+(
+di•œy
+);
+
+145 
+	`glutResh≠eFunc
+(
+ªsh≠e
+);
+
+146 
+	`glutIdÀFunc
+(
+idÀ
+);
+
+148 
+	`öô
+();
+
+150 
+	`glutMaöLo›
+();
+
+153 
+	}
+}
+
+	@/usr/include/GL/glut.h
+
+1 #i‚de‡
+__glut_h__
+
+2 
+	#__glut_h__
+
+	)
+
+10 #i‡
+deföed
+(
+_WIN32
+Ë&& !deföed(
+__CYGWIN__
+Ë&& !deföed(
+__MINGW32__
+)
+
+17 
+	#WIN32_LEAN_AND_MEAN
+
+	)
+
+18 
+	~<wödows.h
+>
+
+21 # i‚de‡
+APIENTRY
+
+22 
+	#GLUT_APIENTRY_DEFINED
+
+	)
+
+23 # i‡(
+_MSC_VER
+ >800Ë|| 
+deföed
+(
+_STDCALL_SUPPORTED
+Ë|| deföed(
+__BORLANDC__
+Ë|| deföed(
+__LCC__
+)
+
+24 
+	#APIENTRY
+ 
+__°dˇŒ
+
+	)
+
+26 
+	#APIENTRY
+
+	)
+
+30 # i‚de‡
+CALLBACK
+
+31 # i‡(
+deföed
+(
+_M_MRX000
+Ë|| deföed(
+_M_IX86
+Ë|| deföed(
+_M_ALPHA
+Ë|| deföed(
+_M_PPC
+)Ë&& !deföed(
+MIDL_PASS
+Ë|| deföed(
+__LCC__
+)
+
+32 
+	#CALLBACK
+ 
+__°dˇŒ
+
+	)
+
+34 
+	#CALLBACK
+
+	)
+
+38 # i‡
+deföed
+–
+__LCC__
+ )
+
+39 # unde‡
+WINGDIAPI
+
+40 
+	#WINGDIAPI
+ 
+__°dˇŒ
+
+	)
+
+43 # i‚de‡
+WINGDIAPI
+
+44 
+	#GLUT_WINGDIAPI_DEFINED
+
+	)
+
+45 
+	#WINGDIAPI
+ 
+	`__de˛•ec
+(
+dŒimp‹t
+)
+
+	)
+
+49 # i‚de‡
+_WCHAR_T_DEFINED
+
+50 
+	twch¨_t
+;
+
+51 
+	#_WCHAR_T_DEFINED
+
+	)
+
+57 # i‡!
+deföed
+(
+GLUT_BUILDING_LIB
+Ë&& !deföed(
+GLUT_NO_LIB_PRAGMA
+)
+
+58 #Öøgm®
+commít
+ (
+lib
+, "winmm.lib")
+
+61 # ifde‡
+GLUT_USE_SGI_OPENGL
+
+62 #Öøgm®
+commít
+ (
+lib
+, "opengl.lib")
+
+63 #Öøgm®
+commít
+ (
+lib
+, "glu.lib")
+
+64 #Öøgm®
+commít
+ (
+lib
+, "glut.lib")
+
+66 #Öøgm®
+commít
+ (
+lib
+, "opengl32.lib")
+
+67 #Öøgm®
+commít
+ (
+lib
+, "glu32.lib")
+
+68 #Öøgm®
+commít
+ (
+lib
+, "glut32.lib")
+
+75 # i‚de‡
+GLUT_NO_WARNING_DISABLE
+
+76 #Öøgm®
+w¨nög
+ (
+dißbÀ
+:4244)
+
+77 #Öøgm®
+w¨nög
+ (
+dißbÀ
+:4305)
+
+101 # i‡!
+deföed
+(
+_MSC_VER
+Ë&& !deföed(
+__cde˛
+)
+
+103 
+	#__cde˛
+
+	)
+
+104 
+	#GLUT_DEFINED___CDECL
+
+	)
+
+106 # i‚de‡
+_CRTIMP
+
+107 # ifde‡
+_NTSDK
+
+109 
+	#_CRTIMP
+
+	)
+
+112 # ifde‡
+_DLL
+
+113 
+	#_CRTIMP
+ 
+	`__de˛•ec
+(
+dŒimp‹t
+)
+
+	)
+
+115 
+	#_CRTIMP
+
+	)
+
+118 
+	#GLUT_DEFINED__CRTIMP
+
+	)
+
+122 # ifde‡
+GLUT_BUILDING_LIB
+
+123 
+	#GLUTAPI
+ 
+	`__de˛•ec
+(
+dŒexp‹t
+)
+
+	)
+
+125 # ifde‡
+_DLL
+
+126 
+	#GLUTAPI
+ 
+	`__de˛•ec
+(
+dŒimp‹t
+)
+
+	)
+
+128 
+	#GLUTAPI
+ 
+
+	)
+
+133 
+	#GLUTCALLBACK
+ 
+__cde˛
+
+	)
+
+137 
+	~<GL/gl.h
+>
+
+138 
+	~<GL/glu.h
+>
+
+140 #ifde‡
+__˝lu•lus
+
+144 #i‡
+deföed
+(
+_WIN32
+Ë&& !deföed(
+__CYGWIN__
+Ë&& !deföed(
+__MINGW32__
+)
+
+145 # i‚de‡
+GLUT_BUILDING_LIB
+
+146 
+_CRTIMP
+ 
+__cde˛
+ 
+exô
+();
+
+148 #ñi‡
+deföed
+(
+__CYGWIN__
+Ë|| deföed(
+__MINGW32__
+)
+
+149 # i‚de‡
+APIENTRY
+
+150 
+	#APIENTRY
+ 
+	`__©åibuã__
+ ((
+__°dˇŒ__
+))
+
+	)
+
+151 
+	#GLUT_APIENTRY_DEFINED
+
+	)
+
+153 # i‚de‡
+CALLBACK
+
+154 
+	#CALLBACK
+ 
+	`__©åibuã__
+ ((
+__°dˇŒ__
+))
+
+	)
+
+155 
+	#GLUT_CALLBACK_DEFINED
+
+	)
+
+157 
+	#GLUTAPI
+ 
+
+	)
+
+158 
+	#GLUTCALLBACK
+ 
+__©åibuã__
+ ((
+__cde˛__
+))
+
+	)
+
+160 
+exô
+();
+
+164 
+	#APIENTRY
+
+	)
+
+165 
+	#GLUT_APIENTRY_DEFINED
+
+	)
+
+166 
+	#CALLBACK
+
+	)
+
+168 
+	#GLUTAPI
+ 
+
+	)
+
+169 
+	#GLUTCALLBACK
+
+	)
+
+171 
+exô
+();
+
+195 #i‚de‡
+GLUT_API_VERSION
+
+196 
+	#GLUT_API_VERSION
+ 3
+
+	)
+
+235 #i‚de‡
+GLUT_XLIB_IMPLEMENTATION
+
+236 
+	#GLUT_XLIB_IMPLEMENTATION
+ 15
+
+	)
+
+240 
+	#GLUT_RGB
+ 0
+
+	)
+
+241 
+	#GLUT_RGBA
+ 
+GLUT_RGB
+
+	)
+
+242 
+	#GLUT_INDEX
+ 1
+
+	)
+
+243 
+	#GLUT_SINGLE
+ 0
+
+	)
+
+244 
+	#GLUT_DOUBLE
+ 2
+
+	)
+
+245 
+	#GLUT_ACCUM
+ 4
+
+	)
+
+246 
+	#GLUT_ALPHA
+ 8
+
+	)
+
+247 
+	#GLUT_DEPTH
+ 16
+
+	)
+
+248 
+	#GLUT_STENCIL
+ 32
+
+	)
+
+249 #i‡(
+GLUT_API_VERSION
+ >= 2)
+
+250 
+	#GLUT_MULTISAMPLE
+ 128
+
+	)
+
+251 
+	#GLUT_STEREO
+ 256
+
+	)
+
+253 #i‡(
+GLUT_API_VERSION
+ >= 3)
+
+254 
+	#GLUT_LUMINANCE
+ 512
+
+	)
+
+258 
+	#GLUT_LEFT_BUTTON
+ 0
+
+	)
+
+259 
+	#GLUT_MIDDLE_BUTTON
+ 1
+
+	)
+
+260 
+	#GLUT_RIGHT_BUTTON
+ 2
+
+	)
+
+263 
+	#GLUT_DOWN
+ 0
+
+	)
+
+264 
+	#GLUT_UP
+ 1
+
+	)
+
+266 #i‡(
+GLUT_API_VERSION
+ >= 2)
+
+268 
+	#GLUT_KEY_F1
+ 1
+
+	)
+
+269 
+	#GLUT_KEY_F2
+ 2
+
+	)
+
+270 
+	#GLUT_KEY_F3
+ 3
+
+	)
+
+271 
+	#GLUT_KEY_F4
+ 4
+
+	)
+
+272 
+	#GLUT_KEY_F5
+ 5
+
+	)
+
+273 
+	#GLUT_KEY_F6
+ 6
+
+	)
+
+274 
+	#GLUT_KEY_F7
+ 7
+
+	)
+
+275 
+	#GLUT_KEY_F8
+ 8
+
+	)
+
+276 
+	#GLUT_KEY_F9
+ 9
+
+	)
+
+277 
+	#GLUT_KEY_F10
+ 10
+
+	)
+
+278 
+	#GLUT_KEY_F11
+ 11
+
+	)
+
+279 
+	#GLUT_KEY_F12
+ 12
+
+	)
+
+281 
+	#GLUT_KEY_LEFT
+ 100
+
+	)
+
+282 
+	#GLUT_KEY_UP
+ 101
+
+	)
+
+283 
+	#GLUT_KEY_RIGHT
+ 102
+
+	)
+
+284 
+	#GLUT_KEY_DOWN
+ 103
+
+	)
+
+285 
+	#GLUT_KEY_PAGE_UP
+ 104
+
+	)
+
+286 
+	#GLUT_KEY_PAGE_DOWN
+ 105
+
+	)
+
+287 
+	#GLUT_KEY_HOME
+ 106
+
+	)
+
+288 
+	#GLUT_KEY_END
+ 107
+
+	)
+
+289 
+	#GLUT_KEY_INSERT
+ 108
+
+	)
+
+293 
+	#GLUT_LEFT
+ 0
+
+	)
+
+294 
+	#GLUT_ENTERED
+ 1
+
+	)
+
+297 
+	#GLUT_MENU_NOT_IN_USE
+ 0
+
+	)
+
+298 
+	#GLUT_MENU_IN_USE
+ 1
+
+	)
+
+301 
+	#GLUT_NOT_VISIBLE
+ 0
+
+	)
+
+302 
+	#GLUT_VISIBLE
+ 1
+
+	)
+
+305 
+	#GLUT_HIDDEN
+ 0
+
+	)
+
+306 
+	#GLUT_FULLY_RETAINED
+ 1
+
+	)
+
+307 
+	#GLUT_PARTIALLY_RETAINED
+ 2
+
+	)
+
+308 
+	#GLUT_FULLY_COVERED
+ 3
+
+	)
+
+311 
+	#GLUT_RED
+ 0
+
+	)
+
+312 
+	#GLUT_GREEN
+ 1
+
+	)
+
+313 
+	#GLUT_BLUE
+ 2
+
+	)
+
+315 #i‡
+deföed
+(
+_WIN32
+Ë|| deföed(
+__CYGWIN__
+Ë|| deföed(
+__MINGW32__
+)
+
+317 
+	#GLUT_STROKE_ROMAN
+ ((*)0)
+
+	)
+
+318 
+	#GLUT_STROKE_MONO_ROMAN
+ ((*)1)
+
+	)
+
+321 
+	#GLUT_BITMAP_9_BY_15
+ ((*)2)
+
+	)
+
+322 
+	#GLUT_BITMAP_8_BY_13
+ ((*)3)
+
+	)
+
+323 
+	#GLUT_BITMAP_TIMES_ROMAN_10
+ ((*)4)
+
+	)
+
+324 
+	#GLUT_BITMAP_TIMES_ROMAN_24
+ ((*)5)
+
+	)
+
+325 #i‡(
+GLUT_API_VERSION
+ >= 3)
+
+326 
+	#GLUT_BITMAP_HELVETICA_10
+ ((*)6)
+
+	)
+
+327 
+	#GLUT_BITMAP_HELVETICA_12
+ ((*)7)
+
+	)
+
+328 
+	#GLUT_BITMAP_HELVETICA_18
+ ((*)8)
+
+	)
+
+332 
+GLUTAPI
+ *
+	gglutSåokeRom™
+;
+
+333 
+GLUTAPI
+ *
+	gglutSåokeM⁄oRom™
+;
+
+336 
+	#GLUT_STROKE_ROMAN
+ (&
+glutSåokeRom™
+)
+
+	)
+
+337 
+	#GLUT_STROKE_MONO_ROMAN
+ (&
+glutSåokeM⁄oRom™
+)
+
+	)
+
+340 
+GLUTAPI
+ *
+	gglutBôm≠9By15
+;
+
+341 
+GLUTAPI
+ *
+	gglutBôm≠8By13
+;
+
+342 
+GLUTAPI
+ *
+	gglutBôm≠TimesRom™10
+;
+
+343 
+GLUTAPI
+ *
+	gglutBôm≠TimesRom™24
+;
+
+344 
+GLUTAPI
+ *
+	gglutBôm≠Hñvëiˇ10
+;
+
+345 
+GLUTAPI
+ *
+	gglutBôm≠Hñvëiˇ12
+;
+
+346 
+GLUTAPI
+ *
+	gglutBôm≠Hñvëiˇ18
+;
+
+349 
+	#GLUT_BITMAP_9_BY_15
+ (&
+glutBôm≠9By15
+)
+
+	)
+
+350 
+	#GLUT_BITMAP_8_BY_13
+ (&
+glutBôm≠8By13
+)
+
+	)
+
+351 
+	#GLUT_BITMAP_TIMES_ROMAN_10
+ (&
+glutBôm≠TimesRom™10
+)
+
+	)
+
+352 
+	#GLUT_BITMAP_TIMES_ROMAN_24
+ (&
+glutBôm≠TimesRom™24
+)
+
+	)
+
+353 #i‡(
+GLUT_API_VERSION
+ >= 3)
+
+354 
+	#GLUT_BITMAP_HELVETICA_10
+ (&
+glutBôm≠Hñvëiˇ10
+)
+
+	)
+
+355 
+	#GLUT_BITMAP_HELVETICA_12
+ (&
+glutBôm≠Hñvëiˇ12
+)
+
+	)
+
+356 
+	#GLUT_BITMAP_HELVETICA_18
+ (&
+glutBôm≠Hñvëiˇ18
+)
+
+	)
+
+361 
+	#GLUT_WINDOW_X
+ ((
+GLíum
+Ë100)
+
+	)
+
+362 
+	#GLUT_WINDOW_Y
+ ((
+GLíum
+Ë101)
+
+	)
+
+363 
+	#GLUT_WINDOW_WIDTH
+ ((
+GLíum
+Ë102)
+
+	)
+
+364 
+	#GLUT_WINDOW_HEIGHT
+ ((
+GLíum
+Ë103)
+
+	)
+
+365 
+	#GLUT_WINDOW_BUFFER_SIZE
+ ((
+GLíum
+Ë104)
+
+	)
+
+366 
+	#GLUT_WINDOW_STENCIL_SIZE
+ ((
+GLíum
+Ë105)
+
+	)
+
+367 
+	#GLUT_WINDOW_DEPTH_SIZE
+ ((
+GLíum
+Ë106)
+
+	)
+
+368 
+	#GLUT_WINDOW_RED_SIZE
+ ((
+GLíum
+Ë107)
+
+	)
+
+369 
+	#GLUT_WINDOW_GREEN_SIZE
+ ((
+GLíum
+Ë108)
+
+	)
+
+370 
+	#GLUT_WINDOW_BLUE_SIZE
+ ((
+GLíum
+Ë109)
+
+	)
+
+371 
+	#GLUT_WINDOW_ALPHA_SIZE
+ ((
+GLíum
+Ë110)
+
+	)
+
+372 
+	#GLUT_WINDOW_ACCUM_RED_SIZE
+ ((
+GLíum
+Ë111)
+
+	)
+
+373 
+	#GLUT_WINDOW_ACCUM_GREEN_SIZE
+ ((
+GLíum
+Ë112)
+
+	)
+
+374 
+	#GLUT_WINDOW_ACCUM_BLUE_SIZE
+ ((
+GLíum
+Ë113)
+
+	)
+
+375 
+	#GLUT_WINDOW_ACCUM_ALPHA_SIZE
+ ((
+GLíum
+Ë114)
+
+	)
+
+376 
+	#GLUT_WINDOW_DOUBLEBUFFER
+ ((
+GLíum
+Ë115)
+
+	)
+
+377 
+	#GLUT_WINDOW_RGBA
+ ((
+GLíum
+Ë116)
+
+	)
+
+378 
+	#GLUT_WINDOW_PARENT
+ ((
+GLíum
+Ë117)
+
+	)
+
+379 
+	#GLUT_WINDOW_NUM_CHILDREN
+ ((
+GLíum
+Ë118)
+
+	)
+
+380 
+	#GLUT_WINDOW_COLORMAP_SIZE
+ ((
+GLíum
+Ë119)
+
+	)
+
+381 #i‡(
+GLUT_API_VERSION
+ >= 2)
+
+382 
+	#GLUT_WINDOW_NUM_SAMPLES
+ ((
+GLíum
+Ë120)
+
+	)
+
+383 
+	#GLUT_WINDOW_STEREO
+ ((
+GLíum
+Ë121)
+
+	)
+
+385 #i‡(
+GLUT_API_VERSION
+ >= 3)
+
+386 
+	#GLUT_WINDOW_CURSOR
+ ((
+GLíum
+Ë122)
+
+	)
+
+388 
+	#GLUT_SCREEN_WIDTH
+ ((
+GLíum
+Ë200)
+
+	)
+
+389 
+	#GLUT_SCREEN_HEIGHT
+ ((
+GLíum
+Ë201)
+
+	)
+
+390 
+	#GLUT_SCREEN_WIDTH_MM
+ ((
+GLíum
+Ë202)
+
+	)
+
+391 
+	#GLUT_SCREEN_HEIGHT_MM
+ ((
+GLíum
+Ë203)
+
+	)
+
+392 
+	#GLUT_MENU_NUM_ITEMS
+ ((
+GLíum
+Ë300)
+
+	)
+
+393 
+	#GLUT_DISPLAY_MODE_POSSIBLE
+ ((
+GLíum
+Ë400)
+
+	)
+
+394 
+	#GLUT_INIT_WINDOW_X
+ ((
+GLíum
+Ë500)
+
+	)
+
+395 
+	#GLUT_INIT_WINDOW_Y
+ ((
+GLíum
+Ë501)
+
+	)
+
+396 
+	#GLUT_INIT_WINDOW_WIDTH
+ ((
+GLíum
+Ë502)
+
+	)
+
+397 
+	#GLUT_INIT_WINDOW_HEIGHT
+ ((
+GLíum
+Ë503)
+
+	)
+
+398 
+	#GLUT_INIT_DISPLAY_MODE
+ ((
+GLíum
+Ë504)
+
+	)
+
+399 #i‡(
+GLUT_API_VERSION
+ >= 2)
+
+400 
+	#GLUT_ELAPSED_TIME
+ ((
+GLíum
+Ë700)
+
+	)
+
+402 #i‡(
+GLUT_API_VERSION
+ >4 || 
+GLUT_XLIB_IMPLEMENTATION
+ >= 13)
+
+403 
+	#GLUT_WINDOW_FORMAT_ID
+ ((
+GLíum
+Ë123)
+
+	)
+
+406 #i‡(
+GLUT_API_VERSION
+ >= 2)
+
+408 
+	#GLUT_HAS_KEYBOARD
+ ((
+GLíum
+Ë600)
+
+	)
+
+409 
+	#GLUT_HAS_MOUSE
+ ((
+GLíum
+Ë601)
+
+	)
+
+410 
+	#GLUT_HAS_SPACEBALL
+ ((
+GLíum
+Ë602)
+
+	)
+
+411 
+	#GLUT_HAS_DIAL_AND_BUTTON_BOX
+ ((
+GLíum
+Ë603)
+
+	)
+
+412 
+	#GLUT_HAS_TABLET
+ ((
+GLíum
+Ë604)
+
+	)
+
+413 
+	#GLUT_NUM_MOUSE_BUTTONS
+ ((
+GLíum
+Ë605)
+
+	)
+
+414 
+	#GLUT_NUM_SPACEBALL_BUTTONS
+ ((
+GLíum
+Ë606)
+
+	)
+
+415 
+	#GLUT_NUM_BUTTON_BOX_BUTTONS
+ ((
+GLíum
+Ë607)
+
+	)
+
+416 
+	#GLUT_NUM_DIALS
+ ((
+GLíum
+Ë608)
+
+	)
+
+417 
+	#GLUT_NUM_TABLET_BUTTONS
+ ((
+GLíum
+Ë609)
+
+	)
+
+419 #i‡(
+GLUT_API_VERSION
+ >4 || 
+GLUT_XLIB_IMPLEMENTATION
+ >= 13)
+
+420 
+	#GLUT_DEVICE_IGNORE_KEY_REPEAT
+ ((
+GLíum
+Ë610)
+
+	)
+
+421 
+	#GLUT_DEVICE_KEY_REPEAT
+ ((
+GLíum
+Ë611)
+
+	)
+
+422 
+	#GLUT_HAS_JOYSTICK
+ ((
+GLíum
+Ë612)
+
+	)
+
+423 
+	#GLUT_OWNS_JOYSTICK
+ ((
+GLíum
+Ë613)
+
+	)
+
+424 
+	#GLUT_JOYSTICK_BUTTONS
+ ((
+GLíum
+Ë614)
+
+	)
+
+425 
+	#GLUT_JOYSTICK_AXES
+ ((
+GLíum
+Ë615)
+
+	)
+
+426 
+	#GLUT_JOYSTICK_POLL_RATE
+ ((
+GLíum
+Ë616)
+
+	)
+
+429 #i‡(
+GLUT_API_VERSION
+ >= 3)
+
+431 
+	#GLUT_OVERLAY_POSSIBLE
+ ((
+GLíum
+Ë800)
+
+	)
+
+432 
+	#GLUT_LAYER_IN_USE
+ ((
+GLíum
+Ë801)
+
+	)
+
+433 
+	#GLUT_HAS_OVERLAY
+ ((
+GLíum
+Ë802)
+
+	)
+
+434 
+	#GLUT_TRANSPARENT_INDEX
+ ((
+GLíum
+Ë803)
+
+	)
+
+435 
+	#GLUT_NORMAL_DAMAGED
+ ((
+GLíum
+Ë804)
+
+	)
+
+436 
+	#GLUT_OVERLAY_DAMAGED
+ ((
+GLíum
+Ë805)
+
+	)
+
+438 #i‡(
+GLUT_API_VERSION
+ >4 || 
+GLUT_XLIB_IMPLEMENTATION
+ >= 9)
+
+440 
+	#GLUT_VIDEO_RESIZE_POSSIBLE
+ ((
+GLíum
+Ë900)
+
+	)
+
+441 
+	#GLUT_VIDEO_RESIZE_IN_USE
+ ((
+GLíum
+Ë901)
+
+	)
+
+442 
+	#GLUT_VIDEO_RESIZE_X_DELTA
+ ((
+GLíum
+Ë902)
+
+	)
+
+443 
+	#GLUT_VIDEO_RESIZE_Y_DELTA
+ ((
+GLíum
+Ë903)
+
+	)
+
+444 
+	#GLUT_VIDEO_RESIZE_WIDTH_DELTA
+ ((
+GLíum
+Ë904)
+
+	)
+
+445 
+	#GLUT_VIDEO_RESIZE_HEIGHT_DELTA
+ ((
+GLíum
+Ë905)
+
+	)
+
+446 
+	#GLUT_VIDEO_RESIZE_X
+ ((
+GLíum
+Ë906)
+
+	)
+
+447 
+	#GLUT_VIDEO_RESIZE_Y
+ ((
+GLíum
+Ë907)
+
+	)
+
+448 
+	#GLUT_VIDEO_RESIZE_WIDTH
+ ((
+GLíum
+Ë908)
+
+	)
+
+449 
+	#GLUT_VIDEO_RESIZE_HEIGHT
+ ((
+GLíum
+Ë909)
+
+	)
+
+453 
+	#GLUT_NORMAL
+ ((
+GLíum
+Ë0)
+
+	)
+
+454 
+	#GLUT_OVERLAY
+ ((
+GLíum
+Ë1)
+
+	)
+
+457 
+	#GLUT_ACTIVE_SHIFT
+ 1
+
+	)
+
+458 
+	#GLUT_ACTIVE_CTRL
+ 2
+
+	)
+
+459 
+	#GLUT_ACTIVE_ALT
+ 4
+
+	)
+
+463 
+	#GLUT_CURSOR_RIGHT_ARROW
+ 0
+
+	)
+
+464 
+	#GLUT_CURSOR_LEFT_ARROW
+ 1
+
+	)
+
+466 
+	#GLUT_CURSOR_INFO
+ 2
+
+	)
+
+467 
+	#GLUT_CURSOR_DESTROY
+ 3
+
+	)
+
+468 
+	#GLUT_CURSOR_HELP
+ 4
+
+	)
+
+469 
+	#GLUT_CURSOR_CYCLE
+ 5
+
+	)
+
+470 
+	#GLUT_CURSOR_SPRAY
+ 6
+
+	)
+
+471 
+	#GLUT_CURSOR_WAIT
+ 7
+
+	)
+
+472 
+	#GLUT_CURSOR_TEXT
+ 8
+
+	)
+
+473 
+	#GLUT_CURSOR_CROSSHAIR
+ 9
+
+	)
+
+475 
+	#GLUT_CURSOR_UP_DOWN
+ 10
+
+	)
+
+476 
+	#GLUT_CURSOR_LEFT_RIGHT
+ 11
+
+	)
+
+478 
+	#GLUT_CURSOR_TOP_SIDE
+ 12
+
+	)
+
+479 
+	#GLUT_CURSOR_BOTTOM_SIDE
+ 13
+
+	)
+
+480 
+	#GLUT_CURSOR_LEFT_SIDE
+ 14
+
+	)
+
+481 
+	#GLUT_CURSOR_RIGHT_SIDE
+ 15
+
+	)
+
+482 
+	#GLUT_CURSOR_TOP_LEFT_CORNER
+ 16
+
+	)
+
+483 
+	#GLUT_CURSOR_TOP_RIGHT_CORNER
+ 17
+
+	)
+
+484 
+	#GLUT_CURSOR_BOTTOM_RIGHT_CORNER
+ 18
+
+	)
+
+485 
+	#GLUT_CURSOR_BOTTOM_LEFT_CORNER
+ 19
+
+	)
+
+487 
+	#GLUT_CURSOR_INHERIT
+ 100
+
+	)
+
+489 
+	#GLUT_CURSOR_NONE
+ 101
+
+	)
+
+491 
+	#GLUT_CURSOR_FULL_CROSSHAIR
+ 102
+
+	)
+
+495 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutInô
+(*
+¨g˝
+, **
+¨gv
+);
+
+496 #i‡(
+deföed
+(
+_WIN32
+Ë || deföed(
+__CYGWIN__
+Ë|| deföed(
+__MINGW32__
+)Ë&& !deföed(
+GLUT_DISABLE_ATEXIT_HACK
+)
+
+497 
+GLUTAPI
+ 
+APIENTRY
+ 
+__glutInôWôhExô
+(*
+¨g˝
+, **
+¨gv
+, (
+__cde˛
+ *
+exôfunc
+)());
+
+498 #i‚de‡
+GLUT_BUILDING_LIB
+
+499 
+APIENTRY
+ 
+glutInô_ATEXIT_HACK
+(*
+¨g˝
+, **
+¨gv
+Ë{ 
+__glutInôWôhExô
+◊rg˝,árgv, 
+exô
+); }
+
+500 
+	#glutInô
+ 
+glutInô_ATEXIT_HACK
+
+	)
+
+503 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutInôDi•œyMode
+(
+mode
+);
+
+504 #i‡(
+GLUT_API_VERSION
+ >4 || 
+GLUT_XLIB_IMPLEMENTATION
+ >= 9)
+
+505 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutInôDi•œySåög
+(c⁄° *
+°rög
+);
+
+507 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutInôWödowPosôi⁄
+(
+x
+, 
+y
+);
+
+508 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutInôWödowSize
+(
+width
+, 
+height
+);
+
+509 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutMaöLo›
+();
+
+512 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutCª©eWödow
+(c⁄° *
+tôÀ
+);
+
+513 #i‡(
+deföed
+(
+_WIN32
+Ë || deföed(
+__CYGWIN__
+Ë|| deföed(
+__MINGW32__
+)Ë&& !deföed(
+GLUT_DISABLE_ATEXIT_HACK
+)
+
+514 
+GLUTAPI
+ 
+APIENTRY
+ 
+__glutCª©eWödowWôhExô
+(c⁄° *
+tôÀ
+, (
+__cde˛
+ *
+exôfunc
+)());
+
+515 #i‚de‡
+GLUT_BUILDING_LIB
+
+516 
+APIENTRY
+ 
+glutCª©eWödow_ATEXIT_HACK
+(c⁄° *
+tôÀ
+Ë{  
+__glutCª©eWödowWôhExô
+—ôÀ, 
+exô
+); }
+
+517 
+	#glutCª©eWödow
+ 
+glutCª©eWödow_ATEXIT_HACK
+
+	)
+
+520 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutCª©eSubWödow
+(
+wö
+, 
+x
+, 
+y
+, 
+width
+, 
+height
+);
+
+521 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutDe°royWödow
+(
+wö
+);
+
+522 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutPo°Redi•œy
+();
+
+523 #i‡(
+GLUT_API_VERSION
+ >4 || 
+GLUT_XLIB_IMPLEMENTATION
+ >= 11)
+
+524 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutPo°WödowRedi•œy
+(
+wö
+);
+
+526 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutSw≠Buf„rs
+();
+
+527 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutGëWödow
+();
+
+528 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutSëWödow
+(
+wö
+);
+
+529 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutSëWödowTôÀ
+(c⁄° *
+tôÀ
+);
+
+530 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutSëIc⁄TôÀ
+(c⁄° *
+tôÀ
+);
+
+531 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutPosôi⁄Wödow
+(
+x
+, 
+y
+);
+
+532 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutResh≠eWödow
+(
+width
+, 
+height
+);
+
+533 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutP›Wödow
+();
+
+534 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutPushWödow
+();
+
+535 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutIc⁄ifyWödow
+();
+
+536 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutShowWödow
+();
+
+537 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutHideWödow
+();
+
+538 #i‡(
+GLUT_API_VERSION
+ >= 3)
+
+539 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutFuŒS¸ìn
+();
+
+540 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutSëCurs‹
+(
+curs‹
+);
+
+541 #i‡(
+GLUT_API_VERSION
+ >4 || 
+GLUT_XLIB_IMPLEMENTATION
+ >= 9)
+
+542 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutW¨pPoöãr
+(
+x
+, 
+y
+);
+
+546 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutE°ablishOvîœy
+();
+
+547 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutRemoveOvîœy
+();
+
+548 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutU£Layî
+(
+GLíum
+ 
+œyî
+);
+
+549 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutPo°OvîœyRedi•œy
+();
+
+550 #i‡(
+GLUT_API_VERSION
+ >4 || 
+GLUT_XLIB_IMPLEMENTATION
+ >= 11)
+
+551 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutPo°WödowOvîœyRedi•œy
+(
+wö
+);
+
+553 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutShowOvîœy
+();
+
+554 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutHideOvîœy
+();
+
+558 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutCª©eMíu
+((
+GLUTCALLBACK
+ *
+func
+)());
+
+559 #i‡(
+deföed
+(
+_WIN32
+Ë || deföed(
+__CYGWIN__
+Ë|| deföed(
+__MINGW32__
+)Ë&& !deföed(
+GLUT_DISABLE_ATEXIT_HACK
+)
+
+560 
+GLUTAPI
+ 
+APIENTRY
+ 
+__glutCª©eMíuWôhExô
+((
+GLUTCALLBACK
+ *
+func
+)(), (
+__cde˛
+ *
+exôfunc
+)());
+
+561 #i‚de‡
+GLUT_BUILDING_LIB
+
+562 
+APIENTRY
+ 
+glutCª©eMíu_ATEXIT_HACK
+((
+GLUTCALLBACK
+ *
+func
+)()Ë{  
+__glutCª©eMíuWôhExô
+(func, 
+exô
+); }
+
+563 
+	#glutCª©eMíu
+ 
+glutCª©eMíu_ATEXIT_HACK
+
+	)
+
+566 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutDe°royMíu
+(
+míu
+);
+
+567 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutGëMíu
+();
+
+568 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutSëMíu
+(
+míu
+);
+
+569 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutAddMíuE¡ry
+(c⁄° *
+œbñ
+, 
+vÆue
+);
+
+570 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutAddSubMíu
+(c⁄° *
+œbñ
+, 
+submíu
+);
+
+571 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutCh™geToMíuE¡ry
+(
+ôem
+, c⁄° *
+œbñ
+, 
+vÆue
+);
+
+572 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutCh™geToSubMíu
+(
+ôem
+, c⁄° *
+œbñ
+, 
+submíu
+);
+
+573 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutRemoveMíuIãm
+(
+ôem
+);
+
+574 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutAâachMíu
+(
+buâ⁄
+);
+
+575 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutDëachMíu
+(
+buâ⁄
+);
+
+578 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutDi•œyFunc
+((
+GLUTCALLBACK
+ *
+func
+)());
+
+579 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutResh≠eFunc
+((
+GLUTCALLBACK
+ *
+func
+)(
+width
+, 
+height
+));
+
+580 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutKeybﬂrdFunc
+((
+GLUTCALLBACK
+ *
+func
+)(
+key
+, 
+x
+, 
+y
+));
+
+581 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutMou£Func
+((
+GLUTCALLBACK
+ *
+func
+)(
+buâ⁄
+, 
+°©e
+, 
+x
+, 
+y
+));
+
+582 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutMŸi⁄Func
+((
+GLUTCALLBACK
+ *
+func
+)(
+x
+, 
+y
+));
+
+583 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutPassiveMŸi⁄Func
+((
+GLUTCALLBACK
+ *
+func
+)(
+x
+, 
+y
+));
+
+584 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutE¡ryFunc
+((
+GLUTCALLBACK
+ *
+func
+)(
+°©e
+));
+
+585 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutVisibûôyFunc
+((
+GLUTCALLBACK
+ *
+func
+)(
+°©e
+));
+
+586 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutIdÀFunc
+((
+GLUTCALLBACK
+ *
+func
+)());
+
+587 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutTimîFunc
+(
+mûlis
+, (
+GLUTCALLBACK
+ *
+func
+)(
+vÆue
+), value);
+
+588 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutMíuSèãFunc
+((
+GLUTCALLBACK
+ *
+func
+)(
+°©e
+));
+
+589 #i‡(
+GLUT_API_VERSION
+ >= 2)
+
+590 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutS≥cülFunc
+((
+GLUTCALLBACK
+ *
+func
+)(
+key
+, 
+x
+, 
+y
+));
+
+591 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutS∑˚bÆlMŸi⁄Func
+((
+GLUTCALLBACK
+ *
+func
+)(
+x
+, 
+y
+, 
+z
+));
+
+592 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutS∑˚bÆlRŸ©eFunc
+((
+GLUTCALLBACK
+ *
+func
+)(
+x
+, 
+y
+, 
+z
+));
+
+593 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutS∑˚bÆlBuâ⁄Func
+((
+GLUTCALLBACK
+ *
+func
+)(
+buâ⁄
+, 
+°©e
+));
+
+594 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutBuâ⁄BoxFunc
+((
+GLUTCALLBACK
+ *
+func
+)(
+buâ⁄
+, 
+°©e
+));
+
+595 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutDülsFunc
+((
+GLUTCALLBACK
+ *
+func
+)(
+dül
+, 
+vÆue
+));
+
+596 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutTabÀtMŸi⁄Func
+((
+GLUTCALLBACK
+ *
+func
+)(
+x
+, 
+y
+));
+
+597 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutTabÀtBuâ⁄Func
+((
+GLUTCALLBACK
+ *
+func
+)(
+buâ⁄
+, 
+°©e
+, 
+x
+, 
+y
+));
+
+598 #i‡(
+GLUT_API_VERSION
+ >= 3)
+
+599 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutMíuSètusFunc
+((
+GLUTCALLBACK
+ *
+func
+)(
+°©us
+, 
+x
+, 
+y
+));
+
+600 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutOvîœyDi•œyFunc
+((
+GLUTCALLBACK
+ *
+func
+)());
+
+601 #i‡(
+GLUT_API_VERSION
+ >4 || 
+GLUT_XLIB_IMPLEMENTATION
+ >= 9)
+
+602 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutWödowSètusFunc
+((
+GLUTCALLBACK
+ *
+func
+)(
+°©e
+));
+
+604 #i‡(
+GLUT_API_VERSION
+ >4 || 
+GLUT_XLIB_IMPLEMENTATION
+ >= 13)
+
+605 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutKeybﬂrdUpFunc
+((
+GLUTCALLBACK
+ *
+func
+)(
+key
+, 
+x
+, 
+y
+));
+
+606 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutS≥cülUpFunc
+((
+GLUTCALLBACK
+ *
+func
+)(
+key
+, 
+x
+, 
+y
+));
+
+607 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutJoy°ickFunc
+((
+GLUTCALLBACK
+ *
+func
+)(
+buâ⁄Mask
+, 
+x
+, 
+y
+, 
+z
+), 
+pﬁlI¡îvÆ
+);
+
+613 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutSëCﬁ‹
+(, 
+GLÊﬂt
+ 
+ªd
+, GLÊﬂà
+gªí
+, GLÊﬂà
+blue
+);
+
+614 
+GLUTAPI
+ 
+GLÊﬂt
+ 
+APIENTRY
+ 
+glutGëCﬁ‹
+(
+ndx
+, 
+comp⁄ít
+);
+
+615 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutC›yCﬁ‹m≠
+(
+wö
+);
+
+618 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutGë
+(
+GLíum
+ 
+ty≥
+);
+
+619 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutDevi˚Gë
+(
+GLíum
+ 
+ty≥
+);
+
+620 #i‡(
+GLUT_API_VERSION
+ >= 2)
+
+622 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutExãnsi⁄Suµ‹ãd
+(c⁄° *
+«me
+);
+
+624 #i‡(
+GLUT_API_VERSION
+ >= 3)
+
+625 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutGëModifõrs
+();
+
+626 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutLayîGë
+(
+GLíum
+ 
+ty≥
+);
+
+630 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutBôm≠Ch¨a˘î
+(*
+f⁄t
+, 
+ch¨a˘î
+);
+
+631 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutBôm≠Width
+(*
+f⁄t
+, 
+ch¨a˘î
+);
+
+632 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutSåokeCh¨a˘î
+(*
+f⁄t
+, 
+ch¨a˘î
+);
+
+633 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutSåokeWidth
+(*
+f⁄t
+, 
+ch¨a˘î
+);
+
+634 #i‡(
+GLUT_API_VERSION
+ >4 || 
+GLUT_XLIB_IMPLEMENTATION
+ >= 9)
+
+635 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutBôm≠Lígth
+(*
+f⁄t
+, c⁄° *
+°rög
+);
+
+636 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutSåokeLígth
+(*
+f⁄t
+, c⁄° *
+°rög
+);
+
+640 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutWúeSphîe
+(
+GLdoubÀ
+ 
+ødius
+, 
+GLöt
+ 
+¶i˚s
+, GLöà
+°acks
+);
+
+641 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutSﬁidSphîe
+(
+GLdoubÀ
+ 
+ødius
+, 
+GLöt
+ 
+¶i˚s
+, GLöà
+°acks
+);
+
+642 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutWúeC⁄e
+(
+GLdoubÀ
+ 
+ba£
+, GLdoubÀ 
+height
+, 
+GLöt
+ 
+¶i˚s
+, GLöà
+°acks
+);
+
+643 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutSﬁidC⁄e
+(
+GLdoubÀ
+ 
+ba£
+, GLdoubÀ 
+height
+, 
+GLöt
+ 
+¶i˚s
+, GLöà
+°acks
+);
+
+644 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutWúeCube
+(
+GLdoubÀ
+ 
+size
+);
+
+645 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutSﬁidCube
+(
+GLdoubÀ
+ 
+size
+);
+
+646 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutWúeT‹us
+(
+GLdoubÀ
+ 
+ö√rRadius
+, GLdoubÀ 
+ouãrRadius
+, 
+GLöt
+ 
+sides
+, GLöà
+rögs
+);
+
+647 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutSﬁidT‹us
+(
+GLdoubÀ
+ 
+ö√rRadius
+, GLdoubÀ 
+ouãrRadius
+, 
+GLöt
+ 
+sides
+, GLöà
+rögs
+);
+
+648 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutWúeDodeˇhedr⁄
+();
+
+649 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutSﬁidDodeˇhedr⁄
+();
+
+650 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutWúeTópŸ
+(
+GLdoubÀ
+ 
+size
+);
+
+651 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutSﬁidTópŸ
+(
+GLdoubÀ
+ 
+size
+);
+
+652 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutWúeO˘ahedr⁄
+();
+
+653 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutSﬁidO˘ahedr⁄
+();
+
+654 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutWúeTëøhedr⁄
+();
+
+655 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutSﬁidTëøhedr⁄
+();
+
+656 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutWúeIcoßhedr⁄
+();
+
+657 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutSﬁidIcoßhedr⁄
+();
+
+659 #i‡(
+GLUT_API_VERSION
+ >4 || 
+GLUT_XLIB_IMPLEMENTATION
+ >= 9)
+
+661 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutVideoResizeGë
+(
+GLíum
+ 
+∑øm
+);
+
+662 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutSëupVideoResizög
+();
+
+663 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutSt›VideoResizög
+();
+
+664 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutVideoResize
+(
+x
+, 
+y
+, 
+width
+, 
+height
+);
+
+665 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutVideoP™
+(
+x
+, 
+y
+, 
+width
+, 
+height
+);
+
+668 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutRï‹tEº‹s
+();
+
+671 #i‡(
+GLUT_API_VERSION
+ >4 || 
+GLUT_XLIB_IMPLEMENTATION
+ >= 13)
+
+674 
+	#GLUT_KEY_REPEAT_OFF
+ 0
+
+	)
+
+675 
+	#GLUT_KEY_REPEAT_ON
+ 1
+
+	)
+
+676 
+	#GLUT_KEY_REPEAT_DEFAULT
+ 2
+
+	)
+
+679 
+	#GLUT_JOYSTICK_BUTTON_A
+ 1
+
+	)
+
+680 
+	#GLUT_JOYSTICK_BUTTON_B
+ 2
+
+	)
+
+681 
+	#GLUT_JOYSTICK_BUTTON_C
+ 4
+
+	)
+
+682 
+	#GLUT_JOYSTICK_BUTTON_D
+ 8
+
+	)
+
+684 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutIgn‹eKeyRïót
+(
+ign‹e
+);
+
+685 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutSëKeyRïót
+(
+ª≥©Mode
+);
+
+686 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutF‹˚Joy°ickFunc
+();
+
+690 
+	#GLUT_GAME_MODE_ACTIVE
+ ((
+GLíum
+Ë0)
+
+	)
+
+691 
+	#GLUT_GAME_MODE_POSSIBLE
+ ((
+GLíum
+Ë1)
+
+	)
+
+692 
+	#GLUT_GAME_MODE_WIDTH
+ ((
+GLíum
+Ë2)
+
+	)
+
+693 
+	#GLUT_GAME_MODE_HEIGHT
+ ((
+GLíum
+Ë3)
+
+	)
+
+694 
+	#GLUT_GAME_MODE_PIXEL_DEPTH
+ ((
+GLíum
+Ë4)
+
+	)
+
+695 
+	#GLUT_GAME_MODE_REFRESH_RATE
+ ((
+GLíum
+Ë5)
+
+	)
+
+696 
+	#GLUT_GAME_MODE_DISPLAY_CHANGED
+ ((
+GLíum
+Ë6)
+
+	)
+
+698 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutGameModeSåög
+(c⁄° *
+°rög
+);
+
+699 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutE¡îGameMode
+();
+
+700 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutLóveGameMode
+();
+
+701 
+GLUTAPI
+ 
+APIENTRY
+ 
+glutGameModeGë
+(
+GLíum
+ 
+mode
+);
+
+704 #ifde‡
+__˝lu•lus
+
+709 #ifde‡
+GLUT_APIENTRY_DEFINED
+
+710 # unde‡
+GLUT_APIENTRY_DEFINED
+
+711 # unde‡
+APIENTRY
+
+714 #ifde‡
+GLUT_WINGDIAPI_DEFINED
+
+715 # unde‡
+GLUT_WINGDIAPI_DEFINED
+
+716 # unde‡
+WINGDIAPI
+
+719 #ifde‡
+GLUT_DEFINED___CDECL
+
+720 # unde‡
+GLUT_DEFINED___CDECL
+
+721 # unde‡
+__cde˛
+
+724 #ifde‡
+GLUT_DEFINED__CRTIMP
+
+725 # unde‡
+GLUT_DEFINED__CRTIMP
+
+726 # unde‡
+_CRTIMP
+
+	@/usr/include/GL/gl.h
+
+46 #i‚de‡
+__gl_h_
+
+47 
+	#__gl_h_
+
+	)
+
+55 #i‡!
+deföed
+(
+__WIN32__
+Ë&& (deföed(
+_WIN32
+Ë|| deföed(
+WIN32
+Ë|| deföed(
+__CYGWIN__
+))
+
+56 
+	#__WIN32__
+
+	)
+
+60 #i‡
+deföed
+(
+__WIN32__
+Ë&& deföed(
+WINGDIAPI
+)
+
+61 
+	#GLAPI
+ 
+WINGDIAPI
+
+	)
+
+65 #i‡!
+deföed
+(
+GLAPI
+)
+
+66 # i‡
+deföed
+(
+_MSC_VER
+)
+
+67 
+	#GLAPI
+ 
+	`__de˛•ec
+(
+dŒimp‹t
+)
+
+	)
+
+68 #Éli‡
+deföed
+(
+__LCC__
+Ë&& deföed(
+__WIN32__
+)
+
+69 
+	#GLAPI
+ 
+__°dˇŒ
+
+	)
+
+71 
+	#GLAPI
+ 
+
+	)
+
+76 #i‡!
+deföed
+(
+APIENTRY
+)
+
+77 # i‡
+deföed
+(
+__WIN32__
+)
+
+78 
+	#APIENTRY
+ 
+__°dˇŒ
+
+	)
+
+80 
+	#APIENTRY
+
+	)
+
+89 #ifde‡
+__˝lu•lus
+
+95 
+	#GL_VERSION_1_1
+ 1
+
+	)
+
+97 #i‡!
+deföed
+(
+__WIN32__
+)
+
+98 
+	#GL_VERSION_1_2
+ 1
+
+	)
+
+99 
+	#GL_VERSION_1_3
+ 1
+
+	)
+
+100 
+	#GL_ARB_imagög
+ 1
+
+	)
+
+109 #ifde‡
+CENTERLINE_CLPP
+
+110 sig√d
+
+	)
+
+112 
+	tGLíum
+;
+
+113 
+	tGLboﬁón
+;
+
+114 
+	tGLbôfõld
+;
+
+115 
+	tGLvoid
+;
+
+116 sig√d 
+	tGLbyã
+;
+
+117 
+	tGLsh‹t
+;
+
+118 
+	tGLöt
+;
+
+119 
+	tGLubyã
+;
+
+120 
+	tGLush‹t
+;
+
+121 
+	tGLuöt
+;
+
+122 
+	tGLsizei
+;
+
+123 
+	tGLÊﬂt
+;
+
+124 
+	tGL˛ampf
+;
+
+125 
+	tGLdoubÀ
+;
+
+126 
+	tGL˛ampd
+;
+
+137 
+	#GL_FALSE
+ 0x0
+
+	)
+
+138 
+	#GL_TRUE
+ 0x1
+
+	)
+
+141 
+	#GL_BYTE
+ 0x1400
+
+	)
+
+142 
+	#GL_UNSIGNED_BYTE
+ 0x1401
+
+	)
+
+143 
+	#GL_SHORT
+ 0x1402
+
+	)
+
+144 
+	#GL_UNSIGNED_SHORT
+ 0x1403
+
+	)
+
+145 
+	#GL_INT
+ 0x1404
+
+	)
+
+146 
+	#GL_UNSIGNED_INT
+ 0x1405
+
+	)
+
+147 
+	#GL_FLOAT
+ 0x1406
+
+	)
+
+148 
+	#GL_DOUBLE
+ 0x140A
+
+	)
+
+149 
+	#GL_2_BYTES
+ 0x1407
+
+	)
+
+150 
+	#GL_3_BYTES
+ 0x1408
+
+	)
+
+151 
+	#GL_4_BYTES
+ 0x1409
+
+	)
+
+154 
+	#GL_POINTS
+ 0x0000
+
+	)
+
+155 
+	#GL_LINES
+ 0x0001
+
+	)
+
+156 
+	#GL_LINE_LOOP
+ 0x0002
+
+	)
+
+157 
+	#GL_LINE_STRIP
+ 0x0003
+
+	)
+
+158 
+	#GL_TRIANGLES
+ 0x0004
+
+	)
+
+159 
+	#GL_TRIANGLE_STRIP
+ 0x0005
+
+	)
+
+160 
+	#GL_TRIANGLE_FAN
+ 0x0006
+
+	)
+
+161 
+	#GL_QUADS
+ 0x0007
+
+	)
+
+162 
+	#GL_QUAD_STRIP
+ 0x0008
+
+	)
+
+163 
+	#GL_POLYGON
+ 0x0009
+
+	)
+
+166 
+	#GL_VERTEX_ARRAY
+ 0x8074
+
+	)
+
+167 
+	#GL_NORMAL_ARRAY
+ 0x8075
+
+	)
+
+168 
+	#GL_COLOR_ARRAY
+ 0x8076
+
+	)
+
+169 
+	#GL_INDEX_ARRAY
+ 0x8077
+
+	)
+
+170 
+	#GL_TEXTURE_COORD_ARRAY
+ 0x8078
+
+	)
+
+171 
+	#GL_EDGE_FLAG_ARRAY
+ 0x8079
+
+	)
+
+172 
+	#GL_VERTEX_ARRAY_SIZE
+ 0x807A
+
+	)
+
+173 
+	#GL_VERTEX_ARRAY_TYPE
+ 0x807B
+
+	)
+
+174 
+	#GL_VERTEX_ARRAY_STRIDE
+ 0x807C
+
+	)
+
+175 
+	#GL_NORMAL_ARRAY_TYPE
+ 0x807E
+
+	)
+
+176 
+	#GL_NORMAL_ARRAY_STRIDE
+ 0x807F
+
+	)
+
+177 
+	#GL_COLOR_ARRAY_SIZE
+ 0x8081
+
+	)
+
+178 
+	#GL_COLOR_ARRAY_TYPE
+ 0x8082
+
+	)
+
+179 
+	#GL_COLOR_ARRAY_STRIDE
+ 0x8083
+
+	)
+
+180 
+	#GL_INDEX_ARRAY_TYPE
+ 0x8085
+
+	)
+
+181 
+	#GL_INDEX_ARRAY_STRIDE
+ 0x8086
+
+	)
+
+182 
+	#GL_TEXTURE_COORD_ARRAY_SIZE
+ 0x8088
+
+	)
+
+183 
+	#GL_TEXTURE_COORD_ARRAY_TYPE
+ 0x8089
+
+	)
+
+184 
+	#GL_TEXTURE_COORD_ARRAY_STRIDE
+ 0x808A
+
+	)
+
+185 
+	#GL_EDGE_FLAG_ARRAY_STRIDE
+ 0x808C
+
+	)
+
+186 
+	#GL_VERTEX_ARRAY_POINTER
+ 0x808E
+
+	)
+
+187 
+	#GL_NORMAL_ARRAY_POINTER
+ 0x808F
+
+	)
+
+188 
+	#GL_COLOR_ARRAY_POINTER
+ 0x8090
+
+	)
+
+189 
+	#GL_INDEX_ARRAY_POINTER
+ 0x8091
+
+	)
+
+190 
+	#GL_TEXTURE_COORD_ARRAY_POINTER
+ 0x8092
+
+	)
+
+191 
+	#GL_EDGE_FLAG_ARRAY_POINTER
+ 0x8093
+
+	)
+
+192 
+	#GL_V2F
+ 0x2A20
+
+	)
+
+193 
+	#GL_V3F
+ 0x2A21
+
+	)
+
+194 
+	#GL_C4UB_V2F
+ 0x2A22
+
+	)
+
+195 
+	#GL_C4UB_V3F
+ 0x2A23
+
+	)
+
+196 
+	#GL_C3F_V3F
+ 0x2A24
+
+	)
+
+197 
+	#GL_N3F_V3F
+ 0x2A25
+
+	)
+
+198 
+	#GL_C4F_N3F_V3F
+ 0x2A26
+
+	)
+
+199 
+	#GL_T2F_V3F
+ 0x2A27
+
+	)
+
+200 
+	#GL_T4F_V4F
+ 0x2A28
+
+	)
+
+201 
+	#GL_T2F_C4UB_V3F
+ 0x2A29
+
+	)
+
+202 
+	#GL_T2F_C3F_V3F
+ 0x2A2A
+
+	)
+
+203 
+	#GL_T2F_N3F_V3F
+ 0x2A2B
+
+	)
+
+204 
+	#GL_T2F_C4F_N3F_V3F
+ 0x2A2C
+
+	)
+
+205 
+	#GL_T4F_C4F_N3F_V4F
+ 0x2A2D
+
+	)
+
+208 
+	#GL_MATRIX_MODE
+ 0x0BA0
+
+	)
+
+209 
+	#GL_MODELVIEW
+ 0x1700
+
+	)
+
+210 
+	#GL_PROJECTION
+ 0x1701
+
+	)
+
+211 
+	#GL_TEXTURE
+ 0x1702
+
+	)
+
+214 
+	#GL_POINT_SMOOTH
+ 0x0B10
+
+	)
+
+215 
+	#GL_POINT_SIZE
+ 0x0B11
+
+	)
+
+216 
+	#GL_POINT_SIZE_GRANULARITY
+ 0x0B13
+
+	)
+
+217 
+	#GL_POINT_SIZE_RANGE
+ 0x0B12
+
+	)
+
+220 
+	#GL_LINE_SMOOTH
+ 0x0B20
+
+	)
+
+221 
+	#GL_LINE_STIPPLE
+ 0x0B24
+
+	)
+
+222 
+	#GL_LINE_STIPPLE_PATTERN
+ 0x0B25
+
+	)
+
+223 
+	#GL_LINE_STIPPLE_REPEAT
+ 0x0B26
+
+	)
+
+224 
+	#GL_LINE_WIDTH
+ 0x0B21
+
+	)
+
+225 
+	#GL_LINE_WIDTH_GRANULARITY
+ 0x0B23
+
+	)
+
+226 
+	#GL_LINE_WIDTH_RANGE
+ 0x0B22
+
+	)
+
+229 
+	#GL_POINT
+ 0x1B00
+
+	)
+
+230 
+	#GL_LINE
+ 0x1B01
+
+	)
+
+231 
+	#GL_FILL
+ 0x1B02
+
+	)
+
+232 
+	#GL_CW
+ 0x0900
+
+	)
+
+233 
+	#GL_CCW
+ 0x0901
+
+	)
+
+234 
+	#GL_FRONT
+ 0x0404
+
+	)
+
+235 
+	#GL_BACK
+ 0x0405
+
+	)
+
+236 
+	#GL_POLYGON_MODE
+ 0x0B40
+
+	)
+
+237 
+	#GL_POLYGON_SMOOTH
+ 0x0B41
+
+	)
+
+238 
+	#GL_POLYGON_STIPPLE
+ 0x0B42
+
+	)
+
+239 
+	#GL_EDGE_FLAG
+ 0x0B43
+
+	)
+
+240 
+	#GL_CULL_FACE
+ 0x0B44
+
+	)
+
+241 
+	#GL_CULL_FACE_MODE
+ 0x0B45
+
+	)
+
+242 
+	#GL_FRONT_FACE
+ 0x0B46
+
+	)
+
+243 
+	#GL_POLYGON_OFFSET_FACTOR
+ 0x8038
+
+	)
+
+244 
+	#GL_POLYGON_OFFSET_UNITS
+ 0x2A00
+
+	)
+
+245 
+	#GL_POLYGON_OFFSET_POINT
+ 0x2A01
+
+	)
+
+246 
+	#GL_POLYGON_OFFSET_LINE
+ 0x2A02
+
+	)
+
+247 
+	#GL_POLYGON_OFFSET_FILL
+ 0x8037
+
+	)
+
+250 
+	#GL_COMPILE
+ 0x1300
+
+	)
+
+251 
+	#GL_COMPILE_AND_EXECUTE
+ 0x1301
+
+	)
+
+252 
+	#GL_LIST_BASE
+ 0x0B32
+
+	)
+
+253 
+	#GL_LIST_INDEX
+ 0x0B33
+
+	)
+
+254 
+	#GL_LIST_MODE
+ 0x0B30
+
+	)
+
+257 
+	#GL_NEVER
+ 0x0200
+
+	)
+
+258 
+	#GL_LESS
+ 0x0201
+
+	)
+
+259 
+	#GL_EQUAL
+ 0x0202
+
+	)
+
+260 
+	#GL_LEQUAL
+ 0x0203
+
+	)
+
+261 
+	#GL_GREATER
+ 0x0204
+
+	)
+
+262 
+	#GL_NOTEQUAL
+ 0x0205
+
+	)
+
+263 
+	#GL_GEQUAL
+ 0x0206
+
+	)
+
+264 
+	#GL_ALWAYS
+ 0x0207
+
+	)
+
+265 
+	#GL_DEPTH_TEST
+ 0x0B71
+
+	)
+
+266 
+	#GL_DEPTH_BITS
+ 0x0D56
+
+	)
+
+267 
+	#GL_DEPTH_CLEAR_VALUE
+ 0x0B73
+
+	)
+
+268 
+	#GL_DEPTH_FUNC
+ 0x0B74
+
+	)
+
+269 
+	#GL_DEPTH_RANGE
+ 0x0B70
+
+	)
+
+270 
+	#GL_DEPTH_WRITEMASK
+ 0x0B72
+
+	)
+
+271 
+	#GL_DEPTH_COMPONENT
+ 0x1902
+
+	)
+
+274 
+	#GL_LIGHTING
+ 0x0B50
+
+	)
+
+275 
+	#GL_LIGHT0
+ 0x4000
+
+	)
+
+276 
+	#GL_LIGHT1
+ 0x4001
+
+	)
+
+277 
+	#GL_LIGHT2
+ 0x4002
+
+	)
+
+278 
+	#GL_LIGHT3
+ 0x4003
+
+	)
+
+279 
+	#GL_LIGHT4
+ 0x4004
+
+	)
+
+280 
+	#GL_LIGHT5
+ 0x4005
+
+	)
+
+281 
+	#GL_LIGHT6
+ 0x4006
+
+	)
+
+282 
+	#GL_LIGHT7
+ 0x4007
+
+	)
+
+283 
+	#GL_SPOT_EXPONENT
+ 0x1205
+
+	)
+
+284 
+	#GL_SPOT_CUTOFF
+ 0x1206
+
+	)
+
+285 
+	#GL_CONSTANT_ATTENUATION
+ 0x1207
+
+	)
+
+286 
+	#GL_LINEAR_ATTENUATION
+ 0x1208
+
+	)
+
+287 
+	#GL_QUADRATIC_ATTENUATION
+ 0x1209
+
+	)
+
+288 
+	#GL_AMBIENT
+ 0x1200
+
+	)
+
+289 
+	#GL_DIFFUSE
+ 0x1201
+
+	)
+
+290 
+	#GL_SPECULAR
+ 0x1202
+
+	)
+
+291 
+	#GL_SHININESS
+ 0x1601
+
+	)
+
+292 
+	#GL_EMISSION
+ 0x1600
+
+	)
+
+293 
+	#GL_POSITION
+ 0x1203
+
+	)
+
+294 
+	#GL_SPOT_DIRECTION
+ 0x1204
+
+	)
+
+295 
+	#GL_AMBIENT_AND_DIFFUSE
+ 0x1602
+
+	)
+
+296 
+	#GL_COLOR_INDEXES
+ 0x1603
+
+	)
+
+297 
+	#GL_LIGHT_MODEL_TWO_SIDE
+ 0x0B52
+
+	)
+
+298 
+	#GL_LIGHT_MODEL_LOCAL_VIEWER
+ 0x0B51
+
+	)
+
+299 
+	#GL_LIGHT_MODEL_AMBIENT
+ 0x0B53
+
+	)
+
+300 
+	#GL_FRONT_AND_BACK
+ 0x0408
+
+	)
+
+301 
+	#GL_SHADE_MODEL
+ 0x0B54
+
+	)
+
+302 
+	#GL_FLAT
+ 0x1D00
+
+	)
+
+303 
+	#GL_SMOOTH
+ 0x1D01
+
+	)
+
+304 
+	#GL_COLOR_MATERIAL
+ 0x0B57
+
+	)
+
+305 
+	#GL_COLOR_MATERIAL_FACE
+ 0x0B55
+
+	)
+
+306 
+	#GL_COLOR_MATERIAL_PARAMETER
+ 0x0B56
+
+	)
+
+307 
+	#GL_NORMALIZE
+ 0x0BA1
+
+	)
+
+310 
+	#GL_CLIP_PLANE0
+ 0x3000
+
+	)
+
+311 
+	#GL_CLIP_PLANE1
+ 0x3001
+
+	)
+
+312 
+	#GL_CLIP_PLANE2
+ 0x3002
+
+	)
+
+313 
+	#GL_CLIP_PLANE3
+ 0x3003
+
+	)
+
+314 
+	#GL_CLIP_PLANE4
+ 0x3004
+
+	)
+
+315 
+	#GL_CLIP_PLANE5
+ 0x3005
+
+	)
+
+318 
+	#GL_ACCUM_RED_BITS
+ 0x0D58
+
+	)
+
+319 
+	#GL_ACCUM_GREEN_BITS
+ 0x0D59
+
+	)
+
+320 
+	#GL_ACCUM_BLUE_BITS
+ 0x0D5A
+
+	)
+
+321 
+	#GL_ACCUM_ALPHA_BITS
+ 0x0D5B
+
+	)
+
+322 
+	#GL_ACCUM_CLEAR_VALUE
+ 0x0B80
+
+	)
+
+323 
+	#GL_ACCUM
+ 0x0100
+
+	)
+
+324 
+	#GL_ADD
+ 0x0104
+
+	)
+
+325 
+	#GL_LOAD
+ 0x0101
+
+	)
+
+326 
+	#GL_MULT
+ 0x0103
+
+	)
+
+327 
+	#GL_RETURN
+ 0x0102
+
+	)
+
+330 
+	#GL_ALPHA_TEST
+ 0x0BC0
+
+	)
+
+331 
+	#GL_ALPHA_TEST_REF
+ 0x0BC2
+
+	)
+
+332 
+	#GL_ALPHA_TEST_FUNC
+ 0x0BC1
+
+	)
+
+335 
+	#GL_BLEND
+ 0x0BE2
+
+	)
+
+336 
+	#GL_BLEND_SRC
+ 0x0BE1
+
+	)
+
+337 
+	#GL_BLEND_DST
+ 0x0BE0
+
+	)
+
+338 
+	#GL_ZERO
+ 0x0
+
+	)
+
+339 
+	#GL_ONE
+ 0x1
+
+	)
+
+340 
+	#GL_SRC_COLOR
+ 0x0300
+
+	)
+
+341 
+	#GL_ONE_MINUS_SRC_COLOR
+ 0x0301
+
+	)
+
+342 
+	#GL_SRC_ALPHA
+ 0x0302
+
+	)
+
+343 
+	#GL_ONE_MINUS_SRC_ALPHA
+ 0x0303
+
+	)
+
+344 
+	#GL_DST_ALPHA
+ 0x0304
+
+	)
+
+345 
+	#GL_ONE_MINUS_DST_ALPHA
+ 0x0305
+
+	)
+
+346 
+	#GL_DST_COLOR
+ 0x0306
+
+	)
+
+347 
+	#GL_ONE_MINUS_DST_COLOR
+ 0x0307
+
+	)
+
+348 
+	#GL_SRC_ALPHA_SATURATE
+ 0x0308
+
+	)
+
+349 
+	#GL_CONSTANT_COLOR
+ 0x8001
+
+	)
+
+350 
+	#GL_ONE_MINUS_CONSTANT_COLOR
+ 0x8002
+
+	)
+
+351 
+	#GL_CONSTANT_ALPHA
+ 0x8003
+
+	)
+
+352 
+	#GL_ONE_MINUS_CONSTANT_ALPHA
+ 0x8004
+
+	)
+
+355 
+	#GL_FEEDBACK
+ 0x1C01
+
+	)
+
+356 
+	#GL_RENDER
+ 0x1C00
+
+	)
+
+357 
+	#GL_SELECT
+ 0x1C02
+
+	)
+
+360 
+	#GL_2D
+ 0x0600
+
+	)
+
+361 
+	#GL_3D
+ 0x0601
+
+	)
+
+362 
+	#GL_3D_COLOR
+ 0x0602
+
+	)
+
+363 
+	#GL_3D_COLOR_TEXTURE
+ 0x0603
+
+	)
+
+364 
+	#GL_4D_COLOR_TEXTURE
+ 0x0604
+
+	)
+
+365 
+	#GL_POINT_TOKEN
+ 0x0701
+
+	)
+
+366 
+	#GL_LINE_TOKEN
+ 0x0702
+
+	)
+
+367 
+	#GL_LINE_RESET_TOKEN
+ 0x0707
+
+	)
+
+368 
+	#GL_POLYGON_TOKEN
+ 0x0703
+
+	)
+
+369 
+	#GL_BITMAP_TOKEN
+ 0x0704
+
+	)
+
+370 
+	#GL_DRAW_PIXEL_TOKEN
+ 0x0705
+
+	)
+
+371 
+	#GL_COPY_PIXEL_TOKEN
+ 0x0706
+
+	)
+
+372 
+	#GL_PASS_THROUGH_TOKEN
+ 0x0700
+
+	)
+
+373 
+	#GL_FEEDBACK_BUFFER_POINTER
+ 0x0DF0
+
+	)
+
+374 
+	#GL_FEEDBACK_BUFFER_SIZE
+ 0x0DF1
+
+	)
+
+375 
+	#GL_FEEDBACK_BUFFER_TYPE
+ 0x0DF2
+
+	)
+
+378 
+	#GL_SELECTION_BUFFER_POINTER
+ 0x0DF3
+
+	)
+
+379 
+	#GL_SELECTION_BUFFER_SIZE
+ 0x0DF4
+
+	)
+
+382 
+	#GL_FOG
+ 0x0B60
+
+	)
+
+383 
+	#GL_FOG_MODE
+ 0x0B65
+
+	)
+
+384 
+	#GL_FOG_DENSITY
+ 0x0B62
+
+	)
+
+385 
+	#GL_FOG_COLOR
+ 0x0B66
+
+	)
+
+386 
+	#GL_FOG_INDEX
+ 0x0B61
+
+	)
+
+387 
+	#GL_FOG_START
+ 0x0B63
+
+	)
+
+388 
+	#GL_FOG_END
+ 0x0B64
+
+	)
+
+389 
+	#GL_LINEAR
+ 0x2601
+
+	)
+
+390 
+	#GL_EXP
+ 0x0800
+
+	)
+
+391 
+	#GL_EXP2
+ 0x0801
+
+	)
+
+394 
+	#GL_LOGIC_OP
+ 0x0BF1
+
+	)
+
+395 
+	#GL_INDEX_LOGIC_OP
+ 0x0BF1
+
+	)
+
+396 
+	#GL_COLOR_LOGIC_OP
+ 0x0BF2
+
+	)
+
+397 
+	#GL_LOGIC_OP_MODE
+ 0x0BF0
+
+	)
+
+398 
+	#GL_CLEAR
+ 0x1500
+
+	)
+
+399 
+	#GL_SET
+ 0x150F
+
+	)
+
+400 
+	#GL_COPY
+ 0x1503
+
+	)
+
+401 
+	#GL_COPY_INVERTED
+ 0x150C
+
+	)
+
+402 
+	#GL_NOOP
+ 0x1505
+
+	)
+
+403 
+	#GL_INVERT
+ 0x150A
+
+	)
+
+404 
+	#GL_AND
+ 0x1501
+
+	)
+
+405 
+	#GL_NAND
+ 0x150E
+
+	)
+
+406 
+	#GL_OR
+ 0x1507
+
+	)
+
+407 
+	#GL_NOR
+ 0x1508
+
+	)
+
+408 
+	#GL_XOR
+ 0x1506
+
+	)
+
+409 
+	#GL_EQUIV
+ 0x1509
+
+	)
+
+410 
+	#GL_AND_REVERSE
+ 0x1502
+
+	)
+
+411 
+	#GL_AND_INVERTED
+ 0x1504
+
+	)
+
+412 
+	#GL_OR_REVERSE
+ 0x150B
+
+	)
+
+413 
+	#GL_OR_INVERTED
+ 0x150D
+
+	)
+
+416 
+	#GL_STENCIL_TEST
+ 0x0B90
+
+	)
+
+417 
+	#GL_STENCIL_WRITEMASK
+ 0x0B98
+
+	)
+
+418 
+	#GL_STENCIL_BITS
+ 0x0D57
+
+	)
+
+419 
+	#GL_STENCIL_FUNC
+ 0x0B92
+
+	)
+
+420 
+	#GL_STENCIL_VALUE_MASK
+ 0x0B93
+
+	)
+
+421 
+	#GL_STENCIL_REF
+ 0x0B97
+
+	)
+
+422 
+	#GL_STENCIL_FAIL
+ 0x0B94
+
+	)
+
+423 
+	#GL_STENCIL_PASS_DEPTH_PASS
+ 0x0B96
+
+	)
+
+424 
+	#GL_STENCIL_PASS_DEPTH_FAIL
+ 0x0B95
+
+	)
+
+425 
+	#GL_STENCIL_CLEAR_VALUE
+ 0x0B91
+
+	)
+
+426 
+	#GL_STENCIL_INDEX
+ 0x1901
+
+	)
+
+427 
+	#GL_KEEP
+ 0x1E00
+
+	)
+
+428 
+	#GL_REPLACE
+ 0x1E01
+
+	)
+
+429 
+	#GL_INCR
+ 0x1E02
+
+	)
+
+430 
+	#GL_DECR
+ 0x1E03
+
+	)
+
+433 
+	#GL_NONE
+ 0x0
+
+	)
+
+434 
+	#GL_LEFT
+ 0x0406
+
+	)
+
+435 
+	#GL_RIGHT
+ 0x0407
+
+	)
+
+439 
+	#GL_FRONT_LEFT
+ 0x0400
+
+	)
+
+440 
+	#GL_FRONT_RIGHT
+ 0x0401
+
+	)
+
+441 
+	#GL_BACK_LEFT
+ 0x0402
+
+	)
+
+442 
+	#GL_BACK_RIGHT
+ 0x0403
+
+	)
+
+443 
+	#GL_AUX0
+ 0x0409
+
+	)
+
+444 
+	#GL_AUX1
+ 0x040A
+
+	)
+
+445 
+	#GL_AUX2
+ 0x040B
+
+	)
+
+446 
+	#GL_AUX3
+ 0x040C
+
+	)
+
+447 
+	#GL_COLOR_INDEX
+ 0x1900
+
+	)
+
+448 
+	#GL_RED
+ 0x1903
+
+	)
+
+449 
+	#GL_GREEN
+ 0x1904
+
+	)
+
+450 
+	#GL_BLUE
+ 0x1905
+
+	)
+
+451 
+	#GL_ALPHA
+ 0x1906
+
+	)
+
+452 
+	#GL_LUMINANCE
+ 0x1909
+
+	)
+
+453 
+	#GL_LUMINANCE_ALPHA
+ 0x190A
+
+	)
+
+454 
+	#GL_ALPHA_BITS
+ 0x0D55
+
+	)
+
+455 
+	#GL_RED_BITS
+ 0x0D52
+
+	)
+
+456 
+	#GL_GREEN_BITS
+ 0x0D53
+
+	)
+
+457 
+	#GL_BLUE_BITS
+ 0x0D54
+
+	)
+
+458 
+	#GL_INDEX_BITS
+ 0x0D51
+
+	)
+
+459 
+	#GL_SUBPIXEL_BITS
+ 0x0D50
+
+	)
+
+460 
+	#GL_AUX_BUFFERS
+ 0x0C00
+
+	)
+
+461 
+	#GL_READ_BUFFER
+ 0x0C02
+
+	)
+
+462 
+	#GL_DRAW_BUFFER
+ 0x0C01
+
+	)
+
+463 
+	#GL_DOUBLEBUFFER
+ 0x0C32
+
+	)
+
+464 
+	#GL_STEREO
+ 0x0C33
+
+	)
+
+465 
+	#GL_BITMAP
+ 0x1A00
+
+	)
+
+466 
+	#GL_COLOR
+ 0x1800
+
+	)
+
+467 
+	#GL_DEPTH
+ 0x1801
+
+	)
+
+468 
+	#GL_STENCIL
+ 0x1802
+
+	)
+
+469 
+	#GL_DITHER
+ 0x0BD0
+
+	)
+
+470 
+	#GL_RGB
+ 0x1907
+
+	)
+
+471 
+	#GL_RGBA
+ 0x1908
+
+	)
+
+474 
+	#GL_MAX_LIST_NESTING
+ 0x0B31
+
+	)
+
+475 
+	#GL_MAX_ATTRIB_STACK_DEPTH
+ 0x0D35
+
+	)
+
+476 
+	#GL_MAX_MODELVIEW_STACK_DEPTH
+ 0x0D36
+
+	)
+
+477 
+	#GL_MAX_NAME_STACK_DEPTH
+ 0x0D37
+
+	)
+
+478 
+	#GL_MAX_PROJECTION_STACK_DEPTH
+ 0x0D38
+
+	)
+
+479 
+	#GL_MAX_TEXTURE_STACK_DEPTH
+ 0x0D39
+
+	)
+
+480 
+	#GL_MAX_EVAL_ORDER
+ 0x0D30
+
+	)
+
+481 
+	#GL_MAX_LIGHTS
+ 0x0D31
+
+	)
+
+482 
+	#GL_MAX_CLIP_PLANES
+ 0x0D32
+
+	)
+
+483 
+	#GL_MAX_TEXTURE_SIZE
+ 0x0D33
+
+	)
+
+484 
+	#GL_MAX_PIXEL_MAP_TABLE
+ 0x0D34
+
+	)
+
+485 
+	#GL_MAX_VIEWPORT_DIMS
+ 0x0D3A
+
+	)
+
+486 
+	#GL_MAX_CLIENT_ATTRIB_STACK_DEPTH
+ 0x0D3B
+
+	)
+
+489 
+	#GL_ATTRIB_STACK_DEPTH
+ 0x0BB0
+
+	)
+
+490 
+	#GL_CLIENT_ATTRIB_STACK_DEPTH
+ 0x0BB1
+
+	)
+
+491 
+	#GL_COLOR_CLEAR_VALUE
+ 0x0C22
+
+	)
+
+492 
+	#GL_COLOR_WRITEMASK
+ 0x0C23
+
+	)
+
+493 
+	#GL_CURRENT_INDEX
+ 0x0B01
+
+	)
+
+494 
+	#GL_CURRENT_COLOR
+ 0x0B00
+
+	)
+
+495 
+	#GL_CURRENT_NORMAL
+ 0x0B02
+
+	)
+
+496 
+	#GL_CURRENT_RASTER_COLOR
+ 0x0B04
+
+	)
+
+497 
+	#GL_CURRENT_RASTER_DISTANCE
+ 0x0B09
+
+	)
+
+498 
+	#GL_CURRENT_RASTER_INDEX
+ 0x0B05
+
+	)
+
+499 
+	#GL_CURRENT_RASTER_POSITION
+ 0x0B07
+
+	)
+
+500 
+	#GL_CURRENT_RASTER_TEXTURE_COORDS
+ 0x0B06
+
+	)
+
+501 
+	#GL_CURRENT_RASTER_POSITION_VALID
+ 0x0B08
+
+	)
+
+502 
+	#GL_CURRENT_TEXTURE_COORDS
+ 0x0B03
+
+	)
+
+503 
+	#GL_INDEX_CLEAR_VALUE
+ 0x0C20
+
+	)
+
+504 
+	#GL_INDEX_MODE
+ 0x0C30
+
+	)
+
+505 
+	#GL_INDEX_WRITEMASK
+ 0x0C21
+
+	)
+
+506 
+	#GL_MODELVIEW_MATRIX
+ 0x0BA6
+
+	)
+
+507 
+	#GL_MODELVIEW_STACK_DEPTH
+ 0x0BA3
+
+	)
+
+508 
+	#GL_NAME_STACK_DEPTH
+ 0x0D70
+
+	)
+
+509 
+	#GL_PROJECTION_MATRIX
+ 0x0BA7
+
+	)
+
+510 
+	#GL_PROJECTION_STACK_DEPTH
+ 0x0BA4
+
+	)
+
+511 
+	#GL_RENDER_MODE
+ 0x0C40
+
+	)
+
+512 
+	#GL_RGBA_MODE
+ 0x0C31
+
+	)
+
+513 
+	#GL_TEXTURE_MATRIX
+ 0x0BA8
+
+	)
+
+514 
+	#GL_TEXTURE_STACK_DEPTH
+ 0x0BA5
+
+	)
+
+515 
+	#GL_VIEWPORT
+ 0x0BA2
+
+	)
+
+518 
+	#GL_AUTO_NORMAL
+ 0x0D80
+
+	)
+
+519 
+	#GL_MAP1_COLOR_4
+ 0x0D90
+
+	)
+
+520 
+	#GL_MAP1_GRID_DOMAIN
+ 0x0DD0
+
+	)
+
+521 
+	#GL_MAP1_GRID_SEGMENTS
+ 0x0DD1
+
+	)
+
+522 
+	#GL_MAP1_INDEX
+ 0x0D91
+
+	)
+
+523 
+	#GL_MAP1_NORMAL
+ 0x0D92
+
+	)
+
+524 
+	#GL_MAP1_TEXTURE_COORD_1
+ 0x0D93
+
+	)
+
+525 
+	#GL_MAP1_TEXTURE_COORD_2
+ 0x0D94
+
+	)
+
+526 
+	#GL_MAP1_TEXTURE_COORD_3
+ 0x0D95
+
+	)
+
+527 
+	#GL_MAP1_TEXTURE_COORD_4
+ 0x0D96
+
+	)
+
+528 
+	#GL_MAP1_VERTEX_3
+ 0x0D97
+
+	)
+
+529 
+	#GL_MAP1_VERTEX_4
+ 0x0D98
+
+	)
+
+530 
+	#GL_MAP2_COLOR_4
+ 0x0DB0
+
+	)
+
+531 
+	#GL_MAP2_GRID_DOMAIN
+ 0x0DD2
+
+	)
+
+532 
+	#GL_MAP2_GRID_SEGMENTS
+ 0x0DD3
+
+	)
+
+533 
+	#GL_MAP2_INDEX
+ 0x0DB1
+
+	)
+
+534 
+	#GL_MAP2_NORMAL
+ 0x0DB2
+
+	)
+
+535 
+	#GL_MAP2_TEXTURE_COORD_1
+ 0x0DB3
+
+	)
+
+536 
+	#GL_MAP2_TEXTURE_COORD_2
+ 0x0DB4
+
+	)
+
+537 
+	#GL_MAP2_TEXTURE_COORD_3
+ 0x0DB5
+
+	)
+
+538 
+	#GL_MAP2_TEXTURE_COORD_4
+ 0x0DB6
+
+	)
+
+539 
+	#GL_MAP2_VERTEX_3
+ 0x0DB7
+
+	)
+
+540 
+	#GL_MAP2_VERTEX_4
+ 0x0DB8
+
+	)
+
+541 
+	#GL_COEFF
+ 0x0A00
+
+	)
+
+542 
+	#GL_DOMAIN
+ 0x0A02
+
+	)
+
+543 
+	#GL_ORDER
+ 0x0A01
+
+	)
+
+546 
+	#GL_FOG_HINT
+ 0x0C54
+
+	)
+
+547 
+	#GL_LINE_SMOOTH_HINT
+ 0x0C52
+
+	)
+
+548 
+	#GL_PERSPECTIVE_CORRECTION_HINT
+ 0x0C50
+
+	)
+
+549 
+	#GL_POINT_SMOOTH_HINT
+ 0x0C51
+
+	)
+
+550 
+	#GL_POLYGON_SMOOTH_HINT
+ 0x0C53
+
+	)
+
+551 
+	#GL_DONT_CARE
+ 0x1100
+
+	)
+
+552 
+	#GL_FASTEST
+ 0x1101
+
+	)
+
+553 
+	#GL_NICEST
+ 0x1102
+
+	)
+
+556 
+	#GL_SCISSOR_TEST
+ 0x0C11
+
+	)
+
+557 
+	#GL_SCISSOR_BOX
+ 0x0C10
+
+	)
+
+560 
+	#GL_MAP_COLOR
+ 0x0D10
+
+	)
+
+561 
+	#GL_MAP_STENCIL
+ 0x0D11
+
+	)
+
+562 
+	#GL_INDEX_SHIFT
+ 0x0D12
+
+	)
+
+563 
+	#GL_INDEX_OFFSET
+ 0x0D13
+
+	)
+
+564 
+	#GL_RED_SCALE
+ 0x0D14
+
+	)
+
+565 
+	#GL_RED_BIAS
+ 0x0D15
+
+	)
+
+566 
+	#GL_GREEN_SCALE
+ 0x0D18
+
+	)
+
+567 
+	#GL_GREEN_BIAS
+ 0x0D19
+
+	)
+
+568 
+	#GL_BLUE_SCALE
+ 0x0D1A
+
+	)
+
+569 
+	#GL_BLUE_BIAS
+ 0x0D1B
+
+	)
+
+570 
+	#GL_ALPHA_SCALE
+ 0x0D1C
+
+	)
+
+571 
+	#GL_ALPHA_BIAS
+ 0x0D1D
+
+	)
+
+572 
+	#GL_DEPTH_SCALE
+ 0x0D1E
+
+	)
+
+573 
+	#GL_DEPTH_BIAS
+ 0x0D1F
+
+	)
+
+574 
+	#GL_PIXEL_MAP_S_TO_S_SIZE
+ 0x0CB1
+
+	)
+
+575 
+	#GL_PIXEL_MAP_I_TO_I_SIZE
+ 0x0CB0
+
+	)
+
+576 
+	#GL_PIXEL_MAP_I_TO_R_SIZE
+ 0x0CB2
+
+	)
+
+577 
+	#GL_PIXEL_MAP_I_TO_G_SIZE
+ 0x0CB3
+
+	)
+
+578 
+	#GL_PIXEL_MAP_I_TO_B_SIZE
+ 0x0CB4
+
+	)
+
+579 
+	#GL_PIXEL_MAP_I_TO_A_SIZE
+ 0x0CB5
+
+	)
+
+580 
+	#GL_PIXEL_MAP_R_TO_R_SIZE
+ 0x0CB6
+
+	)
+
+581 
+	#GL_PIXEL_MAP_G_TO_G_SIZE
+ 0x0CB7
+
+	)
+
+582 
+	#GL_PIXEL_MAP_B_TO_B_SIZE
+ 0x0CB8
+
+	)
+
+583 
+	#GL_PIXEL_MAP_A_TO_A_SIZE
+ 0x0CB9
+
+	)
+
+584 
+	#GL_PIXEL_MAP_S_TO_S
+ 0x0C71
+
+	)
+
+585 
+	#GL_PIXEL_MAP_I_TO_I
+ 0x0C70
+
+	)
+
+586 
+	#GL_PIXEL_MAP_I_TO_R
+ 0x0C72
+
+	)
+
+587 
+	#GL_PIXEL_MAP_I_TO_G
+ 0x0C73
+
+	)
+
+588 
+	#GL_PIXEL_MAP_I_TO_B
+ 0x0C74
+
+	)
+
+589 
+	#GL_PIXEL_MAP_I_TO_A
+ 0x0C75
+
+	)
+
+590 
+	#GL_PIXEL_MAP_R_TO_R
+ 0x0C76
+
+	)
+
+591 
+	#GL_PIXEL_MAP_G_TO_G
+ 0x0C77
+
+	)
+
+592 
+	#GL_PIXEL_MAP_B_TO_B
+ 0x0C78
+
+	)
+
+593 
+	#GL_PIXEL_MAP_A_TO_A
+ 0x0C79
+
+	)
+
+594 
+	#GL_PACK_ALIGNMENT
+ 0x0D05
+
+	)
+
+595 
+	#GL_PACK_LSB_FIRST
+ 0x0D01
+
+	)
+
+596 
+	#GL_PACK_ROW_LENGTH
+ 0x0D02
+
+	)
+
+597 
+	#GL_PACK_SKIP_PIXELS
+ 0x0D04
+
+	)
+
+598 
+	#GL_PACK_SKIP_ROWS
+ 0x0D03
+
+	)
+
+599 
+	#GL_PACK_SWAP_BYTES
+ 0x0D00
+
+	)
+
+600 
+	#GL_UNPACK_ALIGNMENT
+ 0x0CF5
+
+	)
+
+601 
+	#GL_UNPACK_LSB_FIRST
+ 0x0CF1
+
+	)
+
+602 
+	#GL_UNPACK_ROW_LENGTH
+ 0x0CF2
+
+	)
+
+603 
+	#GL_UNPACK_SKIP_PIXELS
+ 0x0CF4
+
+	)
+
+604 
+	#GL_UNPACK_SKIP_ROWS
+ 0x0CF3
+
+	)
+
+605 
+	#GL_UNPACK_SWAP_BYTES
+ 0x0CF0
+
+	)
+
+606 
+	#GL_ZOOM_X
+ 0x0D16
+
+	)
+
+607 
+	#GL_ZOOM_Y
+ 0x0D17
+
+	)
+
+610 
+	#GL_TEXTURE_ENV
+ 0x2300
+
+	)
+
+611 
+	#GL_TEXTURE_ENV_MODE
+ 0x2200
+
+	)
+
+612 
+	#GL_TEXTURE_1D
+ 0x0DE0
+
+	)
+
+613 
+	#GL_TEXTURE_2D
+ 0x0DE1
+
+	)
+
+614 
+	#GL_TEXTURE_WRAP_S
+ 0x2802
+
+	)
+
+615 
+	#GL_TEXTURE_WRAP_T
+ 0x2803
+
+	)
+
+616 
+	#GL_TEXTURE_MAG_FILTER
+ 0x2800
+
+	)
+
+617 
+	#GL_TEXTURE_MIN_FILTER
+ 0x2801
+
+	)
+
+618 
+	#GL_TEXTURE_ENV_COLOR
+ 0x2201
+
+	)
+
+619 
+	#GL_TEXTURE_GEN_S
+ 0x0C60
+
+	)
+
+620 
+	#GL_TEXTURE_GEN_T
+ 0x0C61
+
+	)
+
+621 
+	#GL_TEXTURE_GEN_MODE
+ 0x2500
+
+	)
+
+622 
+	#GL_TEXTURE_BORDER_COLOR
+ 0x1004
+
+	)
+
+623 
+	#GL_TEXTURE_WIDTH
+ 0x1000
+
+	)
+
+624 
+	#GL_TEXTURE_HEIGHT
+ 0x1001
+
+	)
+
+625 
+	#GL_TEXTURE_BORDER
+ 0x1005
+
+	)
+
+626 
+	#GL_TEXTURE_COMPONENTS
+ 0x1003
+
+	)
+
+627 
+	#GL_TEXTURE_RED_SIZE
+ 0x805C
+
+	)
+
+628 
+	#GL_TEXTURE_GREEN_SIZE
+ 0x805D
+
+	)
+
+629 
+	#GL_TEXTURE_BLUE_SIZE
+ 0x805E
+
+	)
+
+630 
+	#GL_TEXTURE_ALPHA_SIZE
+ 0x805F
+
+	)
+
+631 
+	#GL_TEXTURE_LUMINANCE_SIZE
+ 0x8060
+
+	)
+
+632 
+	#GL_TEXTURE_INTENSITY_SIZE
+ 0x8061
+
+	)
+
+633 
+	#GL_NEAREST_MIPMAP_NEAREST
+ 0x2700
+
+	)
+
+634 
+	#GL_NEAREST_MIPMAP_LINEAR
+ 0x2702
+
+	)
+
+635 
+	#GL_LINEAR_MIPMAP_NEAREST
+ 0x2701
+
+	)
+
+636 
+	#GL_LINEAR_MIPMAP_LINEAR
+ 0x2703
+
+	)
+
+637 
+	#GL_OBJECT_LINEAR
+ 0x2401
+
+	)
+
+638 
+	#GL_OBJECT_PLANE
+ 0x2501
+
+	)
+
+639 
+	#GL_EYE_LINEAR
+ 0x2400
+
+	)
+
+640 
+	#GL_EYE_PLANE
+ 0x2502
+
+	)
+
+641 
+	#GL_SPHERE_MAP
+ 0x2402
+
+	)
+
+642 
+	#GL_DECAL
+ 0x2101
+
+	)
+
+643 
+	#GL_MODULATE
+ 0x2100
+
+	)
+
+644 
+	#GL_NEAREST
+ 0x2600
+
+	)
+
+645 
+	#GL_REPEAT
+ 0x2901
+
+	)
+
+646 
+	#GL_CLAMP
+ 0x2900
+
+	)
+
+647 
+	#GL_S
+ 0x2000
+
+	)
+
+648 
+	#GL_T
+ 0x2001
+
+	)
+
+649 
+	#GL_R
+ 0x2002
+
+	)
+
+650 
+	#GL_Q
+ 0x2003
+
+	)
+
+651 
+	#GL_TEXTURE_GEN_R
+ 0x0C62
+
+	)
+
+652 
+	#GL_TEXTURE_GEN_Q
+ 0x0C63
+
+	)
+
+655 
+	#GL_VENDOR
+ 0x1F00
+
+	)
+
+656 
+	#GL_RENDERER
+ 0x1F01
+
+	)
+
+657 
+	#GL_VERSION
+ 0x1F02
+
+	)
+
+658 
+	#GL_EXTENSIONS
+ 0x1F03
+
+	)
+
+661 
+	#GL_NO_ERROR
+ 0x0
+
+	)
+
+662 
+	#GL_INVALID_VALUE
+ 0x0501
+
+	)
+
+663 
+	#GL_INVALID_ENUM
+ 0x0500
+
+	)
+
+664 
+	#GL_INVALID_OPERATION
+ 0x0502
+
+	)
+
+665 
+	#GL_STACK_OVERFLOW
+ 0x0503
+
+	)
+
+666 
+	#GL_STACK_UNDERFLOW
+ 0x0504
+
+	)
+
+667 
+	#GL_OUT_OF_MEMORY
+ 0x0505
+
+	)
+
+670 
+	#GL_CURRENT_BIT
+ 0x00000001
+
+	)
+
+671 
+	#GL_POINT_BIT
+ 0x00000002
+
+	)
+
+672 
+	#GL_LINE_BIT
+ 0x00000004
+
+	)
+
+673 
+	#GL_POLYGON_BIT
+ 0x00000008
+
+	)
+
+674 
+	#GL_POLYGON_STIPPLE_BIT
+ 0x00000010
+
+	)
+
+675 
+	#GL_PIXEL_MODE_BIT
+ 0x00000020
+
+	)
+
+676 
+	#GL_LIGHTING_BIT
+ 0x00000040
+
+	)
+
+677 
+	#GL_FOG_BIT
+ 0x00000080
+
+	)
+
+678 
+	#GL_DEPTH_BUFFER_BIT
+ 0x00000100
+
+	)
+
+679 
+	#GL_ACCUM_BUFFER_BIT
+ 0x00000200
+
+	)
+
+680 
+	#GL_STENCIL_BUFFER_BIT
+ 0x00000400
+
+	)
+
+681 
+	#GL_VIEWPORT_BIT
+ 0x00000800
+
+	)
+
+682 
+	#GL_TRANSFORM_BIT
+ 0x00001000
+
+	)
+
+683 
+	#GL_ENABLE_BIT
+ 0x00002000
+
+	)
+
+684 
+	#GL_COLOR_BUFFER_BIT
+ 0x00004000
+
+	)
+
+685 
+	#GL_HINT_BIT
+ 0x00008000
+
+	)
+
+686 
+	#GL_EVAL_BIT
+ 0x00010000
+
+	)
+
+687 
+	#GL_LIST_BIT
+ 0x00020000
+
+	)
+
+688 
+	#GL_TEXTURE_BIT
+ 0x00040000
+
+	)
+
+689 
+	#GL_SCISSOR_BIT
+ 0x00080000
+
+	)
+
+690 
+	#GL_ALL_ATTRIB_BITS
+ 0x000FFFFF
+
+	)
+
+694 
+	#GL_PROXY_TEXTURE_1D
+ 0x8063
+
+	)
+
+695 
+	#GL_PROXY_TEXTURE_2D
+ 0x8064
+
+	)
+
+696 
+	#GL_TEXTURE_PRIORITY
+ 0x8066
+
+	)
+
+697 
+	#GL_TEXTURE_RESIDENT
+ 0x8067
+
+	)
+
+698 
+	#GL_TEXTURE_BINDING_1D
+ 0x8068
+
+	)
+
+699 
+	#GL_TEXTURE_BINDING_2D
+ 0x8069
+
+	)
+
+700 
+	#GL_TEXTURE_INTERNAL_FORMAT
+ 0x1003
+
+	)
+
+701 
+	#GL_ALPHA4
+ 0x803B
+
+	)
+
+702 
+	#GL_ALPHA8
+ 0x803C
+
+	)
+
+703 
+	#GL_ALPHA12
+ 0x803D
+
+	)
+
+704 
+	#GL_ALPHA16
+ 0x803E
+
+	)
+
+705 
+	#GL_LUMINANCE4
+ 0x803F
+
+	)
+
+706 
+	#GL_LUMINANCE8
+ 0x8040
+
+	)
+
+707 
+	#GL_LUMINANCE12
+ 0x8041
+
+	)
+
+708 
+	#GL_LUMINANCE16
+ 0x8042
+
+	)
+
+709 
+	#GL_LUMINANCE4_ALPHA4
+ 0x8043
+
+	)
+
+710 
+	#GL_LUMINANCE6_ALPHA2
+ 0x8044
+
+	)
+
+711 
+	#GL_LUMINANCE8_ALPHA8
+ 0x8045
+
+	)
+
+712 
+	#GL_LUMINANCE12_ALPHA4
+ 0x8046
+
+	)
+
+713 
+	#GL_LUMINANCE12_ALPHA12
+ 0x8047
+
+	)
+
+714 
+	#GL_LUMINANCE16_ALPHA16
+ 0x8048
+
+	)
+
+715 
+	#GL_INTENSITY
+ 0x8049
+
+	)
+
+716 
+	#GL_INTENSITY4
+ 0x804A
+
+	)
+
+717 
+	#GL_INTENSITY8
+ 0x804B
+
+	)
+
+718 
+	#GL_INTENSITY12
+ 0x804C
+
+	)
+
+719 
+	#GL_INTENSITY16
+ 0x804D
+
+	)
+
+720 
+	#GL_R3_G3_B2
+ 0x2A10
+
+	)
+
+721 
+	#GL_RGB4
+ 0x804F
+
+	)
+
+722 
+	#GL_RGB5
+ 0x8050
+
+	)
+
+723 
+	#GL_RGB8
+ 0x8051
+
+	)
+
+724 
+	#GL_RGB10
+ 0x8052
+
+	)
+
+725 
+	#GL_RGB12
+ 0x8053
+
+	)
+
+726 
+	#GL_RGB16
+ 0x8054
+
+	)
+
+727 
+	#GL_RGBA2
+ 0x8055
+
+	)
+
+728 
+	#GL_RGBA4
+ 0x8056
+
+	)
+
+729 
+	#GL_RGB5_A1
+ 0x8057
+
+	)
+
+730 
+	#GL_RGBA8
+ 0x8058
+
+	)
+
+731 
+	#GL_RGB10_A2
+ 0x8059
+
+	)
+
+732 
+	#GL_RGBA12
+ 0x805A
+
+	)
+
+733 
+	#GL_RGBA16
+ 0x805B
+
+	)
+
+734 
+	#GL_CLIENT_PIXEL_STORE_BIT
+ 0x00000001
+
+	)
+
+735 
+	#GL_CLIENT_VERTEX_ARRAY_BIT
+ 0x00000002
+
+	)
+
+736 
+	#GL_ALL_CLIENT_ATTRIB_BITS
+ 0xFFFFFFFF
+
+	)
+
+737 
+	#GL_CLIENT_ALL_ATTRIB_BITS
+ 0xFFFFFFFF
+
+	)
+
+742 #i‡!
+deföed
+(
+__WIN32__
+)
+
+745 
+	#GL_RESCALE_NORMAL
+ 0x803A
+
+	)
+
+746 
+	#GL_CLAMP_TO_EDGE
+ 0x812F
+
+	)
+
+747 
+	#GL_MAX_ELEMENTS_VERTICES
+ 0x80E8
+
+	)
+
+748 
+	#GL_MAX_ELEMENTS_INDICES
+ 0x80E9
+
+	)
+
+749 
+	#GL_BGR
+ 0x80E0
+
+	)
+
+750 
+	#GL_BGRA
+ 0x80E1
+
+	)
+
+751 
+	#GL_UNSIGNED_BYTE_3_3_2
+ 0x8032
+
+	)
+
+752 
+	#GL_UNSIGNED_BYTE_2_3_3_REV
+ 0x8362
+
+	)
+
+753 
+	#GL_UNSIGNED_SHORT_5_6_5
+ 0x8363
+
+	)
+
+754 
+	#GL_UNSIGNED_SHORT_5_6_5_REV
+ 0x8364
+
+	)
+
+755 
+	#GL_UNSIGNED_SHORT_4_4_4_4
+ 0x8033
+
+	)
+
+756 
+	#GL_UNSIGNED_SHORT_4_4_4_4_REV
+ 0x8365
+
+	)
+
+757 
+	#GL_UNSIGNED_SHORT_5_5_5_1
+ 0x8034
+
+	)
+
+758 
+	#GL_UNSIGNED_SHORT_1_5_5_5_REV
+ 0x8366
+
+	)
+
+759 
+	#GL_UNSIGNED_INT_8_8_8_8
+ 0x8035
+
+	)
+
+760 
+	#GL_UNSIGNED_INT_8_8_8_8_REV
+ 0x8367
+
+	)
+
+761 
+	#GL_UNSIGNED_INT_10_10_10_2
+ 0x8036
+
+	)
+
+762 
+	#GL_UNSIGNED_INT_2_10_10_10_REV
+ 0x8368
+
+	)
+
+763 
+	#GL_LIGHT_MODEL_COLOR_CONTROL
+ 0x81F8
+
+	)
+
+764 
+	#GL_SINGLE_COLOR
+ 0x81F9
+
+	)
+
+765 
+	#GL_SEPARATE_SPECULAR_COLOR
+ 0x81FA
+
+	)
+
+766 
+	#GL_TEXTURE_MIN_LOD
+ 0x813A
+
+	)
+
+767 
+	#GL_TEXTURE_MAX_LOD
+ 0x813B
+
+	)
+
+768 
+	#GL_TEXTURE_BASE_LEVEL
+ 0x813C
+
+	)
+
+769 
+	#GL_TEXTURE_MAX_LEVEL
+ 0x813D
+
+	)
+
+770 
+	#GL_SMOOTH_POINT_SIZE_RANGE
+ 0x0B12
+
+	)
+
+771 
+	#GL_SMOOTH_POINT_SIZE_GRANULARITY
+ 0x0B13
+
+	)
+
+772 
+	#GL_SMOOTH_LINE_WIDTH_RANGE
+ 0x0B22
+
+	)
+
+773 
+	#GL_SMOOTH_LINE_WIDTH_GRANULARITY
+ 0x0B23
+
+	)
+
+774 
+	#GL_ALIASED_POINT_SIZE_RANGE
+ 0x846D
+
+	)
+
+775 
+	#GL_ALIASED_LINE_WIDTH_RANGE
+ 0x846E
+
+	)
+
+776 
+	#GL_PACK_SKIP_IMAGES
+ 0x806B
+
+	)
+
+777 
+	#GL_PACK_IMAGE_HEIGHT
+ 0x806C
+
+	)
+
+778 
+	#GL_UNPACK_SKIP_IMAGES
+ 0x806D
+
+	)
+
+779 
+	#GL_UNPACK_IMAGE_HEIGHT
+ 0x806E
+
+	)
+
+780 
+	#GL_TEXTURE_3D
+ 0x806F
+
+	)
+
+781 
+	#GL_PROXY_TEXTURE_3D
+ 0x8070
+
+	)
+
+782 
+	#GL_TEXTURE_DEPTH
+ 0x8071
+
+	)
+
+783 
+	#GL_TEXTURE_WRAP_R
+ 0x8072
+
+	)
+
+784 
+	#GL_MAX_3D_TEXTURE_SIZE
+ 0x8073
+
+	)
+
+785 
+	#GL_TEXTURE_BINDING_3D
+ 0x806A
+
+	)
+
+789 
+	#GL_COLOR_TABLE
+ 0x80D0
+
+	)
+
+790 
+	#GL_POST_CONVOLUTION_COLOR_TABLE
+ 0x80D1
+
+	)
+
+791 
+	#GL_POST_COLOR_MATRIX_COLOR_TABLE
+ 0x80D2
+
+	)
+
+792 
+	#GL_PROXY_COLOR_TABLE
+ 0x80D3
+
+	)
+
+793 
+	#GL_PROXY_POST_CONVOLUTION_COLOR_TABLE
+ 0x80D4
+
+	)
+
+794 
+	#GL_PROXY_POST_COLOR_MATRIX_COLOR_TABLE
+ 0x80D5
+
+	)
+
+795 
+	#GL_COLOR_TABLE_SCALE
+ 0x80D6
+
+	)
+
+796 
+	#GL_COLOR_TABLE_BIAS
+ 0x80D7
+
+	)
+
+797 
+	#GL_COLOR_TABLE_FORMAT
+ 0x80D8
+
+	)
+
+798 
+	#GL_COLOR_TABLE_WIDTH
+ 0x80D9
+
+	)
+
+799 
+	#GL_COLOR_TABLE_RED_SIZE
+ 0x80DA
+
+	)
+
+800 
+	#GL_COLOR_TABLE_GREEN_SIZE
+ 0x80DB
+
+	)
+
+801 
+	#GL_COLOR_TABLE_BLUE_SIZE
+ 0x80DC
+
+	)
+
+802 
+	#GL_COLOR_TABLE_ALPHA_SIZE
+ 0x80DD
+
+	)
+
+803 
+	#GL_COLOR_TABLE_LUMINANCE_SIZE
+ 0x80DE
+
+	)
+
+804 
+	#GL_COLOR_TABLE_INTENSITY_SIZE
+ 0x80DF
+
+	)
+
+806 
+	#GL_CONVOLUTION_1D
+ 0x8010
+
+	)
+
+807 
+	#GL_CONVOLUTION_2D
+ 0x8011
+
+	)
+
+808 
+	#GL_SEPARABLE_2D
+ 0x8012
+
+	)
+
+809 
+	#GL_CONVOLUTION_BORDER_MODE
+ 0x8013
+
+	)
+
+810 
+	#GL_CONVOLUTION_FILTER_SCALE
+ 0x8014
+
+	)
+
+811 
+	#GL_CONVOLUTION_FILTER_BIAS
+ 0x8015
+
+	)
+
+812 
+	#GL_REDUCE
+ 0x8016
+
+	)
+
+813 
+	#GL_CONVOLUTION_FORMAT
+ 0x8017
+
+	)
+
+814 
+	#GL_CONVOLUTION_WIDTH
+ 0x8018
+
+	)
+
+815 
+	#GL_CONVOLUTION_HEIGHT
+ 0x8019
+
+	)
+
+816 
+	#GL_MAX_CONVOLUTION_WIDTH
+ 0x801A
+
+	)
+
+817 
+	#GL_MAX_CONVOLUTION_HEIGHT
+ 0x801B
+
+	)
+
+818 
+	#GL_POST_CONVOLUTION_RED_SCALE
+ 0x801C
+
+	)
+
+819 
+	#GL_POST_CONVOLUTION_GREEN_SCALE
+ 0x801D
+
+	)
+
+820 
+	#GL_POST_CONVOLUTION_BLUE_SCALE
+ 0x801E
+
+	)
+
+821 
+	#GL_POST_CONVOLUTION_ALPHA_SCALE
+ 0x801F
+
+	)
+
+822 
+	#GL_POST_CONVOLUTION_RED_BIAS
+ 0x8020
+
+	)
+
+823 
+	#GL_POST_CONVOLUTION_GREEN_BIAS
+ 0x8021
+
+	)
+
+824 
+	#GL_POST_CONVOLUTION_BLUE_BIAS
+ 0x8022
+
+	)
+
+825 
+	#GL_POST_CONVOLUTION_ALPHA_BIAS
+ 0x8023
+
+	)
+
+826 
+	#GL_CONSTANT_BORDER
+ 0x8151
+
+	)
+
+827 
+	#GL_REPLICATE_BORDER
+ 0x8153
+
+	)
+
+828 
+	#GL_CONVOLUTION_BORDER_COLOR
+ 0x8154
+
+	)
+
+830 
+	#GL_COLOR_MATRIX
+ 0x80B1
+
+	)
+
+831 
+	#GL_COLOR_MATRIX_STACK_DEPTH
+ 0x80B2
+
+	)
+
+832 
+	#GL_MAX_COLOR_MATRIX_STACK_DEPTH
+ 0x80B3
+
+	)
+
+833 
+	#GL_POST_COLOR_MATRIX_RED_SCALE
+ 0x80B4
+
+	)
+
+834 
+	#GL_POST_COLOR_MATRIX_GREEN_SCALE
+ 0x80B5
+
+	)
+
+835 
+	#GL_POST_COLOR_MATRIX_BLUE_SCALE
+ 0x80B6
+
+	)
+
+836 
+	#GL_POST_COLOR_MATRIX_ALPHA_SCALE
+ 0x80B7
+
+	)
+
+837 
+	#GL_POST_COLOR_MATRIX_RED_BIAS
+ 0x80B8
+
+	)
+
+838 
+	#GL_POST_COLOR_MATRIX_GREEN_BIAS
+ 0x80B9
+
+	)
+
+839 
+	#GL_POST_COLOR_MATRIX_BLUE_BIAS
+ 0x80BA
+
+	)
+
+840 
+	#GL_POST_COLOR_MATRIX_ALPHA_BIAS
+ 0x80BB
+
+	)
+
+842 
+	#GL_HISTOGRAM
+ 0x8024
+
+	)
+
+843 
+	#GL_PROXY_HISTOGRAM
+ 0x8025
+
+	)
+
+844 
+	#GL_HISTOGRAM_WIDTH
+ 0x8026
+
+	)
+
+845 
+	#GL_HISTOGRAM_FORMAT
+ 0x8027
+
+	)
+
+846 
+	#GL_HISTOGRAM_RED_SIZE
+ 0x8028
+
+	)
+
+847 
+	#GL_HISTOGRAM_GREEN_SIZE
+ 0x8029
+
+	)
+
+848 
+	#GL_HISTOGRAM_BLUE_SIZE
+ 0x802A
+
+	)
+
+849 
+	#GL_HISTOGRAM_ALPHA_SIZE
+ 0x802B
+
+	)
+
+850 
+	#GL_HISTOGRAM_LUMINANCE_SIZE
+ 0x802C
+
+	)
+
+851 
+	#GL_HISTOGRAM_SINK
+ 0x802D
+
+	)
+
+852 
+	#GL_MINMAX
+ 0x802E
+
+	)
+
+853 
+	#GL_MINMAX_FORMAT
+ 0x802F
+
+	)
+
+854 
+	#GL_MINMAX_SINK
+ 0x8030
+
+	)
+
+855 
+	#GL_TABLE_TOO_LARGE
+ 0x8031
+
+	)
+
+857 
+	#GL_BLEND_EQUATION
+ 0x8009
+
+	)
+
+858 
+	#GL_MIN
+ 0x8007
+
+	)
+
+859 
+	#GL_MAX
+ 0x8008
+
+	)
+
+860 
+	#GL_FUNC_ADD
+ 0x8006
+
+	)
+
+861 
+	#GL_FUNC_SUBTRACT
+ 0x800A
+
+	)
+
+862 
+	#GL_FUNC_REVERSE_SUBTRACT
+ 0x800B
+
+	)
+
+863 
+	#GL_BLEND_COLOR
+ 0x8005
+
+	)
+
+868 
+	#GL_TEXTURE0
+ 0x84C0
+
+	)
+
+869 
+	#GL_TEXTURE1
+ 0x84C1
+
+	)
+
+870 
+	#GL_TEXTURE2
+ 0x84C2
+
+	)
+
+871 
+	#GL_TEXTURE3
+ 0x84C3
+
+	)
+
+872 
+	#GL_TEXTURE4
+ 0x84C4
+
+	)
+
+873 
+	#GL_TEXTURE5
+ 0x84C5
+
+	)
+
+874 
+	#GL_TEXTURE6
+ 0x84C6
+
+	)
+
+875 
+	#GL_TEXTURE7
+ 0x84C7
+
+	)
+
+876 
+	#GL_TEXTURE8
+ 0x84C8
+
+	)
+
+877 
+	#GL_TEXTURE9
+ 0x84C9
+
+	)
+
+878 
+	#GL_TEXTURE10
+ 0x84CA
+
+	)
+
+879 
+	#GL_TEXTURE11
+ 0x84CB
+
+	)
+
+880 
+	#GL_TEXTURE12
+ 0x84CC
+
+	)
+
+881 
+	#GL_TEXTURE13
+ 0x84CD
+
+	)
+
+882 
+	#GL_TEXTURE14
+ 0x84CE
+
+	)
+
+883 
+	#GL_TEXTURE15
+ 0x84CF
+
+	)
+
+884 
+	#GL_TEXTURE16
+ 0x84D0
+
+	)
+
+885 
+	#GL_TEXTURE17
+ 0x84D1
+
+	)
+
+886 
+	#GL_TEXTURE18
+ 0x84D2
+
+	)
+
+887 
+	#GL_TEXTURE19
+ 0x84D3
+
+	)
+
+888 
+	#GL_TEXTURE20
+ 0x84D4
+
+	)
+
+889 
+	#GL_TEXTURE21
+ 0x84D5
+
+	)
+
+890 
+	#GL_TEXTURE22
+ 0x84D6
+
+	)
+
+891 
+	#GL_TEXTURE23
+ 0x84D7
+
+	)
+
+892 
+	#GL_TEXTURE24
+ 0x84D8
+
+	)
+
+893 
+	#GL_TEXTURE25
+ 0x84D9
+
+	)
+
+894 
+	#GL_TEXTURE26
+ 0x84DA
+
+	)
+
+895 
+	#GL_TEXTURE27
+ 0x84DB
+
+	)
+
+896 
+	#GL_TEXTURE28
+ 0x84DC
+
+	)
+
+897 
+	#GL_TEXTURE29
+ 0x84DD
+
+	)
+
+898 
+	#GL_TEXTURE30
+ 0x84DE
+
+	)
+
+899 
+	#GL_TEXTURE31
+ 0x84DF
+
+	)
+
+900 
+	#GL_ACTIVE_TEXTURE
+ 0x84E0
+
+	)
+
+901 
+	#GL_CLIENT_ACTIVE_TEXTURE
+ 0x84E1
+
+	)
+
+902 
+	#GL_MAX_TEXTURE_UNITS
+ 0x84E2
+
+	)
+
+904 
+	#GL_NORMAL_MAP
+ 0x8511
+
+	)
+
+905 
+	#GL_REFLECTION_MAP
+ 0x8512
+
+	)
+
+906 
+	#GL_TEXTURE_CUBE_MAP
+ 0x8513
+
+	)
+
+907 
+	#GL_TEXTURE_BINDING_CUBE_MAP
+ 0x8514
+
+	)
+
+908 
+	#GL_TEXTURE_CUBE_MAP_POSITIVE_X
+ 0x8515
+
+	)
+
+909 
+	#GL_TEXTURE_CUBE_MAP_NEGATIVE_X
+ 0x8516
+
+	)
+
+910 
+	#GL_TEXTURE_CUBE_MAP_POSITIVE_Y
+ 0x8517
+
+	)
+
+911 
+	#GL_TEXTURE_CUBE_MAP_NEGATIVE_Y
+ 0x8518
+
+	)
+
+912 
+	#GL_TEXTURE_CUBE_MAP_POSITIVE_Z
+ 0x8519
+
+	)
+
+913 
+	#GL_TEXTURE_CUBE_MAP_NEGATIVE_Z
+ 0x851A
+
+	)
+
+914 
+	#GL_PROXY_TEXTURE_CUBE_MAP
+ 0x851B
+
+	)
+
+915 
+	#GL_MAX_CUBE_MAP_TEXTURE_SIZE
+ 0x851C
+
+	)
+
+917 
+	#GL_COMPRESSED_ALPHA
+ 0x84E9
+
+	)
+
+918 
+	#GL_COMPRESSED_LUMINANCE
+ 0x84EA
+
+	)
+
+919 
+	#GL_COMPRESSED_LUMINANCE_ALPHA
+ 0x84EB
+
+	)
+
+920 
+	#GL_COMPRESSED_INTENSITY
+ 0x84EC
+
+	)
+
+921 
+	#GL_COMPRESSED_RGB
+ 0x84ED
+
+	)
+
+922 
+	#GL_COMPRESSED_RGBA
+ 0x84EE
+
+	)
+
+923 
+	#GL_TEXTURE_COMPRESSION_HINT
+ 0x84EF
+
+	)
+
+924 
+	#GL_TEXTURE_COMPRESSED_IMAGE_SIZE
+ 0x86A0
+
+	)
+
+925 
+	#GL_TEXTURE_COMPRESSED
+ 0x86A1
+
+	)
+
+926 
+	#GL_NUM_COMPRESSED_TEXTURE_FORMATS
+ 0x86A2
+
+	)
+
+927 
+	#GL_COMPRESSED_TEXTURE_FORMATS
+ 0x86A3
+
+	)
+
+929 
+	#GL_MULTISAMPLE
+ 0x809D
+
+	)
+
+930 
+	#GL_SAMPLE_ALPHA_TO_COVERAGE
+ 0x809E
+
+	)
+
+931 
+	#GL_SAMPLE_ALPHA_TO_ONE
+ 0x809F
+
+	)
+
+932 
+	#GL_SAMPLE_COVERAGE
+ 0x80A0
+
+	)
+
+933 
+	#GL_SAMPLE_BUFFERS
+ 0x80A8
+
+	)
+
+934 
+	#GL_SAMPLES
+ 0x80A9
+
+	)
+
+935 
+	#GL_SAMPLE_COVERAGE_VALUE
+ 0x80AA
+
+	)
+
+936 
+	#GL_SAMPLE_COVERAGE_INVERT
+ 0x80AB
+
+	)
+
+937 
+	#GL_MULTISAMPLE_BIT
+ 0x20000000
+
+	)
+
+939 
+	#GL_TRANSPOSE_MODELVIEW_MATRIX
+ 0x84E3
+
+	)
+
+940 
+	#GL_TRANSPOSE_PROJECTION_MATRIX
+ 0x84E4
+
+	)
+
+941 
+	#GL_TRANSPOSE_TEXTURE_MATRIX
+ 0x84E5
+
+	)
+
+942 
+	#GL_TRANSPOSE_COLOR_MATRIX
+ 0x84E6
+
+	)
+
+944 
+	#GL_COMBINE
+ 0x8570
+
+	)
+
+945 
+	#GL_COMBINE_RGB
+ 0x8571
+
+	)
+
+946 
+	#GL_COMBINE_ALPHA
+ 0x8572
+
+	)
+
+947 
+	#GL_SOURCE0_RGB
+ 0x8580
+
+	)
+
+948 
+	#GL_SOURCE1_RGB
+ 0x8581
+
+	)
+
+949 
+	#GL_SOURCE2_RGB
+ 0x8582
+
+	)
+
+950 
+	#GL_SOURCE0_ALPHA
+ 0x8588
+
+	)
+
+951 
+	#GL_SOURCE1_ALPHA
+ 0x8589
+
+	)
+
+952 
+	#GL_SOURCE2_ALPHA
+ 0x858A
+
+	)
+
+953 
+	#GL_OPERAND0_RGB
+ 0x8590
+
+	)
+
+954 
+	#GL_OPERAND1_RGB
+ 0x8591
+
+	)
+
+955 
+	#GL_OPERAND2_RGB
+ 0x8592
+
+	)
+
+956 
+	#GL_OPERAND0_ALPHA
+ 0x8598
+
+	)
+
+957 
+	#GL_OPERAND1_ALPHA
+ 0x8599
+
+	)
+
+958 
+	#GL_OPERAND2_ALPHA
+ 0x859A
+
+	)
+
+959 
+	#GL_RGB_SCALE
+ 0x8573
+
+	)
+
+960 
+	#GL_ADD_SIGNED
+ 0x8574
+
+	)
+
+961 
+	#GL_INTERPOLATE
+ 0x8575
+
+	)
+
+962 
+	#GL_SUBTRACT
+ 0x84E7
+
+	)
+
+963 
+	#GL_CONSTANT
+ 0x8576
+
+	)
+
+964 
+	#GL_PRIMARY_COLOR
+ 0x8577
+
+	)
+
+965 
+	#GL_PREVIOUS
+ 0x8578
+
+	)
+
+967 
+	#GL_DOT3_RGB
+ 0x86AE
+
+	)
+
+968 
+	#GL_DOT3_RGBA
+ 0x86AF
+
+	)
+
+970 
+	#GL_CLAMP_TO_BORDER
+ 0x812D
+
+	)
+
+983 
+GLAPI
+ 
+APIENTRY
+ 
+glCÀ¨Index
+–
+GLÊﬂt
+ 
+c
+ );
+
+984 
+GLAPI
+ 
+APIENTRY
+ 
+glCÀ¨Cﬁ‹
+–
+GL˛ampf
+ 
+ªd
+, GL˛amp‡
+gªí
+, GL˛amp‡
+blue
+, GL˛amp‡
+Æpha
+ );
+
+985 
+GLAPI
+ 
+APIENTRY
+ 
+glCÀ¨
+–
+GLbôfõld
+ 
+mask
+ );
+
+986 
+GLAPI
+ 
+APIENTRY
+ 
+glIndexMask
+–
+GLuöt
+ 
+mask
+ );
+
+987 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹Mask
+–
+GLboﬁón
+ 
+ªd
+, GLboﬁó¿
+gªí
+, GLboﬁó¿
+blue
+, GLboﬁó¿
+Æpha
+ );
+
+988 
+GLAPI
+ 
+APIENTRY
+ 
+glAÕhaFunc
+–
+GLíum
+ 
+func
+, 
+GL˛ampf
+ 
+ªf
+ );
+
+989 
+GLAPI
+ 
+APIENTRY
+ 
+glBÀndFunc
+–
+GLíum
+ 
+sÁ˘‹
+, GLíum 
+dÁ˘‹
+ );
+
+990 
+GLAPI
+ 
+APIENTRY
+ 
+glLogicOp
+–
+GLíum
+ 
+›code
+ );
+
+991 
+GLAPI
+ 
+APIENTRY
+ 
+glCuŒFa˚
+–
+GLíum
+ 
+mode
+ );
+
+992 
+GLAPI
+ 
+APIENTRY
+ 
+glFr⁄tFa˚
+–
+GLíum
+ 
+mode
+ );
+
+993 
+GLAPI
+ 
+APIENTRY
+ 
+glPoötSize
+–
+GLÊﬂt
+ 
+size
+ );
+
+994 
+GLAPI
+ 
+APIENTRY
+ 
+glLöeWidth
+–
+GLÊﬂt
+ 
+width
+ );
+
+995 
+GLAPI
+ 
+APIENTRY
+ 
+glLöeStù∂e
+–
+GLöt
+ 
+Á˘‹
+, 
+GLush‹t
+ 
+∑âîn
+ );
+
+996 
+GLAPI
+ 
+APIENTRY
+ 
+glPﬁyg⁄Mode
+–
+GLíum
+ 
+Á˚
+, GLíum 
+mode
+ );
+
+997 
+GLAPI
+ 
+APIENTRY
+ 
+glPﬁyg⁄Off£t
+–
+GLÊﬂt
+ 
+Á˘‹
+, GLÊﬂà
+unôs
+ );
+
+998 
+GLAPI
+ 
+APIENTRY
+ 
+glPﬁyg⁄Stù∂e
+–c⁄° 
+GLubyã
+ *
+mask
+ );
+
+999 
+GLAPI
+ 
+APIENTRY
+ 
+glGëPﬁyg⁄Stù∂e
+–
+GLubyã
+ *
+mask
+ );
+
+1000 
+GLAPI
+ 
+APIENTRY
+ 
+glEdgeFœg
+–
+GLboﬁón
+ 
+Êag
+ );
+
+1001 
+GLAPI
+ 
+APIENTRY
+ 
+glEdgeFœgv
+–c⁄° 
+GLboﬁón
+ *
+Êag
+ );
+
+1002 
+GLAPI
+ 
+APIENTRY
+ 
+glSciss‹
+–
+GLöt
+ 
+x
+, GLöà
+y
+, 
+GLsizei
+ 
+width
+, GLsizeò
+height
+);
+
+1003 
+GLAPI
+ 
+APIENTRY
+ 
+glClùPœ√
+–
+GLíum
+ 
+∂™e
+, c⁄° 
+GLdoubÀ
+ *
+equ©i⁄
+ );
+
+1004 
+GLAPI
+ 
+APIENTRY
+ 
+glGëClùPœ√
+–
+GLíum
+ 
+∂™e
+, 
+GLdoubÀ
+ *
+equ©i⁄
+ );
+
+1005 
+GLAPI
+ 
+APIENTRY
+ 
+glDøwBuf„r
+–
+GLíum
+ 
+mode
+ );
+
+1006 
+GLAPI
+ 
+APIENTRY
+ 
+glRódBuf„r
+–
+GLíum
+ 
+mode
+ );
+
+1007 
+GLAPI
+ 
+APIENTRY
+ 
+glE«bÀ
+–
+GLíum
+ 
+ˇp
+ );
+
+1008 
+GLAPI
+ 
+APIENTRY
+ 
+glDißbÀ
+–
+GLíum
+ 
+ˇp
+ );
+
+1009 
+GLAPI
+ 
+GLboﬁón
+ 
+APIENTRY
+ 
+glIsE«bÀd
+–
+GLíum
+ 
+ˇp
+ );
+
+1010 
+GLAPI
+ 
+APIENTRY
+ 
+glE«bÀClõ¡Sèã
+–
+GLíum
+ 
+ˇp
+ );
+
+1011 
+GLAPI
+ 
+APIENTRY
+ 
+glDißbÀClõ¡Sèã
+–
+GLíum
+ 
+ˇp
+ );
+
+1012 
+GLAPI
+ 
+APIENTRY
+ 
+glGëBoﬁónv
+–
+GLíum
+ 
+≤ame
+, 
+GLboﬁón
+ *
+∑øms
+ );
+
+1013 
+GLAPI
+ 
+APIENTRY
+ 
+glGëDoubÀv
+–
+GLíum
+ 
+≤ame
+, 
+GLdoubÀ
+ *
+∑øms
+ );
+
+1014 
+GLAPI
+ 
+APIENTRY
+ 
+glGëFlﬂtv
+–
+GLíum
+ 
+≤ame
+, 
+GLÊﬂt
+ *
+∑øms
+ );
+
+1015 
+GLAPI
+ 
+APIENTRY
+ 
+glGëI¡egîv
+–
+GLíum
+ 
+≤ame
+, 
+GLöt
+ *
+∑øms
+ );
+
+1016 
+GLAPI
+ 
+APIENTRY
+ 
+glPushAârib
+–
+GLbôfõld
+ 
+mask
+ );
+
+1017 
+GLAPI
+ 
+APIENTRY
+ 
+glP›Aârib
+( );
+
+1018 
+GLAPI
+ 
+APIENTRY
+ 
+glPushClõ¡Aârib
+–
+GLbôfõld
+ 
+mask
+ );
+
+1019 
+GLAPI
+ 
+APIENTRY
+ 
+glP›Clõ¡Aârib
+( );
+
+1020 
+GLAPI
+ 
+GLöt
+ 
+APIENTRY
+ 
+glRídîMode
+–
+GLíum
+ 
+mode
+ );
+
+1021 
+GLAPI
+ 
+GLíum
+ 
+APIENTRY
+ 
+glGëEº‹
+( );
+
+1022 
+GLAPI
+ c⁄° 
+GLubyã
+* 
+	gAPIENTRY
+ 
+glGëSåög
+–
+GLíum
+ 
+«me
+ );
+
+1023 
+GLAPI
+ 
+APIENTRY
+ 
+glFöish
+( );
+
+1024 
+GLAPI
+ 
+APIENTRY
+ 
+glFlush
+( );
+
+1025 
+GLAPI
+ 
+APIENTRY
+ 
+glHöt
+–
+GLíum
+ 
+èrgë
+, GLíum 
+mode
+ );
+
+1028 
+GLAPI
+ 
+APIENTRY
+ 
+glCÀ¨Dïth
+–
+GL˛ampd
+ 
+dïth
+ );
+
+1029 
+GLAPI
+ 
+APIENTRY
+ 
+glDïthFunc
+–
+GLíum
+ 
+func
+ );
+
+1030 
+GLAPI
+ 
+APIENTRY
+ 
+glDïthMask
+–
+GLboﬁón
+ 
+Êag
+ );
+
+1031 
+GLAPI
+ 
+APIENTRY
+ 
+glDïthR™ge
+–
+GL˛ampd
+ 
+√¨_vÆ
+, GL˛ampd 
+Ár_vÆ
+ );
+
+1034 
+GLAPI
+ 
+APIENTRY
+ 
+glCÀ¨Accum
+–
+GLÊﬂt
+ 
+ªd
+, GLÊﬂà
+gªí
+, GLÊﬂà
+blue
+, GLÊﬂà
+Æpha
+ );
+
+1035 
+GLAPI
+ 
+APIENTRY
+ 
+glAccum
+–
+GLíum
+ 
+›
+, 
+GLÊﬂt
+ 
+vÆue
+ );
+
+1038 
+GLAPI
+ 
+APIENTRY
+ 
+glM©rixMode
+–
+GLíum
+ 
+mode
+ );
+
+1039 
+GLAPI
+ 
+APIENTRY
+ 
+glOπho
+–
+GLdoubÀ
+ 
+À·
+, GLdoubÀ 
+right
+, GLdoubÀ 
+bŸtom
+, GLdoubÀ 
+t›
+, GLdoubÀ 
+√¨_vÆ
+, GLdoubÀ 
+Ár_vÆ
+ );
+
+1040 
+GLAPI
+ 
+APIENTRY
+ 
+glFru°um
+–
+GLdoubÀ
+ 
+À·
+, GLdoubÀ 
+right
+, GLdoubÀ 
+bŸtom
+, GLdoubÀ 
+t›
+, GLdoubÀ 
+√¨_vÆ
+, GLdoubÀ 
+Ár_vÆ
+ );
+
+1041 
+GLAPI
+ 
+APIENTRY
+ 
+glVõwp‹t
+–
+GLöt
+ 
+x
+, GLöà
+y
+, 
+GLsizei
+ 
+width
+, GLsizeò
+height
+ );
+
+1042 
+GLAPI
+ 
+APIENTRY
+ 
+glPushM©rix
+( );
+
+1043 
+GLAPI
+ 
+APIENTRY
+ 
+glP›M©rix
+( );
+
+1044 
+GLAPI
+ 
+APIENTRY
+ 
+glLﬂdIdítôy
+( );
+
+1045 
+GLAPI
+ 
+APIENTRY
+ 
+glLﬂdM©rixd
+–c⁄° 
+GLdoubÀ
+ *
+m
+ );
+
+1046 
+GLAPI
+ 
+APIENTRY
+ 
+glLﬂdM©rixf
+–c⁄° 
+GLÊﬂt
+ *
+m
+ );
+
+1047 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…M©rixd
+–c⁄° 
+GLdoubÀ
+ *
+m
+ );
+
+1048 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…M©rixf
+–c⁄° 
+GLÊﬂt
+ *
+m
+ );
+
+1049 
+GLAPI
+ 
+APIENTRY
+ 
+glRŸ©ed
+–
+GLdoubÀ
+ 
+™gÀ
+, GLdoubÀ 
+x
+, GLdoubÀ 
+y
+, GLdoubÀ 
+z
+ );
+
+1050 
+GLAPI
+ 
+APIENTRY
+ 
+glRŸ©ef
+–
+GLÊﬂt
+ 
+™gÀ
+, GLÊﬂà
+x
+, GLÊﬂà
+y
+, GLÊﬂà
+z
+ );
+
+1051 
+GLAPI
+ 
+APIENTRY
+ 
+glSˇÀd
+–
+GLdoubÀ
+ 
+x
+, GLdoubÀ 
+y
+, GLdoubÀ 
+z
+ );
+
+1052 
+GLAPI
+ 
+APIENTRY
+ 
+glSˇÀf
+–
+GLÊﬂt
+ 
+x
+, GLÊﬂà
+y
+, GLÊﬂà
+z
+ );
+
+1053 
+GLAPI
+ 
+APIENTRY
+ 
+glTøn¶©ed
+–
+GLdoubÀ
+ 
+x
+, GLdoubÀ 
+y
+, GLdoubÀ 
+z
+ );
+
+1054 
+GLAPI
+ 
+APIENTRY
+ 
+glTøn¶©ef
+–
+GLÊﬂt
+ 
+x
+, GLÊﬂà
+y
+, GLÊﬂà
+z
+ );
+
+1057 
+GLAPI
+ 
+GLboﬁón
+ 
+APIENTRY
+ 
+glIsLi°
+–
+GLuöt
+ 
+li°
+ );
+
+1058 
+GLAPI
+ 
+APIENTRY
+ 
+glDñëeLi°s
+–
+GLuöt
+ 
+li°
+, 
+GLsizei
+ 
+ønge
+ );
+
+1059 
+GLAPI
+ 
+GLuöt
+ 
+APIENTRY
+ 
+glGíLi°s
+–
+GLsizei
+ 
+ønge
+ );
+
+1060 
+GLAPI
+ 
+APIENTRY
+ 
+glNewLi°
+–
+GLuöt
+ 
+li°
+, 
+GLíum
+ 
+mode
+ );
+
+1061 
+GLAPI
+ 
+APIENTRY
+ 
+glEndLi°
+( );
+
+1062 
+GLAPI
+ 
+APIENTRY
+ 
+glCÆlLi°
+–
+GLuöt
+ 
+li°
+ );
+
+1063 
+GLAPI
+ 
+APIENTRY
+ 
+glCÆlLi°s
+–
+GLsizei
+ 
+n
+, 
+GLíum
+ 
+ty≥
+, c⁄° 
+GLvoid
+ *
+li°s
+ );
+
+1064 
+GLAPI
+ 
+APIENTRY
+ 
+glLi°Ba£
+–
+GLuöt
+ 
+ba£
+ );
+
+1067 
+GLAPI
+ 
+APIENTRY
+ 
+glBegö
+–
+GLíum
+ 
+mode
+ );
+
+1068 
+GLAPI
+ 
+APIENTRY
+ 
+glEnd
+( );
+
+1069 
+GLAPI
+ 
+APIENTRY
+ 
+glVîãx2d
+–
+GLdoubÀ
+ 
+x
+, GLdoubÀ 
+y
+ );
+
+1070 
+GLAPI
+ 
+APIENTRY
+ 
+glVîãx2f
+–
+GLÊﬂt
+ 
+x
+, GLÊﬂà
+y
+ );
+
+1071 
+GLAPI
+ 
+APIENTRY
+ 
+glVîãx2i
+–
+GLöt
+ 
+x
+, GLöà
+y
+ );
+
+1072 
+GLAPI
+ 
+APIENTRY
+ 
+glVîãx2s
+–
+GLsh‹t
+ 
+x
+, GLsh‹à
+y
+ );
+
+1073 
+GLAPI
+ 
+APIENTRY
+ 
+glVîãx3d
+–
+GLdoubÀ
+ 
+x
+, GLdoubÀ 
+y
+, GLdoubÀ 
+z
+ );
+
+1074 
+GLAPI
+ 
+APIENTRY
+ 
+glVîãx3f
+–
+GLÊﬂt
+ 
+x
+, GLÊﬂà
+y
+, GLÊﬂà
+z
+ );
+
+1075 
+GLAPI
+ 
+APIENTRY
+ 
+glVîãx3i
+–
+GLöt
+ 
+x
+, GLöà
+y
+, GLöà
+z
+ );
+
+1076 
+GLAPI
+ 
+APIENTRY
+ 
+glVîãx3s
+–
+GLsh‹t
+ 
+x
+, GLsh‹à
+y
+, GLsh‹à
+z
+ );
+
+1077 
+GLAPI
+ 
+APIENTRY
+ 
+glVîãx4d
+–
+GLdoubÀ
+ 
+x
+, GLdoubÀ 
+y
+, GLdoubÀ 
+z
+, GLdoubÀ 
+w
+ );
+
+1078 
+GLAPI
+ 
+APIENTRY
+ 
+glVîãx4f
+–
+GLÊﬂt
+ 
+x
+, GLÊﬂà
+y
+, GLÊﬂà
+z
+, GLÊﬂà
+w
+ );
+
+1079 
+GLAPI
+ 
+APIENTRY
+ 
+glVîãx4i
+–
+GLöt
+ 
+x
+, GLöà
+y
+, GLöà
+z
+, GLöà
+w
+ );
+
+1080 
+GLAPI
+ 
+APIENTRY
+ 
+glVîãx4s
+–
+GLsh‹t
+ 
+x
+, GLsh‹à
+y
+, GLsh‹à
+z
+, GLsh‹à
+w
+ );
+
+1081 
+GLAPI
+ 
+APIENTRY
+ 
+glVîãx2dv
+–c⁄° 
+GLdoubÀ
+ *
+v
+ );
+
+1082 
+GLAPI
+ 
+APIENTRY
+ 
+glVîãx2fv
+–c⁄° 
+GLÊﬂt
+ *
+v
+ );
+
+1083 
+GLAPI
+ 
+APIENTRY
+ 
+glVîãx2iv
+–c⁄° 
+GLöt
+ *
+v
+ );
+
+1084 
+GLAPI
+ 
+APIENTRY
+ 
+glVîãx2sv
+–c⁄° 
+GLsh‹t
+ *
+v
+ );
+
+1085 
+GLAPI
+ 
+APIENTRY
+ 
+glVîãx3dv
+–c⁄° 
+GLdoubÀ
+ *
+v
+ );
+
+1086 
+GLAPI
+ 
+APIENTRY
+ 
+glVîãx3fv
+–c⁄° 
+GLÊﬂt
+ *
+v
+ );
+
+1087 
+GLAPI
+ 
+APIENTRY
+ 
+glVîãx3iv
+–c⁄° 
+GLöt
+ *
+v
+ );
+
+1088 
+GLAPI
+ 
+APIENTRY
+ 
+glVîãx3sv
+–c⁄° 
+GLsh‹t
+ *
+v
+ );
+
+1089 
+GLAPI
+ 
+APIENTRY
+ 
+glVîãx4dv
+–c⁄° 
+GLdoubÀ
+ *
+v
+ );
+
+1090 
+GLAPI
+ 
+APIENTRY
+ 
+glVîãx4fv
+–c⁄° 
+GLÊﬂt
+ *
+v
+ );
+
+1091 
+GLAPI
+ 
+APIENTRY
+ 
+glVîãx4iv
+–c⁄° 
+GLöt
+ *
+v
+ );
+
+1092 
+GLAPI
+ 
+APIENTRY
+ 
+glVîãx4sv
+–c⁄° 
+GLsh‹t
+ *
+v
+ );
+
+1093 
+GLAPI
+ 
+APIENTRY
+ 
+glN‹mÆ3b
+–
+GLbyã
+ 
+nx
+, GLbyã 
+ny
+, GLbyã 
+nz
+ );
+
+1094 
+GLAPI
+ 
+APIENTRY
+ 
+glN‹mÆ3d
+–
+GLdoubÀ
+ 
+nx
+, GLdoubÀ 
+ny
+, GLdoubÀ 
+nz
+ );
+
+1095 
+GLAPI
+ 
+APIENTRY
+ 
+glN‹mÆ3f
+–
+GLÊﬂt
+ 
+nx
+, GLÊﬂà
+ny
+, GLÊﬂà
+nz
+ );
+
+1096 
+GLAPI
+ 
+APIENTRY
+ 
+glN‹mÆ3i
+–
+GLöt
+ 
+nx
+, GLöà
+ny
+, GLöà
+nz
+ );
+
+1097 
+GLAPI
+ 
+APIENTRY
+ 
+glN‹mÆ3s
+–
+GLsh‹t
+ 
+nx
+, GLsh‹à
+ny
+, GLsh‹à
+nz
+ );
+
+1098 
+GLAPI
+ 
+APIENTRY
+ 
+glN‹mÆ3bv
+–c⁄° 
+GLbyã
+ *
+v
+ );
+
+1099 
+GLAPI
+ 
+APIENTRY
+ 
+glN‹mÆ3dv
+–c⁄° 
+GLdoubÀ
+ *
+v
+ );
+
+1100 
+GLAPI
+ 
+APIENTRY
+ 
+glN‹mÆ3fv
+–c⁄° 
+GLÊﬂt
+ *
+v
+ );
+
+1101 
+GLAPI
+ 
+APIENTRY
+ 
+glN‹mÆ3iv
+–c⁄° 
+GLöt
+ *
+v
+ );
+
+1102 
+GLAPI
+ 
+APIENTRY
+ 
+glN‹mÆ3sv
+–c⁄° 
+GLsh‹t
+ *
+v
+ );
+
+1103 
+GLAPI
+ 
+APIENTRY
+ 
+glIndexd
+–
+GLdoubÀ
+ 
+c
+ );
+
+1104 
+GLAPI
+ 
+APIENTRY
+ 
+glIndexf
+–
+GLÊﬂt
+ 
+c
+ );
+
+1105 
+GLAPI
+ 
+APIENTRY
+ 
+glIndexi
+–
+GLöt
+ 
+c
+ );
+
+1106 
+GLAPI
+ 
+APIENTRY
+ 
+glIndexs
+–
+GLsh‹t
+ 
+c
+ );
+
+1107 
+GLAPI
+ 
+APIENTRY
+ 
+glIndexub
+–
+GLubyã
+ 
+c
+ );
+
+1108 
+GLAPI
+ 
+APIENTRY
+ 
+glIndexdv
+–c⁄° 
+GLdoubÀ
+ *
+c
+ );
+
+1109 
+GLAPI
+ 
+APIENTRY
+ 
+glIndexfv
+–c⁄° 
+GLÊﬂt
+ *
+c
+ );
+
+1110 
+GLAPI
+ 
+APIENTRY
+ 
+glIndexiv
+–c⁄° 
+GLöt
+ *
+c
+ );
+
+1111 
+GLAPI
+ 
+APIENTRY
+ 
+glIndexsv
+–c⁄° 
+GLsh‹t
+ *
+c
+ );
+
+1112 
+GLAPI
+ 
+APIENTRY
+ 
+glIndexubv
+–c⁄° 
+GLubyã
+ *
+c
+ );
+
+1113 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹3b
+–
+GLbyã
+ 
+ªd
+, GLbyã 
+gªí
+, GLbyã 
+blue
+ );
+
+1114 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹3d
+–
+GLdoubÀ
+ 
+ªd
+, GLdoubÀ 
+gªí
+, GLdoubÀ 
+blue
+ );
+
+1115 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹3f
+–
+GLÊﬂt
+ 
+ªd
+, GLÊﬂà
+gªí
+, GLÊﬂà
+blue
+ );
+
+1116 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹3i
+–
+GLöt
+ 
+ªd
+, GLöà
+gªí
+, GLöà
+blue
+ );
+
+1117 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹3s
+–
+GLsh‹t
+ 
+ªd
+, GLsh‹à
+gªí
+, GLsh‹à
+blue
+ );
+
+1118 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹3ub
+–
+GLubyã
+ 
+ªd
+, GLubyã 
+gªí
+, GLubyã 
+blue
+ );
+
+1119 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹3ui
+–
+GLuöt
+ 
+ªd
+, GLuöà
+gªí
+, GLuöà
+blue
+ );
+
+1120 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹3us
+–
+GLush‹t
+ 
+ªd
+, GLush‹à
+gªí
+, GLush‹à
+blue
+ );
+
+1121 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹4b
+–
+GLbyã
+ 
+ªd
+, GLbyã 
+gªí
+, GLbyã 
+blue
+, GLbyã 
+Æpha
+ );
+
+1122 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹4d
+–
+GLdoubÀ
+ 
+ªd
+, GLdoubÀ 
+gªí
+, GLdoubÀ 
+blue
+, GLdoubÀ 
+Æpha
+ );
+
+1123 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹4f
+–
+GLÊﬂt
+ 
+ªd
+, GLÊﬂà
+gªí
+, GLÊﬂà
+blue
+, GLÊﬂà
+Æpha
+ );
+
+1124 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹4i
+–
+GLöt
+ 
+ªd
+, GLöà
+gªí
+, GLöà
+blue
+, GLöà
+Æpha
+ );
+
+1125 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹4s
+–
+GLsh‹t
+ 
+ªd
+, GLsh‹à
+gªí
+, GLsh‹à
+blue
+, GLsh‹à
+Æpha
+ );
+
+1126 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹4ub
+–
+GLubyã
+ 
+ªd
+, GLubyã 
+gªí
+, GLubyã 
+blue
+, GLubyã 
+Æpha
+ );
+
+1127 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹4ui
+–
+GLuöt
+ 
+ªd
+, GLuöà
+gªí
+, GLuöà
+blue
+, GLuöà
+Æpha
+ );
+
+1128 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹4us
+–
+GLush‹t
+ 
+ªd
+, GLush‹à
+gªí
+, GLush‹à
+blue
+, GLush‹à
+Æpha
+ );
+
+1129 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹3bv
+–c⁄° 
+GLbyã
+ *
+v
+ );
+
+1130 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹3dv
+–c⁄° 
+GLdoubÀ
+ *
+v
+ );
+
+1131 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹3fv
+–c⁄° 
+GLÊﬂt
+ *
+v
+ );
+
+1132 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹3iv
+–c⁄° 
+GLöt
+ *
+v
+ );
+
+1133 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹3sv
+–c⁄° 
+GLsh‹t
+ *
+v
+ );
+
+1134 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹3ubv
+–c⁄° 
+GLubyã
+ *
+v
+ );
+
+1135 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹3uiv
+–c⁄° 
+GLuöt
+ *
+v
+ );
+
+1136 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹3usv
+–c⁄° 
+GLush‹t
+ *
+v
+ );
+
+1137 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹4bv
+–c⁄° 
+GLbyã
+ *
+v
+ );
+
+1138 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹4dv
+–c⁄° 
+GLdoubÀ
+ *
+v
+ );
+
+1139 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹4fv
+–c⁄° 
+GLÊﬂt
+ *
+v
+ );
+
+1140 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹4iv
+–c⁄° 
+GLöt
+ *
+v
+ );
+
+1141 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹4sv
+–c⁄° 
+GLsh‹t
+ *
+v
+ );
+
+1142 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹4ubv
+–c⁄° 
+GLubyã
+ *
+v
+ );
+
+1143 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹4uiv
+–c⁄° 
+GLuöt
+ *
+v
+ );
+
+1144 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹4usv
+–c⁄° 
+GLush‹t
+ *
+v
+ );
+
+1145 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d1d
+–
+GLdoubÀ
+ 
+s
+ );
+
+1146 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d1f
+–
+GLÊﬂt
+ 
+s
+ );
+
+1147 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d1i
+–
+GLöt
+ 
+s
+ );
+
+1148 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d1s
+–
+GLsh‹t
+ 
+s
+ );
+
+1149 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d2d
+–
+GLdoubÀ
+ 
+s
+, GLdoubÀ 
+t
+ );
+
+1150 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d2f
+–
+GLÊﬂt
+ 
+s
+, GLÊﬂà
+t
+ );
+
+1151 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d2i
+–
+GLöt
+ 
+s
+, GLöà
+t
+ );
+
+1152 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d2s
+–
+GLsh‹t
+ 
+s
+, GLsh‹à
+t
+ );
+
+1153 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d3d
+–
+GLdoubÀ
+ 
+s
+, GLdoubÀ 
+t
+, GLdoubÀ 
+r
+ );
+
+1154 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d3f
+–
+GLÊﬂt
+ 
+s
+, GLÊﬂà
+t
+, GLÊﬂà
+r
+ );
+
+1155 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d3i
+–
+GLöt
+ 
+s
+, GLöà
+t
+, GLöà
+r
+ );
+
+1156 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d3s
+–
+GLsh‹t
+ 
+s
+, GLsh‹à
+t
+, GLsh‹à
+r
+ );
+
+1157 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d4d
+–
+GLdoubÀ
+ 
+s
+, GLdoubÀ 
+t
+, GLdoubÀ 
+r
+, GLdoubÀ 
+q
+ );
+
+1158 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d4f
+–
+GLÊﬂt
+ 
+s
+, GLÊﬂà
+t
+, GLÊﬂà
+r
+, GLÊﬂà
+q
+ );
+
+1159 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d4i
+–
+GLöt
+ 
+s
+, GLöà
+t
+, GLöà
+r
+, GLöà
+q
+ );
+
+1160 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d4s
+–
+GLsh‹t
+ 
+s
+, GLsh‹à
+t
+, GLsh‹à
+r
+, GLsh‹à
+q
+ );
+
+1161 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d1dv
+–c⁄° 
+GLdoubÀ
+ *
+v
+ );
+
+1162 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d1fv
+–c⁄° 
+GLÊﬂt
+ *
+v
+ );
+
+1163 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d1iv
+–c⁄° 
+GLöt
+ *
+v
+ );
+
+1164 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d1sv
+–c⁄° 
+GLsh‹t
+ *
+v
+ );
+
+1165 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d2dv
+–c⁄° 
+GLdoubÀ
+ *
+v
+ );
+
+1166 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d2fv
+–c⁄° 
+GLÊﬂt
+ *
+v
+ );
+
+1167 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d2iv
+–c⁄° 
+GLöt
+ *
+v
+ );
+
+1168 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d2sv
+–c⁄° 
+GLsh‹t
+ *
+v
+ );
+
+1169 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d3dv
+–c⁄° 
+GLdoubÀ
+ *
+v
+ );
+
+1170 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d3fv
+–c⁄° 
+GLÊﬂt
+ *
+v
+ );
+
+1171 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d3iv
+–c⁄° 
+GLöt
+ *
+v
+ );
+
+1172 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d3sv
+–c⁄° 
+GLsh‹t
+ *
+v
+ );
+
+1173 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d4dv
+–c⁄° 
+GLdoubÀ
+ *
+v
+ );
+
+1174 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d4fv
+–c⁄° 
+GLÊﬂt
+ *
+v
+ );
+
+1175 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d4iv
+–c⁄° 
+GLöt
+ *
+v
+ );
+
+1176 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹d4sv
+–c⁄° 
+GLsh‹t
+ *
+v
+ );
+
+1177 
+GLAPI
+ 
+APIENTRY
+ 
+glRa°îPos2d
+–
+GLdoubÀ
+ 
+x
+, GLdoubÀ 
+y
+ );
+
+1178 
+GLAPI
+ 
+APIENTRY
+ 
+glRa°îPos2f
+–
+GLÊﬂt
+ 
+x
+, GLÊﬂà
+y
+ );
+
+1179 
+GLAPI
+ 
+APIENTRY
+ 
+glRa°îPos2i
+–
+GLöt
+ 
+x
+, GLöà
+y
+ );
+
+1180 
+GLAPI
+ 
+APIENTRY
+ 
+glRa°îPos2s
+–
+GLsh‹t
+ 
+x
+, GLsh‹à
+y
+ );
+
+1181 
+GLAPI
+ 
+APIENTRY
+ 
+glRa°îPos3d
+–
+GLdoubÀ
+ 
+x
+, GLdoubÀ 
+y
+, GLdoubÀ 
+z
+ );
+
+1182 
+GLAPI
+ 
+APIENTRY
+ 
+glRa°îPos3f
+–
+GLÊﬂt
+ 
+x
+, GLÊﬂà
+y
+, GLÊﬂà
+z
+ );
+
+1183 
+GLAPI
+ 
+APIENTRY
+ 
+glRa°îPos3i
+–
+GLöt
+ 
+x
+, GLöà
+y
+, GLöà
+z
+ );
+
+1184 
+GLAPI
+ 
+APIENTRY
+ 
+glRa°îPos3s
+–
+GLsh‹t
+ 
+x
+, GLsh‹à
+y
+, GLsh‹à
+z
+ );
+
+1185 
+GLAPI
+ 
+APIENTRY
+ 
+glRa°îPos4d
+–
+GLdoubÀ
+ 
+x
+, GLdoubÀ 
+y
+, GLdoubÀ 
+z
+, GLdoubÀ 
+w
+ );
+
+1186 
+GLAPI
+ 
+APIENTRY
+ 
+glRa°îPos4f
+–
+GLÊﬂt
+ 
+x
+, GLÊﬂà
+y
+, GLÊﬂà
+z
+, GLÊﬂà
+w
+ );
+
+1187 
+GLAPI
+ 
+APIENTRY
+ 
+glRa°îPos4i
+–
+GLöt
+ 
+x
+, GLöà
+y
+, GLöà
+z
+, GLöà
+w
+ );
+
+1188 
+GLAPI
+ 
+APIENTRY
+ 
+glRa°îPos4s
+–
+GLsh‹t
+ 
+x
+, GLsh‹à
+y
+, GLsh‹à
+z
+, GLsh‹à
+w
+ );
+
+1189 
+GLAPI
+ 
+APIENTRY
+ 
+glRa°îPos2dv
+–c⁄° 
+GLdoubÀ
+ *
+v
+ );
+
+1190 
+GLAPI
+ 
+APIENTRY
+ 
+glRa°îPos2fv
+–c⁄° 
+GLÊﬂt
+ *
+v
+ );
+
+1191 
+GLAPI
+ 
+APIENTRY
+ 
+glRa°îPos2iv
+–c⁄° 
+GLöt
+ *
+v
+ );
+
+1192 
+GLAPI
+ 
+APIENTRY
+ 
+glRa°îPos2sv
+–c⁄° 
+GLsh‹t
+ *
+v
+ );
+
+1193 
+GLAPI
+ 
+APIENTRY
+ 
+glRa°îPos3dv
+–c⁄° 
+GLdoubÀ
+ *
+v
+ );
+
+1194 
+GLAPI
+ 
+APIENTRY
+ 
+glRa°îPos3fv
+–c⁄° 
+GLÊﬂt
+ *
+v
+ );
+
+1195 
+GLAPI
+ 
+APIENTRY
+ 
+glRa°îPos3iv
+–c⁄° 
+GLöt
+ *
+v
+ );
+
+1196 
+GLAPI
+ 
+APIENTRY
+ 
+glRa°îPos3sv
+–c⁄° 
+GLsh‹t
+ *
+v
+ );
+
+1197 
+GLAPI
+ 
+APIENTRY
+ 
+glRa°îPos4dv
+–c⁄° 
+GLdoubÀ
+ *
+v
+ );
+
+1198 
+GLAPI
+ 
+APIENTRY
+ 
+glRa°îPos4fv
+–c⁄° 
+GLÊﬂt
+ *
+v
+ );
+
+1199 
+GLAPI
+ 
+APIENTRY
+ 
+glRa°îPos4iv
+–c⁄° 
+GLöt
+ *
+v
+ );
+
+1200 
+GLAPI
+ 
+APIENTRY
+ 
+glRa°îPos4sv
+–c⁄° 
+GLsh‹t
+ *
+v
+ );
+
+1201 
+GLAPI
+ 
+APIENTRY
+ 
+glRe˘d
+–
+GLdoubÀ
+ 
+x1
+, GLdoubÀ 
+y1
+, GLdoubÀ 
+x2
+, GLdoubÀ 
+y2
+ );
+
+1202 
+GLAPI
+ 
+APIENTRY
+ 
+glRe˘f
+–
+GLÊﬂt
+ 
+x1
+, GLÊﬂà
+y1
+, GLÊﬂà
+x2
+, GLÊﬂà
+y2
+ );
+
+1203 
+GLAPI
+ 
+APIENTRY
+ 
+glRe˘i
+–
+GLöt
+ 
+x1
+, GLöà
+y1
+, GLöà
+x2
+, GLöà
+y2
+ );
+
+1204 
+GLAPI
+ 
+APIENTRY
+ 
+glRe˘s
+–
+GLsh‹t
+ 
+x1
+, GLsh‹à
+y1
+, GLsh‹à
+x2
+, GLsh‹à
+y2
+ );
+
+1205 
+GLAPI
+ 
+APIENTRY
+ 
+glRe˘dv
+–c⁄° 
+GLdoubÀ
+ *
+v1
+, c⁄° GLdoubÀ *
+v2
+ );
+
+1206 
+GLAPI
+ 
+APIENTRY
+ 
+glRe˘fv
+–c⁄° 
+GLÊﬂt
+ *
+v1
+, c⁄° GLÊﬂà*
+v2
+ );
+
+1207 
+GLAPI
+ 
+APIENTRY
+ 
+glRe˘iv
+–c⁄° 
+GLöt
+ *
+v1
+, c⁄° GLöà*
+v2
+ );
+
+1208 
+GLAPI
+ 
+APIENTRY
+ 
+glRe˘sv
+–c⁄° 
+GLsh‹t
+ *
+v1
+, c⁄° GLsh‹à*
+v2
+ );
+
+1211 
+GLAPI
+ 
+APIENTRY
+ 
+glShadeModñ
+–
+GLíum
+ 
+mode
+ );
+
+1212 
+GLAPI
+ 
+APIENTRY
+ 
+glLightf
+–
+GLíum
+ 
+light
+, GLíum 
+≤ame
+, 
+GLÊﬂt
+ 
+∑øm
+ );
+
+1213 
+GLAPI
+ 
+APIENTRY
+ 
+glLighti
+–
+GLíum
+ 
+light
+, GLíum 
+≤ame
+, 
+GLöt
+ 
+∑øm
+ );
+
+1214 
+GLAPI
+ 
+APIENTRY
+ 
+glLightfv
+–
+GLíum
+ 
+light
+, GLíum 
+≤ame
+, c⁄° 
+GLÊﬂt
+ *
+∑øms
+ );
+
+1215 
+GLAPI
+ 
+APIENTRY
+ 
+glLightiv
+–
+GLíum
+ 
+light
+, GLíum 
+≤ame
+, c⁄° 
+GLöt
+ *
+∑øms
+ );
+
+1216 
+GLAPI
+ 
+APIENTRY
+ 
+glGëLightfv
+–
+GLíum
+ 
+light
+, GLíum 
+≤ame
+, 
+GLÊﬂt
+ *
+∑øms
+ );
+
+1217 
+GLAPI
+ 
+APIENTRY
+ 
+glGëLightiv
+–
+GLíum
+ 
+light
+, GLíum 
+≤ame
+, 
+GLöt
+ *
+∑øms
+ );
+
+1218 
+GLAPI
+ 
+APIENTRY
+ 
+glLightModñf
+–
+GLíum
+ 
+≤ame
+, 
+GLÊﬂt
+ 
+∑øm
+ );
+
+1219 
+GLAPI
+ 
+APIENTRY
+ 
+glLightModñi
+–
+GLíum
+ 
+≤ame
+, 
+GLöt
+ 
+∑øm
+ );
+
+1220 
+GLAPI
+ 
+APIENTRY
+ 
+glLightModñfv
+–
+GLíum
+ 
+≤ame
+, c⁄° 
+GLÊﬂt
+ *
+∑øms
+ );
+
+1221 
+GLAPI
+ 
+APIENTRY
+ 
+glLightModñiv
+–
+GLíum
+ 
+≤ame
+, c⁄° 
+GLöt
+ *
+∑øms
+ );
+
+1222 
+GLAPI
+ 
+APIENTRY
+ 
+glM©îülf
+–
+GLíum
+ 
+Á˚
+, GLíum 
+≤ame
+, 
+GLÊﬂt
+ 
+∑øm
+ );
+
+1223 
+GLAPI
+ 
+APIENTRY
+ 
+glM©îüli
+–
+GLíum
+ 
+Á˚
+, GLíum 
+≤ame
+, 
+GLöt
+ 
+∑øm
+ );
+
+1224 
+GLAPI
+ 
+APIENTRY
+ 
+glM©îülfv
+–
+GLíum
+ 
+Á˚
+, GLíum 
+≤ame
+, c⁄° 
+GLÊﬂt
+ *
+∑øms
+ );
+
+1225 
+GLAPI
+ 
+APIENTRY
+ 
+glM©îüliv
+–
+GLíum
+ 
+Á˚
+, GLíum 
+≤ame
+, c⁄° 
+GLöt
+ *
+∑øms
+ );
+
+1226 
+GLAPI
+ 
+APIENTRY
+ 
+glGëM©îülfv
+–
+GLíum
+ 
+Á˚
+, GLíum 
+≤ame
+, 
+GLÊﬂt
+ *
+∑øms
+ );
+
+1227 
+GLAPI
+ 
+APIENTRY
+ 
+glGëM©îüliv
+–
+GLíum
+ 
+Á˚
+, GLíum 
+≤ame
+, 
+GLöt
+ *
+∑øms
+ );
+
+1228 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹M©îül
+–
+GLíum
+ 
+Á˚
+, GLíum 
+mode
+ );
+
+1231 
+GLAPI
+ 
+APIENTRY
+ 
+glPixñZoom
+–
+GLÊﬂt
+ 
+xÁ˘‹
+, GLÊﬂà
+yÁ˘‹
+ );
+
+1232 
+GLAPI
+ 
+APIENTRY
+ 
+glPixñSt‹ef
+–
+GLíum
+ 
+≤ame
+, 
+GLÊﬂt
+ 
+∑øm
+ );
+
+1233 
+GLAPI
+ 
+APIENTRY
+ 
+glPixñSt‹ei
+–
+GLíum
+ 
+≤ame
+, 
+GLöt
+ 
+∑øm
+ );
+
+1234 
+GLAPI
+ 
+APIENTRY
+ 
+glPixñTøns„rf
+–
+GLíum
+ 
+≤ame
+, 
+GLÊﬂt
+ 
+∑øm
+ );
+
+1235 
+GLAPI
+ 
+APIENTRY
+ 
+glPixñTøns„ri
+–
+GLíum
+ 
+≤ame
+, 
+GLöt
+ 
+∑øm
+ );
+
+1236 
+GLAPI
+ 
+APIENTRY
+ 
+glPixñM≠fv
+–
+GLíum
+ 
+m≠
+, 
+GLöt
+ 
+m≠size
+, c⁄° 
+GLÊﬂt
+ *
+vÆues
+ );
+
+1237 
+GLAPI
+ 
+APIENTRY
+ 
+glPixñM≠uiv
+–
+GLíum
+ 
+m≠
+, 
+GLöt
+ 
+m≠size
+, c⁄° 
+GLuöt
+ *
+vÆues
+ );
+
+1238 
+GLAPI
+ 
+APIENTRY
+ 
+glPixñM≠usv
+–
+GLíum
+ 
+m≠
+, 
+GLöt
+ 
+m≠size
+, c⁄° 
+GLush‹t
+ *
+vÆues
+ );
+
+1239 
+GLAPI
+ 
+APIENTRY
+ 
+glGëPixñM≠fv
+–
+GLíum
+ 
+m≠
+, 
+GLÊﬂt
+ *
+vÆues
+ );
+
+1240 
+GLAPI
+ 
+APIENTRY
+ 
+glGëPixñM≠uiv
+–
+GLíum
+ 
+m≠
+, 
+GLuöt
+ *
+vÆues
+ );
+
+1241 
+GLAPI
+ 
+APIENTRY
+ 
+glGëPixñM≠usv
+–
+GLíum
+ 
+m≠
+, 
+GLush‹t
+ *
+vÆues
+ );
+
+1242 
+GLAPI
+ 
+APIENTRY
+ 
+glBôm≠
+–
+GLsizei
+ 
+width
+, GLsizeò
+height
+, 
+GLÊﬂt
+ 
+x‹ig
+, GLÊﬂà
+y‹ig
+, GLÊﬂà
+xmove
+, GLÊﬂà
+ymove
+, c⁄° 
+GLubyã
+ *
+bôm≠
+ );
+
+1243 
+GLAPI
+ 
+APIENTRY
+ 
+glRódPixñs
+–
+GLöt
+ 
+x
+, GLöà
+y
+, 
+GLsizei
+ 
+width
+, GLsizeò
+height
+, 
+GLíum
+ 
+f‹m©
+, GLíum 
+ty≥
+, 
+GLvoid
+ *
+pixñs
+ );
+
+1244 
+GLAPI
+ 
+APIENTRY
+ 
+glDøwPixñs
+–
+GLsizei
+ 
+width
+, GLsizeò
+height
+, 
+GLíum
+ 
+f‹m©
+, GLíum 
+ty≥
+, c⁄° 
+GLvoid
+ *
+pixñs
+ );
+
+1245 
+GLAPI
+ 
+APIENTRY
+ 
+glC›yPixñs
+–
+GLöt
+ 
+x
+, GLöà
+y
+, 
+GLsizei
+ 
+width
+, GLsizeò
+height
+, 
+GLíum
+ 
+ty≥
+ );
+
+1248 
+GLAPI
+ 
+APIENTRY
+ 
+glSãncûFunc
+–
+GLíum
+ 
+func
+, 
+GLöt
+ 
+ªf
+, 
+GLuöt
+ 
+mask
+ );
+
+1249 
+GLAPI
+ 
+APIENTRY
+ 
+glSãncûMask
+–
+GLuöt
+ 
+mask
+ );
+
+1250 
+GLAPI
+ 
+APIENTRY
+ 
+glSãncûOp
+–
+GLíum
+ 
+Áû
+, GLíum 
+zÁû
+, GLíum 
+z∑ss
+ );
+
+1251 
+GLAPI
+ 
+APIENTRY
+ 
+glCÀ¨Sãncû
+–
+GLöt
+ 
+s
+ );
+
+1254 
+GLAPI
+ 
+APIENTRY
+ 
+glTexGíd
+–
+GLíum
+ 
+co‹d
+, GLíum 
+≤ame
+, 
+GLdoubÀ
+ 
+∑øm
+ );
+
+1255 
+GLAPI
+ 
+APIENTRY
+ 
+glTexGíf
+–
+GLíum
+ 
+co‹d
+, GLíum 
+≤ame
+, 
+GLÊﬂt
+ 
+∑øm
+ );
+
+1256 
+GLAPI
+ 
+APIENTRY
+ 
+glTexGíi
+–
+GLíum
+ 
+co‹d
+, GLíum 
+≤ame
+, 
+GLöt
+ 
+∑øm
+ );
+
+1257 
+GLAPI
+ 
+APIENTRY
+ 
+glTexGídv
+–
+GLíum
+ 
+co‹d
+, GLíum 
+≤ame
+, c⁄° 
+GLdoubÀ
+ *
+∑øms
+ );
+
+1258 
+GLAPI
+ 
+APIENTRY
+ 
+glTexGífv
+–
+GLíum
+ 
+co‹d
+, GLíum 
+≤ame
+, c⁄° 
+GLÊﬂt
+ *
+∑øms
+ );
+
+1259 
+GLAPI
+ 
+APIENTRY
+ 
+glTexGíiv
+–
+GLíum
+ 
+co‹d
+, GLíum 
+≤ame
+, c⁄° 
+GLöt
+ *
+∑øms
+ );
+
+1260 
+GLAPI
+ 
+APIENTRY
+ 
+glGëTexGídv
+–
+GLíum
+ 
+co‹d
+, GLíum 
+≤ame
+, 
+GLdoubÀ
+ *
+∑øms
+ );
+
+1261 
+GLAPI
+ 
+APIENTRY
+ 
+glGëTexGífv
+–
+GLíum
+ 
+co‹d
+, GLíum 
+≤ame
+, 
+GLÊﬂt
+ *
+∑øms
+ );
+
+1262 
+GLAPI
+ 
+APIENTRY
+ 
+glGëTexGíiv
+–
+GLíum
+ 
+co‹d
+, GLíum 
+≤ame
+, 
+GLöt
+ *
+∑øms
+ );
+
+1263 
+GLAPI
+ 
+APIENTRY
+ 
+glTexEnvf
+–
+GLíum
+ 
+èrgë
+, GLíum 
+≤ame
+, 
+GLÊﬂt
+ 
+∑øm
+ );
+
+1264 
+GLAPI
+ 
+APIENTRY
+ 
+glTexEnvi
+–
+GLíum
+ 
+èrgë
+, GLíum 
+≤ame
+, 
+GLöt
+ 
+∑øm
+ );
+
+1265 
+GLAPI
+ 
+APIENTRY
+ 
+glTexEnvfv
+–
+GLíum
+ 
+èrgë
+, GLíum 
+≤ame
+, c⁄° 
+GLÊﬂt
+ *
+∑øms
+ );
+
+1266 
+GLAPI
+ 
+APIENTRY
+ 
+glTexEnviv
+–
+GLíum
+ 
+èrgë
+, GLíum 
+≤ame
+, c⁄° 
+GLöt
+ *
+∑øms
+ );
+
+1267 
+GLAPI
+ 
+APIENTRY
+ 
+glGëTexEnvfv
+–
+GLíum
+ 
+èrgë
+, GLíum 
+≤ame
+, 
+GLÊﬂt
+ *
+∑øms
+ );
+
+1268 
+GLAPI
+ 
+APIENTRY
+ 
+glGëTexEnviv
+–
+GLíum
+ 
+èrgë
+, GLíum 
+≤ame
+, 
+GLöt
+ *
+∑øms
+ );
+
+1269 
+GLAPI
+ 
+APIENTRY
+ 
+glTexP¨amëîf
+–
+GLíum
+ 
+èrgë
+, GLíum 
+≤ame
+, 
+GLÊﬂt
+ 
+∑øm
+ );
+
+1270 
+GLAPI
+ 
+APIENTRY
+ 
+glTexP¨amëîi
+–
+GLíum
+ 
+èrgë
+, GLíum 
+≤ame
+, 
+GLöt
+ 
+∑øm
+ );
+
+1271 
+GLAPI
+ 
+APIENTRY
+ 
+glTexP¨amëîfv
+–
+GLíum
+ 
+èrgë
+, GLíum 
+≤ame
+, c⁄° 
+GLÊﬂt
+ *
+∑øms
+ );
+
+1272 
+GLAPI
+ 
+APIENTRY
+ 
+glTexP¨amëîiv
+–
+GLíum
+ 
+èrgë
+, GLíum 
+≤ame
+, c⁄° 
+GLöt
+ *
+∑øms
+ );
+
+1273 
+GLAPI
+ 
+APIENTRY
+ 
+glGëTexP¨amëîfv
+–
+GLíum
+ 
+èrgë
+, GLíum 
+≤ame
+, 
+GLÊﬂt
+ *
+∑øms
+);
+
+1274 
+GLAPI
+ 
+APIENTRY
+ 
+glGëTexP¨amëîiv
+–
+GLíum
+ 
+èrgë
+, GLíum 
+≤ame
+, 
+GLöt
+ *
+∑øms
+ );
+
+1275 
+GLAPI
+ 
+APIENTRY
+ 
+glGëTexLevñP¨amëîfv
+–
+GLíum
+ 
+èrgë
+, 
+GLöt
+ 
+Àvñ
+, GLíum 
+≤ame
+, 
+GLÊﬂt
+ *
+∑øms
+ );
+
+1276 
+GLAPI
+ 
+APIENTRY
+ 
+glGëTexLevñP¨amëîiv
+–
+GLíum
+ 
+èrgë
+, 
+GLöt
+ 
+Àvñ
+, GLíum 
+≤ame
+, GLöà*
+∑øms
+ );
+
+1277 
+GLAPI
+ 
+APIENTRY
+ 
+glTexImage1D
+–
+GLíum
+ 
+èrgë
+, 
+GLöt
+ 
+Àvñ
+, GLöà
+öã∫ÆF‹m©
+, 
+GLsizei
+ 
+width
+, GLöà
+b‹dî
+, GLíum 
+f‹m©
+, GLíum 
+ty≥
+, c⁄° 
+GLvoid
+ *
+pixñs
+ );
+
+1278 
+GLAPI
+ 
+APIENTRY
+ 
+glTexImage2D
+–
+GLíum
+ 
+èrgë
+, 
+GLöt
+ 
+Àvñ
+, GLöà
+öã∫ÆF‹m©
+, 
+GLsizei
+ 
+width
+, GLsizeò
+height
+, GLöà
+b‹dî
+, GLíum 
+f‹m©
+, GLíum 
+ty≥
+, c⁄° 
+GLvoid
+ *
+pixñs
+ );
+
+1279 
+GLAPI
+ 
+APIENTRY
+ 
+glGëTexImage
+–
+GLíum
+ 
+èrgë
+, 
+GLöt
+ 
+Àvñ
+, GLíum 
+f‹m©
+, GLíum 
+ty≥
+, 
+GLvoid
+ *
+pixñs
+ );
+
+1282 
+GLAPI
+ 
+APIENTRY
+ 
+glM≠1d
+–
+GLíum
+ 
+èrgë
+, 
+GLdoubÀ
+ 
+u1
+, GLdoubÀ 
+u2
+, 
+GLöt
+ 
+°ride
+, GLöà
+‹dî
+, c⁄° GLdoubÀ *
+poöts
+ );
+
+1283 
+GLAPI
+ 
+APIENTRY
+ 
+glM≠1f
+–
+GLíum
+ 
+èrgë
+, 
+GLÊﬂt
+ 
+u1
+, GLÊﬂà
+u2
+, 
+GLöt
+ 
+°ride
+, GLöà
+‹dî
+, c⁄° GLÊﬂà*
+poöts
+ );
+
+1284 
+GLAPI
+ 
+APIENTRY
+ 
+glM≠2d
+–
+GLíum
+ 
+èrgë
+, 
+GLdoubÀ
+ 
+u1
+, GLdoubÀ 
+u2
+, 
+GLöt
+ 
+u°ride
+, GLöà
+u‹dî
+, GLdoubÀ 
+v1
+, GLdoubÀ 
+v2
+, GLöà
+v°ride
+, GLöà
+v‹dî
+, c⁄° GLdoubÀ *
+poöts
+ );
+
+1285 
+GLAPI
+ 
+APIENTRY
+ 
+glM≠2f
+–
+GLíum
+ 
+èrgë
+, 
+GLÊﬂt
+ 
+u1
+, GLÊﬂà
+u2
+, 
+GLöt
+ 
+u°ride
+, GLöà
+u‹dî
+, GLÊﬂà
+v1
+, GLÊﬂà
+v2
+, GLöà
+v°ride
+, GLöà
+v‹dî
+, c⁄° GLÊﬂà*
+poöts
+ );
+
+1286 
+GLAPI
+ 
+APIENTRY
+ 
+glGëM≠dv
+–
+GLíum
+ 
+èrgë
+, GLíum 
+quîy
+, 
+GLdoubÀ
+ *
+v
+ );
+
+1287 
+GLAPI
+ 
+APIENTRY
+ 
+glGëM≠fv
+–
+GLíum
+ 
+èrgë
+, GLíum 
+quîy
+, 
+GLÊﬂt
+ *
+v
+ );
+
+1288 
+GLAPI
+ 
+APIENTRY
+ 
+glGëM≠iv
+–
+GLíum
+ 
+èrgë
+, GLíum 
+quîy
+, 
+GLöt
+ *
+v
+ );
+
+1289 
+GLAPI
+ 
+APIENTRY
+ 
+glEvÆCo‹d1d
+–
+GLdoubÀ
+ 
+u
+ );
+
+1290 
+GLAPI
+ 
+APIENTRY
+ 
+glEvÆCo‹d1f
+–
+GLÊﬂt
+ 
+u
+ );
+
+1291 
+GLAPI
+ 
+APIENTRY
+ 
+glEvÆCo‹d1dv
+–c⁄° 
+GLdoubÀ
+ *
+u
+ );
+
+1292 
+GLAPI
+ 
+APIENTRY
+ 
+glEvÆCo‹d1fv
+–c⁄° 
+GLÊﬂt
+ *
+u
+ );
+
+1293 
+GLAPI
+ 
+APIENTRY
+ 
+glEvÆCo‹d2d
+–
+GLdoubÀ
+ 
+u
+, GLdoubÀ 
+v
+ );
+
+1294 
+GLAPI
+ 
+APIENTRY
+ 
+glEvÆCo‹d2f
+–
+GLÊﬂt
+ 
+u
+, GLÊﬂà
+v
+ );
+
+1295 
+GLAPI
+ 
+APIENTRY
+ 
+glEvÆCo‹d2dv
+–c⁄° 
+GLdoubÀ
+ *
+u
+ );
+
+1296 
+GLAPI
+ 
+APIENTRY
+ 
+glEvÆCo‹d2fv
+–c⁄° 
+GLÊﬂt
+ *
+u
+ );
+
+1297 
+GLAPI
+ 
+APIENTRY
+ 
+glM≠Grid1d
+–
+GLöt
+ 
+un
+, 
+GLdoubÀ
+ 
+u1
+, GLdoubÀ 
+u2
+ );
+
+1298 
+GLAPI
+ 
+APIENTRY
+ 
+glM≠Grid1f
+–
+GLöt
+ 
+un
+, 
+GLÊﬂt
+ 
+u1
+, GLÊﬂà
+u2
+ );
+
+1299 
+GLAPI
+ 
+APIENTRY
+ 
+glM≠Grid2d
+–
+GLöt
+ 
+un
+, 
+GLdoubÀ
+ 
+u1
+, GLdoubÀ 
+u2
+, GLöà
+vn
+, GLdoubÀ 
+v1
+, GLdoubÀ 
+v2
+ );
+
+1300 
+GLAPI
+ 
+APIENTRY
+ 
+glM≠Grid2f
+–
+GLöt
+ 
+un
+, 
+GLÊﬂt
+ 
+u1
+, GLÊﬂà
+u2
+, GLöà
+vn
+, GLÊﬂà
+v1
+, GLÊﬂà
+v2
+ );
+
+1301 
+GLAPI
+ 
+APIENTRY
+ 
+glEvÆPoöt1
+–
+GLöt
+ 
+i
+ );
+
+1302 
+GLAPI
+ 
+APIENTRY
+ 
+glEvÆPoöt2
+–
+GLöt
+ 
+i
+, GLöà
+j
+ );
+
+1303 
+GLAPI
+ 
+APIENTRY
+ 
+glEvÆMesh1
+–
+GLíum
+ 
+mode
+, 
+GLöt
+ 
+i1
+, GLöà
+i2
+ );
+
+1304 
+GLAPI
+ 
+APIENTRY
+ 
+glEvÆMesh2
+–
+GLíum
+ 
+mode
+, 
+GLöt
+ 
+i1
+, GLöà
+i2
+, GLöà
+j1
+, GLöà
+j2
+ );
+
+1307 
+GLAPI
+ 
+APIENTRY
+ 
+glFogf
+–
+GLíum
+ 
+≤ame
+, 
+GLÊﬂt
+ 
+∑øm
+ );
+
+1308 
+GLAPI
+ 
+APIENTRY
+ 
+glFogi
+–
+GLíum
+ 
+≤ame
+, 
+GLöt
+ 
+∑øm
+ );
+
+1309 
+GLAPI
+ 
+APIENTRY
+ 
+glFogfv
+–
+GLíum
+ 
+≤ame
+, c⁄° 
+GLÊﬂt
+ *
+∑øms
+ );
+
+1310 
+GLAPI
+ 
+APIENTRY
+ 
+glFogiv
+–
+GLíum
+ 
+≤ame
+, c⁄° 
+GLöt
+ *
+∑øms
+ );
+
+1313 
+GLAPI
+ 
+APIENTRY
+ 
+glFìdbackBuf„r
+–
+GLsizei
+ 
+size
+, 
+GLíum
+ 
+ty≥
+, 
+GLÊﬂt
+ *
+buf„r
+ );
+
+1314 
+GLAPI
+ 
+APIENTRY
+ 
+glPassThrough
+–
+GLÊﬂt
+ 
+tokí
+ );
+
+1315 
+GLAPI
+ 
+APIENTRY
+ 
+glSñe˘Buf„r
+–
+GLsizei
+ 
+size
+, 
+GLuöt
+ *
+buf„r
+ );
+
+1316 
+GLAPI
+ 
+APIENTRY
+ 
+glInôNames
+( );
+
+1317 
+GLAPI
+ 
+APIENTRY
+ 
+glLﬂdName
+–
+GLuöt
+ 
+«me
+ );
+
+1318 
+GLAPI
+ 
+APIENTRY
+ 
+glPushName
+–
+GLuöt
+ 
+«me
+ );
+
+1319 
+GLAPI
+ 
+APIENTRY
+ 
+glP›Name
+( );
+
+1324 
+GLAPI
+ 
+APIENTRY
+ 
+glGíTextuªs
+–
+GLsizei
+ 
+n
+, 
+GLuöt
+ *
+ãxtuªs
+ );
+
+1325 
+GLAPI
+ 
+APIENTRY
+ 
+glDñëeTextuªs
+–
+GLsizei
+ 
+n
+, c⁄° 
+GLuöt
+ *
+ãxtuªs
+);
+
+1326 
+GLAPI
+ 
+APIENTRY
+ 
+glBödTextuª
+–
+GLíum
+ 
+èrgë
+, 
+GLuöt
+ 
+ãxtuª
+ );
+
+1327 
+GLAPI
+ 
+APIENTRY
+ 
+glPri‹ôizeTextuªs
+–
+GLsizei
+ 
+n
+, c⁄° 
+GLuöt
+ *
+ãxtuªs
+, c⁄° 
+GL˛ampf
+ *
+¥i‹ôõs
+ );
+
+1328 
+GLAPI
+ 
+GLboﬁón
+ 
+APIENTRY
+ 
+glAªTextuªsResidít
+–
+GLsizei
+ 
+n
+, c⁄° 
+GLuöt
+ *
+ãxtuªs
+, GLboﬁó¿*
+ªsidí˚s
+ );
+
+1329 
+GLAPI
+ 
+GLboﬁón
+ 
+APIENTRY
+ 
+glIsTextuª
+–
+GLuöt
+ 
+ãxtuª
+ );
+
+1331 
+GLAPI
+ 
+APIENTRY
+ 
+glTexSubImage1D
+–
+GLíum
+ 
+èrgë
+, 
+GLöt
+ 
+Àvñ
+, GLöà
+xoff£t
+, 
+GLsizei
+ 
+width
+, GLíum 
+f‹m©
+, GLíum 
+ty≥
+, c⁄° 
+GLvoid
+ *
+pixñs
+ );
+
+1332 
+GLAPI
+ 
+APIENTRY
+ 
+glTexSubImage2D
+–
+GLíum
+ 
+èrgë
+, 
+GLöt
+ 
+Àvñ
+, GLöà
+xoff£t
+, GLöà
+yoff£t
+, 
+GLsizei
+ 
+width
+, GLsizeò
+height
+, GLíum 
+f‹m©
+, GLíum 
+ty≥
+, c⁄° 
+GLvoid
+ *
+pixñs
+ );
+
+1333 
+GLAPI
+ 
+APIENTRY
+ 
+glC›yTexImage1D
+–
+GLíum
+ 
+èrgë
+, 
+GLöt
+ 
+Àvñ
+, GLíum 
+öã∫Æf‹m©
+, GLöà
+x
+, GLöà
+y
+, 
+GLsizei
+ 
+width
+, GLöà
+b‹dî
+ );
+
+1334 
+GLAPI
+ 
+APIENTRY
+ 
+glC›yTexImage2D
+–
+GLíum
+ 
+èrgë
+, 
+GLöt
+ 
+Àvñ
+, GLíum 
+öã∫Æf‹m©
+, GLöà
+x
+, GLöà
+y
+, 
+GLsizei
+ 
+width
+, GLsizeò
+height
+, GLöà
+b‹dî
+ );
+
+1335 
+GLAPI
+ 
+APIENTRY
+ 
+glC›yTexSubImage1D
+–
+GLíum
+ 
+èrgë
+, 
+GLöt
+ 
+Àvñ
+, GLöà
+xoff£t
+, GLöà
+x
+, GLöà
+y
+, 
+GLsizei
+ 
+width
+ );
+
+1336 
+GLAPI
+ 
+APIENTRY
+ 
+glC›yTexSubImage2D
+–
+GLíum
+ 
+èrgë
+, 
+GLöt
+ 
+Àvñ
+, GLöà
+xoff£t
+, GLöà
+yoff£t
+, GLöà
+x
+, GLöà
+y
+, 
+GLsizei
+ 
+width
+, GLsizeò
+height
+ );
+
+1338 
+GLAPI
+ 
+APIENTRY
+ 
+glVîãxPoöãr
+–
+GLöt
+ 
+size
+, 
+GLíum
+ 
+ty≥
+, 
+GLsizei
+ 
+°ride
+, c⁄° 
+GLvoid
+ *
+±r
+ );
+
+1339 
+GLAPI
+ 
+APIENTRY
+ 
+glN‹mÆPoöãr
+–
+GLíum
+ 
+ty≥
+, 
+GLsizei
+ 
+°ride
+, c⁄° 
+GLvoid
+ *
+±r
+ );
+
+1340 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹Poöãr
+–
+GLöt
+ 
+size
+, 
+GLíum
+ 
+ty≥
+, 
+GLsizei
+ 
+°ride
+, c⁄° 
+GLvoid
+ *
+±r
+ );
+
+1341 
+GLAPI
+ 
+APIENTRY
+ 
+glIndexPoöãr
+–
+GLíum
+ 
+ty≥
+, 
+GLsizei
+ 
+°ride
+, c⁄° 
+GLvoid
+ *
+±r
+ );
+
+1342 
+GLAPI
+ 
+APIENTRY
+ 
+glTexCo‹dPoöãr
+–
+GLöt
+ 
+size
+, 
+GLíum
+ 
+ty≥
+, 
+GLsizei
+ 
+°ride
+, c⁄° 
+GLvoid
+ *
+±r
+ );
+
+1343 
+GLAPI
+ 
+APIENTRY
+ 
+glEdgeFœgPoöãr
+–
+GLsizei
+ 
+°ride
+, c⁄° 
+GLvoid
+ *
+±r
+ );
+
+1344 
+GLAPI
+ 
+APIENTRY
+ 
+glGëPoöãrv
+–
+GLíum
+ 
+≤ame
+, 
+GLvoid
+ **
+∑øms
+ );
+
+1345 
+GLAPI
+ 
+APIENTRY
+ 
+glAºayEÀmít
+–
+GLöt
+ 
+i
+ );
+
+1346 
+GLAPI
+ 
+APIENTRY
+ 
+glDøwAºays
+–
+GLíum
+ 
+mode
+, 
+GLöt
+ 
+fú°
+, 
+GLsizei
+ 
+cou¡
+ );
+
+1347 
+GLAPI
+ 
+APIENTRY
+ 
+glDøwEÀmíts
+–
+GLíum
+ 
+mode
+, 
+GLsizei
+ 
+cou¡
+, GLíum 
+ty≥
+, c⁄° 
+GLvoid
+ *
+ödi˚s
+ );
+
+1348 
+GLAPI
+ 
+APIENTRY
+ 
+glI¡îÀavedAºays
+–
+GLíum
+ 
+f‹m©
+, 
+GLsizei
+ 
+°ride
+, c⁄° 
+GLvoid
+ *
+poöãr
+ );
+
+1354 #i‡!
+deföed
+(
+__WIN32__
+)
+
+1357 
+GLAPI
+ 
+APIENTRY
+ 
+glDøwR™geEÀmíts
+–
+GLíum
+ 
+mode
+, 
+GLuöt
+ 
+°¨t
+, GLuöà
+íd
+, 
+GLsizei
+ 
+cou¡
+, GLíum 
+ty≥
+, c⁄° 
+GLvoid
+ *
+ödi˚s
+ );
+
+1358 
+GLAPI
+ 
+APIENTRY
+ 
+glTexImage3D
+–
+GLíum
+ 
+èrgë
+, 
+GLöt
+ 
+Àvñ
+, GLíum 
+öã∫ÆF‹m©
+, 
+GLsizei
+ 
+width
+, GLsizeò
+height
+, GLsizeò
+dïth
+, GLöà
+b‹dî
+, GLíum 
+f‹m©
+, GLíum 
+ty≥
+, c⁄° 
+GLvoid
+ *
+pixñs
+ );
+
+1359 
+GLAPI
+ 
+APIENTRY
+ 
+glTexSubImage3D
+–
+GLíum
+ 
+èrgë
+, 
+GLöt
+ 
+Àvñ
+, GLöà
+xoff£t
+, GLöà
+yoff£t
+, GLöà
+zoff£t
+, 
+GLsizei
+ 
+width
+, GLsizeò
+height
+, GLsizeò
+dïth
+, GLíum 
+f‹m©
+, GLíum 
+ty≥
+, c⁄° 
+GLvoid
+ *
+pixñs
+);
+
+1360 
+GLAPI
+ 
+APIENTRY
+ 
+glC›yTexSubImage3D
+–
+GLíum
+ 
+èrgë
+, 
+GLöt
+ 
+Àvñ
+, GLöà
+xoff£t
+, GLöà
+yoff£t
+, GLöà
+zoff£t
+, GLöà
+x
+, GLöà
+y
+, 
+GLsizei
+ 
+width
+, GLsizeò
+height
+ );
+
+1363 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹TabÀ
+–
+GLíum
+ 
+èrgë
+, GLíum 
+öã∫Æf‹m©
+, 
+GLsizei
+ 
+width
+, GLíum 
+f‹m©
+, GLíum 
+ty≥
+, c⁄° 
+GLvoid
+ *
+èbÀ
+ );
+
+1364 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹SubTabÀ
+–
+GLíum
+ 
+èrgë
+, 
+GLsizei
+ 
+°¨t
+, GLsizeò
+cou¡
+, GLíum 
+f‹m©
+, GLíum 
+ty≥
+, c⁄° 
+GLvoid
+ *
+d©a
+ );
+
+1365 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹TabÀP¨amëîiv
+(
+GLíum
+ 
+èrgë
+, GLíum 
+≤ame
+, c⁄° 
+GLöt
+ *
+∑øms
+);
+
+1366 
+GLAPI
+ 
+APIENTRY
+ 
+glCﬁ‹TabÀP¨amëîfv
+(
+GLíum
+ 
+èrgë
+, GLíum 
+≤ame
+, c⁄° 
+GLÊﬂt
+ *
+∑øms
+);
+
+1367 
+GLAPI
+ 
+APIENTRY
+ 
+glC›yCﬁ‹SubTabÀ
+–
+GLíum
+ 
+èrgë
+, 
+GLsizei
+ 
+°¨t
+, 
+GLöt
+ 
+x
+, GLöà
+y
+, GLsizeò
+width
+ );
+
+1368 
+GLAPI
+ 
+APIENTRY
+ 
+glC›yCﬁ‹TabÀ
+–
+GLíum
+ 
+èrgë
+, GLíum 
+öã∫Æf‹m©
+, 
+GLöt
+ 
+x
+, GLöà
+y
+, 
+GLsizei
+ 
+width
+ );
+
+1369 
+GLAPI
+ 
+APIENTRY
+ 
+glGëCﬁ‹TabÀ
+–
+GLíum
+ 
+èrgë
+, GLíum 
+f‹m©
+, GLíum 
+ty≥
+, 
+GLvoid
+ *
+èbÀ
+ );
+
+1370 
+GLAPI
+ 
+APIENTRY
+ 
+glGëCﬁ‹TabÀP¨amëîfv
+–
+GLíum
+ 
+èrgë
+, GLíum 
+≤ame
+, 
+GLÊﬂt
+ *
+∑øms
+ );
+
+1371 
+GLAPI
+ 
+APIENTRY
+ 
+glGëCﬁ‹TabÀP¨amëîiv
+–
+GLíum
+ 
+èrgë
+, GLíum 
+≤ame
+, 
+GLöt
+ *
+∑øms
+ );
+
+1372 
+GLAPI
+ 
+APIENTRY
+ 
+glBÀndEqu©i⁄
+–
+GLíum
+ 
+mode
+ );
+
+1373 
+GLAPI
+ 
+APIENTRY
+ 
+glBÀndCﬁ‹
+–
+GL˛ampf
+ 
+ªd
+, GL˛amp‡
+gªí
+, GL˛amp‡
+blue
+, GL˛amp‡
+Æpha
+ );
+
+1374 
+GLAPI
+ 
+APIENTRY
+ 
+glHi°ogøm
+–
+GLíum
+ 
+èrgë
+, 
+GLsizei
+ 
+width
+, GLíum 
+öã∫Æf‹m©
+, 
+GLboﬁón
+ 
+sök
+ );
+
+1375 
+GLAPI
+ 
+APIENTRY
+ 
+glRe£tHi°ogøm
+–
+GLíum
+ 
+èrgë
+ );
+
+1376 
+GLAPI
+ 
+APIENTRY
+ 
+glGëHi°ogøm
+–
+GLíum
+ 
+èrgë
+, 
+GLboﬁón
+ 
+ª£t
+, GLíum 
+f‹m©
+, GLíum 
+ty≥
+, 
+GLvoid
+ *
+vÆues
+ );
+
+1377 
+GLAPI
+ 
+APIENTRY
+ 
+glGëHi°ogømP¨amëîfv
+–
+GLíum
+ 
+èrgë
+, GLíum 
+≤ame
+, 
+GLÊﬂt
+ *
+∑øms
+ );
+
+1378 
+GLAPI
+ 
+APIENTRY
+ 
+glGëHi°ogømP¨amëîiv
+–
+GLíum
+ 
+èrgë
+, GLíum 
+≤ame
+, 
+GLöt
+ *
+∑øms
+ );
+
+1379 
+GLAPI
+ 
+APIENTRY
+ 
+glMömax
+–
+GLíum
+ 
+èrgë
+, GLíum 
+öã∫Æf‹m©
+, 
+GLboﬁón
+ 
+sök
+ );
+
+1380 
+GLAPI
+ 
+APIENTRY
+ 
+glRe£tMömax
+–
+GLíum
+ 
+èrgë
+ );
+
+1381 
+GLAPI
+ 
+APIENTRY
+ 
+glGëMömax
+–
+GLíum
+ 
+èrgë
+, 
+GLboﬁón
+ 
+ª£t
+, GLíum 
+f‹m©
+, GLíum 
+ty≥s
+, 
+GLvoid
+ *
+vÆues
+ );
+
+1382 
+GLAPI
+ 
+APIENTRY
+ 
+glGëMömaxP¨amëîfv
+–
+GLíum
+ 
+èrgë
+, GLíum 
+≤ame
+, 
+GLÊﬂt
+ *
+∑øms
+ );
+
+1383 
+GLAPI
+ 
+APIENTRY
+ 
+glGëMömaxP¨amëîiv
+–
+GLíum
+ 
+èrgë
+, GLíum 
+≤ame
+, 
+GLöt
+ *
+∑øms
+ );
+
+1384 
+GLAPI
+ 
+APIENTRY
+ 
+glC⁄vﬁuti⁄Fûãr1D
+–
+GLíum
+ 
+èrgë
+, GLíum 
+öã∫Æf‹m©
+, 
+GLsizei
+ 
+width
+, GLíum 
+f‹m©
+, GLíum 
+ty≥
+, c⁄° 
+GLvoid
+ *
+image
+ );
+
+1385 
+GLAPI
+ 
+APIENTRY
+ 
+glC⁄vﬁuti⁄Fûãr2D
+–
+GLíum
+ 
+èrgë
+, GLíum 
+öã∫Æf‹m©
+, 
+GLsizei
+ 
+width
+, GLsizeò
+height
+, GLíum 
+f‹m©
+, GLíum 
+ty≥
+, c⁄° 
+GLvoid
+ *
+image
+ );
+
+1386 
+GLAPI
+ 
+APIENTRY
+ 
+glC⁄vﬁuti⁄P¨amëîf
+–
+GLíum
+ 
+èrgë
+, GLíum 
+≤ame
+, 
+GLÊﬂt
+ 
+∑øms
+ );
+
+1387 
+GLAPI
+ 
+APIENTRY
+ 
+glC⁄vﬁuti⁄P¨amëîfv
+–
+GLíum
+ 
+èrgë
+, GLíum 
+≤ame
+, c⁄° 
+GLÊﬂt
+ *
+∑øms
+ );
+
+1388 
+GLAPI
+ 
+APIENTRY
+ 
+glC⁄vﬁuti⁄P¨amëîi
+–
+GLíum
+ 
+èrgë
+, GLíum 
+≤ame
+, 
+GLöt
+ 
+∑øms
+ );
+
+1389 
+GLAPI
+ 
+APIENTRY
+ 
+glC⁄vﬁuti⁄P¨amëîiv
+–
+GLíum
+ 
+èrgë
+, GLíum 
+≤ame
+, c⁄° 
+GLöt
+ *
+∑øms
+ );
+
+1390 
+GLAPI
+ 
+APIENTRY
+ 
+glC›yC⁄vﬁuti⁄Fûãr1D
+–
+GLíum
+ 
+èrgë
+, GLíum 
+öã∫Æf‹m©
+, 
+GLöt
+ 
+x
+, GLöà
+y
+, 
+GLsizei
+ 
+width
+ );
+
+1391 
+GLAPI
+ 
+APIENTRY
+ 
+glC›yC⁄vﬁuti⁄Fûãr2D
+–
+GLíum
+ 
+èrgë
+, GLíum 
+öã∫Æf‹m©
+, 
+GLöt
+ 
+x
+, GLöà
+y
+, 
+GLsizei
+ 
+width
+, GLsizeò
+height
+);
+
+1392 
+GLAPI
+ 
+APIENTRY
+ 
+glGëC⁄vﬁuti⁄Fûãr
+–
+GLíum
+ 
+èrgë
+, GLíum 
+f‹m©
+, GLíum 
+ty≥
+, 
+GLvoid
+ *
+image
+ );
+
+1393 
+GLAPI
+ 
+APIENTRY
+ 
+glGëC⁄vﬁuti⁄P¨amëîfv
+–
+GLíum
+ 
+èrgë
+, GLíum 
+≤ame
+, 
+GLÊﬂt
+ *
+∑øms
+ );
+
+1394 
+GLAPI
+ 
+APIENTRY
+ 
+glGëC⁄vﬁuti⁄P¨amëîiv
+–
+GLíum
+ 
+èrgë
+, GLíum 
+≤ame
+, 
+GLöt
+ *
+∑øms
+ );
+
+1395 
+GLAPI
+ 
+APIENTRY
+ 
+glSï¨abÀFûãr2D
+–
+GLíum
+ 
+èrgë
+, GLíum 
+öã∫Æf‹m©
+, 
+GLsizei
+ 
+width
+, GLsizeò
+height
+, GLíum 
+f‹m©
+, GLíum 
+ty≥
+, c⁄° 
+GLvoid
+ *
+row
+, c⁄° GLvoid *
+cﬁumn
+ );
+
+1396 
+GLAPI
+ 
+APIENTRY
+ 
+glGëSï¨abÀFûãr
+–
+GLíum
+ 
+èrgë
+, GLíum 
+f‹m©
+, GLíum 
+ty≥
+, 
+GLvoid
+ *
+row
+, GLvoid *
+cﬁumn
+, GLvoid *
+•™
+ );
+
+1399 
+GLAPI
+ 
+APIENTRY
+ 
+glA˘iveTextuª
+–
+GLíum
+ 
+ãxtuª
+ );
+
+1400 
+GLAPI
+ 
+APIENTRY
+ 
+glClõ¡A˘iveTextuª
+–
+GLíum
+ 
+ãxtuª
+ );
+
+1401 
+GLAPI
+ 
+APIENTRY
+ 
+glCom¥es£dTexImage1D
+–
+GLíum
+ 
+èrgë
+, 
+GLöt
+ 
+Àvñ
+, GLíum 
+öã∫Æf‹m©
+, 
+GLsizei
+ 
+width
+, GLöà
+b‹dî
+, GLsizeò
+imageSize
+, c⁄° 
+GLvoid
+ *
+d©a
+ );
+
+1402 
+GLAPI
+ 
+APIENTRY
+ 
+glCom¥es£dTexImage2D
+–
+GLíum
+ 
+èrgë
+, 
+GLöt
+ 
+Àvñ
+, GLíum 
+öã∫Æf‹m©
+, 
+GLsizei
+ 
+width
+, GLsizeò
+height
+, GLöà
+b‹dî
+, GLsizeò
+imageSize
+, c⁄° 
+GLvoid
+ *
+d©a
+ );
+
+1403 
+GLAPI
+ 
+APIENTRY
+ 
+glCom¥es£dTexImage3D
+–
+GLíum
+ 
+èrgë
+, 
+GLöt
+ 
+Àvñ
+, GLíum 
+öã∫Æf‹m©
+, 
+GLsizei
+ 
+width
+, GLsizeò
+height
+, GLsizeò
+dïth
+, GLöà
+b‹dî
+, GLsizeò
+imageSize
+, c⁄° 
+GLvoid
+ *
+d©a
+ );
+
+1404 
+GLAPI
+ 
+APIENTRY
+ 
+glCom¥es£dTexSubImage1D
+–
+GLíum
+ 
+èrgë
+, 
+GLöt
+ 
+Àvñ
+, GLöà
+xoff£t
+, 
+GLsizei
+ 
+width
+, GLíum 
+f‹m©
+, GLsizeò
+imageSize
+, c⁄° 
+GLvoid
+ *
+d©a
+ );
+
+1405 
+GLAPI
+ 
+APIENTRY
+ 
+glCom¥es£dTexSubImage2D
+–
+GLíum
+ 
+èrgë
+, 
+GLöt
+ 
+Àvñ
+, GLöà
+xoff£t
+, GLöà
+yoff£t
+, 
+GLsizei
+ 
+width
+, GLsizeò
+height
+, GLíum 
+f‹m©
+, GLsizeò
+imageSize
+, c⁄° 
+GLvoid
+ *
+d©a
+ );
+
+1406 
+GLAPI
+ 
+APIENTRY
+ 
+glCom¥es£dTexSubImage3D
+–
+GLíum
+ 
+èrgë
+, 
+GLöt
+ 
+Àvñ
+, GLöà
+xoff£t
+, GLöà
+yoff£t
+, GLöà
+zoff£t
+, 
+GLsizei
+ 
+width
+, GLsizeò
+height
+, GLsizeò
+dïth
+, GLíum 
+f‹m©
+, GLsizeò
+imageSize
+, c⁄° 
+GLvoid
+ *
+d©a
+ );
+
+1407 
+GLAPI
+ 
+APIENTRY
+ 
+glGëCom¥es£dTexImage
+–
+GLíum
+ 
+èrgë
+, 
+GLöt
+ 
+lod
+, 
+GLvoid
+ *
+img
+ );
+
+1408 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d1d
+–
+GLíum
+ 
+èrgë
+, 
+GLdoubÀ
+ 
+s
+ );
+
+1409 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d1dv
+–
+GLíum
+ 
+èrgë
+, c⁄° 
+GLdoubÀ
+ *
+v
+ );
+
+1410 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d1f
+–
+GLíum
+ 
+èrgë
+, 
+GLÊﬂt
+ 
+s
+ );
+
+1411 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d1fv
+–
+GLíum
+ 
+èrgë
+, c⁄° 
+GLÊﬂt
+ *
+v
+ );
+
+1412 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d1i
+–
+GLíum
+ 
+èrgë
+, 
+GLöt
+ 
+s
+ );
+
+1413 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d1iv
+–
+GLíum
+ 
+èrgë
+, c⁄° 
+GLöt
+ *
+v
+ );
+
+1414 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d1s
+–
+GLíum
+ 
+èrgë
+, 
+GLsh‹t
+ 
+s
+ );
+
+1415 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d1sv
+–
+GLíum
+ 
+èrgë
+, c⁄° 
+GLsh‹t
+ *
+v
+ );
+
+1416 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d2d
+–
+GLíum
+ 
+èrgë
+, 
+GLdoubÀ
+ 
+s
+, GLdoubÀ 
+t
+ );
+
+1417 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d2dv
+–
+GLíum
+ 
+èrgë
+, c⁄° 
+GLdoubÀ
+ *
+v
+ );
+
+1418 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d2f
+–
+GLíum
+ 
+èrgë
+, 
+GLÊﬂt
+ 
+s
+, GLÊﬂà
+t
+ );
+
+1419 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d2fv
+–
+GLíum
+ 
+èrgë
+, c⁄° 
+GLÊﬂt
+ *
+v
+ );
+
+1420 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d2i
+–
+GLíum
+ 
+èrgë
+, 
+GLöt
+ 
+s
+, GLöà
+t
+ );
+
+1421 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d2iv
+–
+GLíum
+ 
+èrgë
+, c⁄° 
+GLöt
+ *
+v
+ );
+
+1422 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d2s
+–
+GLíum
+ 
+èrgë
+, 
+GLsh‹t
+ 
+s
+, GLsh‹à
+t
+ );
+
+1423 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d2sv
+–
+GLíum
+ 
+èrgë
+, c⁄° 
+GLsh‹t
+ *
+v
+ );
+
+1424 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d3d
+–
+GLíum
+ 
+èrgë
+, 
+GLdoubÀ
+ 
+s
+, GLdoubÀ 
+t
+, GLdoubÀ 
+r
+ );
+
+1425 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d3dv
+–
+GLíum
+ 
+èrgë
+, c⁄° 
+GLdoubÀ
+ *
+v
+ );
+
+1426 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d3f
+–
+GLíum
+ 
+èrgë
+, 
+GLÊﬂt
+ 
+s
+, GLÊﬂà
+t
+, GLÊﬂà
+r
+ );
+
+1427 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d3fv
+–
+GLíum
+ 
+èrgë
+, c⁄° 
+GLÊﬂt
+ *
+v
+ );
+
+1428 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d3i
+–
+GLíum
+ 
+èrgë
+, 
+GLöt
+ 
+s
+, GLöà
+t
+, GLöà
+r
+ );
+
+1429 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d3iv
+–
+GLíum
+ 
+èrgë
+, c⁄° 
+GLöt
+ *
+v
+ );
+
+1430 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d3s
+–
+GLíum
+ 
+èrgë
+, 
+GLsh‹t
+ 
+s
+, GLsh‹à
+t
+, GLsh‹à
+r
+ );
+
+1431 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d3sv
+–
+GLíum
+ 
+èrgë
+, c⁄° 
+GLsh‹t
+ *
+v
+ );
+
+1432 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d4d
+–
+GLíum
+ 
+èrgë
+, 
+GLdoubÀ
+ 
+s
+, GLdoubÀ 
+t
+, GLdoubÀ 
+r
+, GLdoubÀ 
+q
+ );
+
+1433 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d4dv
+–
+GLíum
+ 
+èrgë
+, c⁄° 
+GLdoubÀ
+ *
+v
+ );
+
+1434 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d4f
+–
+GLíum
+ 
+èrgë
+, 
+GLÊﬂt
+ 
+s
+, GLÊﬂà
+t
+, GLÊﬂà
+r
+, GLÊﬂà
+q
+ );
+
+1435 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d4fv
+–
+GLíum
+ 
+èrgë
+, c⁄° 
+GLÊﬂt
+ *
+v
+ );
+
+1436 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d4i
+–
+GLíum
+ 
+èrgë
+, 
+GLöt
+ 
+s
+, GLöà
+t
+, GLöà
+r
+, GLöà
+q
+ );
+
+1437 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d4iv
+–
+GLíum
+ 
+èrgë
+, c⁄° 
+GLöt
+ *
+v
+ );
+
+1438 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d4s
+–
+GLíum
+ 
+èrgë
+, 
+GLsh‹t
+ 
+s
+, GLsh‹à
+t
+, GLsh‹à
+r
+, GLsh‹à
+q
+ );
+
+1439 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…iTexCo‹d4sv
+–
+GLíum
+ 
+èrgë
+, c⁄° 
+GLsh‹t
+ *
+v
+ );
+
+1440 
+GLAPI
+ 
+APIENTRY
+ 
+glLﬂdTøn•o£M©rixd
+–c⁄° 
+GLdoubÀ
+ 
+m
+[16] );
+
+1441 
+GLAPI
+ 
+APIENTRY
+ 
+glLﬂdTøn•o£M©rixf
+–c⁄° 
+GLÊﬂt
+ 
+m
+[16] );
+
+1442 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…Tøn•o£M©rixd
+–c⁄° 
+GLdoubÀ
+ 
+m
+[16] );
+
+1443 
+GLAPI
+ 
+APIENTRY
+ 
+glMu…Tøn•o£M©rixf
+–c⁄° 
+GLÊﬂt
+ 
+m
+[16] );
+
+1444 
+GLAPI
+ 
+APIENTRY
+ 
+glSam∂eCovîage
+–
+GL˛ampf
+ 
+vÆue
+, 
+GLboﬁón
+ 
+övît
+ );
+
+1445 
+GLAPI
+ 
+APIENTRY
+ 
+glSam∂ePass
+–
+GLíum
+ 
+∑ss
+ );
+
+1466 #ifde‡
+__˝lu•lus
+
+	@/usr/include/GL/glu.h
+
+30 #i‚de‡
+__glu_h__
+
+31 
+	#__glu_h__
+
+	)
+
+32 
+	#_GLU_H
+
+	)
+
+33 #i‡
+__GNUC__
+ >= 3
+
+34 #¥agm®
+GCC
+ 
+sy°em_hódî
+
+37 
+	~<°ddef.h
+>
+
+38 
+	~<GL/gl.h
+>
+
+40 #ifde‡
+__˝lu•lus
+
+47 
+	#GLU_FALSE
+ 0
+
+	)
+
+48 
+	#GLU_TRUE
+ 1
+
+	)
+
+51 
+	#GLU_VERSION_1_1
+ 1
+
+	)
+
+52 
+	#GLU_VERSION_1_2
+ 1
+
+	)
+
+55 
+	#GLU_VERSION
+ 100800
+
+	)
+
+56 
+	#GLU_EXTENSIONS
+ 100801
+
+	)
+
+59 
+	#GLU_INVALID_ENUM
+ 100900
+
+	)
+
+60 
+	#GLU_INVALID_VALUE
+ 100901
+
+	)
+
+61 
+	#GLU_OUT_OF_MEMORY
+ 100902
+
+	)
+
+62 
+	#GLU_INVALID_OPERATION
+ 100904
+
+	)
+
+66 
+	#GLU_OUTLINE_POLYGON
+ 100240
+
+	)
+
+67 
+	#GLU_OUTLINE_PATCH
+ 100241
+
+	)
+
+70 
+	#GLU_NURBS_ERROR1
+ 100251
+
+	)
+
+71 
+	#GLU_NURBS_ERROR2
+ 100252
+
+	)
+
+72 
+	#GLU_NURBS_ERROR3
+ 100253
+
+	)
+
+73 
+	#GLU_NURBS_ERROR4
+ 100254
+
+	)
+
+74 
+	#GLU_NURBS_ERROR5
+ 100255
+
+	)
+
+75 
+	#GLU_NURBS_ERROR6
+ 100256
+
+	)
+
+76 
+	#GLU_NURBS_ERROR7
+ 100257
+
+	)
+
+77 
+	#GLU_NURBS_ERROR8
+ 100258
+
+	)
+
+78 
+	#GLU_NURBS_ERROR9
+ 100259
+
+	)
+
+79 
+	#GLU_NURBS_ERROR10
+ 100260
+
+	)
+
+80 
+	#GLU_NURBS_ERROR11
+ 100261
+
+	)
+
+81 
+	#GLU_NURBS_ERROR12
+ 100262
+
+	)
+
+82 
+	#GLU_NURBS_ERROR13
+ 100263
+
+	)
+
+83 
+	#GLU_NURBS_ERROR14
+ 100264
+
+	)
+
+84 
+	#GLU_NURBS_ERROR15
+ 100265
+
+	)
+
+85 
+	#GLU_NURBS_ERROR16
+ 100266
+
+	)
+
+86 
+	#GLU_NURBS_ERROR17
+ 100267
+
+	)
+
+87 
+	#GLU_NURBS_ERROR18
+ 100268
+
+	)
+
+88 
+	#GLU_NURBS_ERROR19
+ 100269
+
+	)
+
+89 
+	#GLU_NURBS_ERROR20
+ 100270
+
+	)
+
+90 
+	#GLU_NURBS_ERROR21
+ 100271
+
+	)
+
+91 
+	#GLU_NURBS_ERROR22
+ 100272
+
+	)
+
+92 
+	#GLU_NURBS_ERROR23
+ 100273
+
+	)
+
+93 
+	#GLU_NURBS_ERROR24
+ 100274
+
+	)
+
+94 
+	#GLU_NURBS_ERROR25
+ 100275
+
+	)
+
+95 
+	#GLU_NURBS_ERROR26
+ 100276
+
+	)
+
+96 
+	#GLU_NURBS_ERROR27
+ 100277
+
+	)
+
+97 
+	#GLU_NURBS_ERROR28
+ 100278
+
+	)
+
+98 
+	#GLU_NURBS_ERROR29
+ 100279
+
+	)
+
+99 
+	#GLU_NURBS_ERROR30
+ 100280
+
+	)
+
+100 
+	#GLU_NURBS_ERROR31
+ 100281
+
+	)
+
+101 
+	#GLU_NURBS_ERROR32
+ 100282
+
+	)
+
+102 
+	#GLU_NURBS_ERROR33
+ 100283
+
+	)
+
+103 
+	#GLU_NURBS_ERROR34
+ 100284
+
+	)
+
+104 
+	#GLU_NURBS_ERROR35
+ 100285
+
+	)
+
+105 
+	#GLU_NURBS_ERROR36
+ 100286
+
+	)
+
+106 
+	#GLU_NURBS_ERROR37
+ 100287
+
+	)
+
+109 
+	#GLU_AUTO_LOAD_MATRIX
+ 100200
+
+	)
+
+110 
+	#GLU_CULLING
+ 100201
+
+	)
+
+111 
+	#GLU_SAMPLING_TOLERANCE
+ 100203
+
+	)
+
+112 
+	#GLU_DISPLAY_MODE
+ 100204
+
+	)
+
+113 
+	#GLU_PARAMETRIC_TOLERANCE
+ 100202
+
+	)
+
+114 
+	#GLU_SAMPLING_METHOD
+ 100205
+
+	)
+
+115 
+	#GLU_U_STEP
+ 100206
+
+	)
+
+116 
+	#GLU_V_STEP
+ 100207
+
+	)
+
+119 
+	#GLU_PATH_LENGTH
+ 100215
+
+	)
+
+120 
+	#GLU_PARAMETRIC_ERROR
+ 100216
+
+	)
+
+121 
+	#GLU_DOMAIN_DISTANCE
+ 100217
+
+	)
+
+124 
+	#GLU_MAP1_TRIM_2
+ 100210
+
+	)
+
+125 
+	#GLU_MAP1_TRIM_3
+ 100211
+
+	)
+
+128 
+	#GLU_POINT
+ 100010
+
+	)
+
+129 
+	#GLU_LINE
+ 100011
+
+	)
+
+130 
+	#GLU_FILL
+ 100012
+
+	)
+
+131 
+	#GLU_SILHOUETTE
+ 100013
+
+	)
+
+134 
+	#GLU_ERROR
+ 100103
+
+	)
+
+137 
+	#GLU_SMOOTH
+ 100000
+
+	)
+
+138 
+	#GLU_FLAT
+ 100001
+
+	)
+
+139 
+	#GLU_NONE
+ 100002
+
+	)
+
+142 
+	#GLU_OUTSIDE
+ 100020
+
+	)
+
+143 
+	#GLU_INSIDE
+ 100021
+
+	)
+
+146 
+	#GLU_TESS_BEGIN
+ 100100
+
+	)
+
+147 
+	#GLU_BEGIN
+ 100100
+
+	)
+
+148 
+	#GLU_TESS_VERTEX
+ 100101
+
+	)
+
+149 
+	#GLU_VERTEX
+ 100101
+
+	)
+
+150 
+	#GLU_TESS_END
+ 100102
+
+	)
+
+151 
+	#GLU_END
+ 100102
+
+	)
+
+152 
+	#GLU_TESS_ERROR
+ 100103
+
+	)
+
+153 
+	#GLU_TESS_EDGE_FLAG
+ 100104
+
+	)
+
+154 
+	#GLU_EDGE_FLAG
+ 100104
+
+	)
+
+155 
+	#GLU_TESS_COMBINE
+ 100105
+
+	)
+
+156 
+	#GLU_TESS_BEGIN_DATA
+ 100106
+
+	)
+
+157 
+	#GLU_TESS_VERTEX_DATA
+ 100107
+
+	)
+
+158 
+	#GLU_TESS_END_DATA
+ 100108
+
+	)
+
+159 
+	#GLU_TESS_ERROR_DATA
+ 100109
+
+	)
+
+160 
+	#GLU_TESS_EDGE_FLAG_DATA
+ 100110
+
+	)
+
+161 
+	#GLU_TESS_COMBINE_DATA
+ 100111
+
+	)
+
+164 
+	#GLU_CW
+ 100120
+
+	)
+
+165 
+	#GLU_CCW
+ 100121
+
+	)
+
+166 
+	#GLU_INTERIOR
+ 100122
+
+	)
+
+167 
+	#GLU_EXTERIOR
+ 100123
+
+	)
+
+168 
+	#GLU_UNKNOWN
+ 100124
+
+	)
+
+171 
+	#GLU_TESS_WINDING_RULE
+ 100140
+
+	)
+
+172 
+	#GLU_TESS_BOUNDARY_ONLY
+ 100141
+
+	)
+
+173 
+	#GLU_TESS_TOLERANCE
+ 100142
+
+	)
+
+176 
+	#GLU_TESS_ERROR1
+ 100151
+
+	)
+
+177 
+	#GLU_TESS_ERROR2
+ 100152
+
+	)
+
+178 
+	#GLU_TESS_ERROR3
+ 100153
+
+	)
+
+179 
+	#GLU_TESS_ERROR4
+ 100154
+
+	)
+
+180 
+	#GLU_TESS_ERROR5
+ 100155
+
+	)
+
+181 
+	#GLU_TESS_ERROR6
+ 100156
+
+	)
+
+182 
+	#GLU_TESS_ERROR7
+ 100157
+
+	)
+
+183 
+	#GLU_TESS_ERROR8
+ 100158
+
+	)
+
+184 
+	#GLU_TESS_MISSING_BEGIN_POLYGON
+ 100151
+
+	)
+
+185 
+	#GLU_TESS_MISSING_BEGIN_CONTOUR
+ 100152
+
+	)
+
+186 
+	#GLU_TESS_MISSING_END_POLYGON
+ 100153
+
+	)
+
+187 
+	#GLU_TESS_MISSING_END_CONTOUR
+ 100154
+
+	)
+
+188 
+	#GLU_TESS_COORD_TOO_LARGE
+ 100155
+
+	)
+
+189 
+	#GLU_TESS_NEED_COMBINE_CALLBACK
+ 100156
+
+	)
+
+192 
+	#GLU_TESS_WINDING_ODD
+ 100130
+
+	)
+
+193 
+	#GLU_TESS_WINDING_NONZERO
+ 100131
+
+	)
+
+194 
+	#GLU_TESS_WINDING_POSITIVE
+ 100132
+
+	)
+
+195 
+	#GLU_TESS_WINDING_NEGATIVE
+ 100133
+
+	)
+
+196 
+	#GLU_TESS_WINDING_ABS_GEQ_TWO
+ 100134
+
+	)
+
+199 
+	#GLU_INCOMPATIBLE_GL_VERSION
+ 100903
+
+	)
+
+205 #ifde‡
+__˝lu•lus
+
+206 ˛as†
+	cGLUnurbs
+;
+
+207 ˛as†
+	cGLUquadric
+;
+
+208 ˛as†
+	cGLUãs£œt‹
+;
+
+210 
+GLUnurbs
+ 
+	tGLUnurbs
+;
+
+211 
+GLUquadric
+ 
+	tGLUquadric
+;
+
+212 
+GLUãs£œt‹
+ 
+	tGLUãs£œt‹
+;
+
+215 
+GLUnurbs
+ 
+	tGLUnurbsObj
+;
+
+216 
+GLUquadric
+ 
+	tGLUquadricObj
+;
+
+217 
+GLUãs£œt‹
+ 
+	tGLUãs£œt‹Obj
+;
+
+218 
+GLUãs£œt‹
+ 
+	tGLUåünguœt‹Obj
+;
+
+220 
+	#GLU_TESS_MAX_COORD
+ 1.0e150
+
+	)
+
+223 (
+APIENTRY
+ *
+	t_GLUfun˝å
+)();
+
+225 
+GLAPI
+ 
+APIENTRY
+ 
+gluBegöCurve
+ (
+GLUnurbs
+* 
+nurb
+);
+
+226 
+GLAPI
+ 
+APIENTRY
+ 
+gluBegöPﬁyg⁄
+ (
+GLUãs£œt‹
+* 
+ãss
+);
+
+227 
+GLAPI
+ 
+APIENTRY
+ 
+gluBegöSurÁ˚
+ (
+GLUnurbs
+* 
+nurb
+);
+
+228 
+GLAPI
+ 
+APIENTRY
+ 
+gluBegöTrim
+ (
+GLUnurbs
+* 
+nurb
+);
+
+229 
+GLAPI
+ 
+GLöt
+ 
+APIENTRY
+ 
+gluBuûd1DMùm≠s
+ (
+GLíum
+ 
+èrgë
+, GLöà
+öã∫ÆF‹m©
+, 
+GLsizei
+ 
+width
+, GLíum 
+f‹m©
+, GLíum 
+ty≥
+, c⁄° *
+d©a
+);
+
+230 
+GLAPI
+ 
+GLöt
+ 
+APIENTRY
+ 
+gluBuûd2DMùm≠s
+ (
+GLíum
+ 
+èrgë
+, GLöà
+öã∫ÆF‹m©
+, 
+GLsizei
+ 
+width
+, GLsizeò
+height
+, GLíum 
+f‹m©
+, GLíum 
+ty≥
+, c⁄° *
+d©a
+);
+
+231 
+GLAPI
+ 
+APIENTRY
+ 
+gluCylödî
+ (
+GLUquadric
+* 
+quad
+, 
+GLdoubÀ
+ 
+ba£
+, GLdoubÀ 
+t›
+, GLdoubÀ 
+height
+, 
+GLöt
+ 
+¶i˚s
+, GLöà
+°acks
+);
+
+232 
+GLAPI
+ 
+APIENTRY
+ 
+gluDñëeNurbsRídîî
+ (
+GLUnurbs
+* 
+nurb
+);
+
+233 
+GLAPI
+ 
+APIENTRY
+ 
+gluDñëeQuadric
+ (
+GLUquadric
+* 
+quad
+);
+
+234 
+GLAPI
+ 
+APIENTRY
+ 
+gluDñëeTess
+ (
+GLUãs£œt‹
+* 
+ãss
+);
+
+235 
+GLAPI
+ 
+APIENTRY
+ 
+gluDisk
+ (
+GLUquadric
+* 
+quad
+, 
+GLdoubÀ
+ 
+ö√r
+, GLdoubÀ 
+ouãr
+, 
+GLöt
+ 
+¶i˚s
+, GLöà
+lo›s
+);
+
+236 
+GLAPI
+ 
+APIENTRY
+ 
+gluEndCurve
+ (
+GLUnurbs
+* 
+nurb
+);
+
+237 
+GLAPI
+ 
+APIENTRY
+ 
+gluEndPﬁyg⁄
+ (
+GLUãs£œt‹
+* 
+ãss
+);
+
+238 
+GLAPI
+ 
+APIENTRY
+ 
+gluEndSurÁ˚
+ (
+GLUnurbs
+* 
+nurb
+);
+
+239 
+GLAPI
+ 
+APIENTRY
+ 
+gluEndTrim
+ (
+GLUnurbs
+* 
+nurb
+);
+
+240 
+GLAPI
+ c⁄° 
+GLubyã
+ * 
+	gAPIENTRY
+ 
+gluEº‹Såög
+ (
+GLíum
+ 
+îr‹
+);
+
+241 
+GLAPI
+ c⁄° 
+wch¨_t
+ * 
+	gAPIENTRY
+ 
+gluEº‹UnicodeSåögEXT
+ (
+GLíum
+ 
+îr‹
+);
+
+242 
+GLAPI
+ 
+APIENTRY
+ 
+gluGëNurbsPr›îty
+ (
+GLUnurbs
+* 
+nurb
+, 
+GLíum
+ 
+¥›îty
+, 
+GLÊﬂt
+* 
+d©a
+);
+
+243 
+GLAPI
+ c⁄° 
+GLubyã
+ * 
+	gAPIENTRY
+ 
+gluGëSåög
+ (
+GLíum
+ 
+«me
+);
+
+244 
+GLAPI
+ 
+APIENTRY
+ 
+gluGëTessPr›îty
+ (
+GLUãs£œt‹
+* 
+ãss
+, 
+GLíum
+ 
+which
+, 
+GLdoubÀ
+* 
+d©a
+);
+
+245 
+GLAPI
+ 
+APIENTRY
+ 
+gluLﬂdSam∂ögM©ri˚s
+ (
+GLUnurbs
+* 
+nurb
+, c⁄° 
+GLÊﬂt
+ *
+modñ
+, c⁄° GLÊﬂà*
+≥r•e˘ive
+, c⁄° 
+GLöt
+ *
+võw
+);
+
+246 
+GLAPI
+ 
+APIENTRY
+ 
+gluLookAt
+ (
+GLdoubÀ
+ 
+eyeX
+, GLdoubÀ 
+eyeY
+, GLdoubÀ 
+eyeZ
+, GLdoubÀ 
+˚¡îX
+, GLdoubÀ 
+˚¡îY
+, GLdoubÀ 
+˚¡îZ
+, GLdoubÀ 
+upX
+, GLdoubÀ 
+upY
+, GLdoubÀ 
+upZ
+);
+
+247 
+GLAPI
+ 
+GLUnurbs
+* 
+	gAPIENTRY
+ 
+gluNewNurbsRídîî
+ ();
+
+248 
+GLAPI
+ 
+GLUquadric
+* 
+	gAPIENTRY
+ 
+gluNewQuadric
+ ();
+
+249 
+GLAPI
+ 
+GLUãs£œt‹
+* 
+	gAPIENTRY
+ 
+gluNewTess
+ ();
+
+250 
+GLAPI
+ 
+APIENTRY
+ 
+gluNextC⁄tour
+ (
+GLUãs£œt‹
+* 
+ãss
+, 
+GLíum
+ 
+ty≥
+);
+
+251 
+GLAPI
+ 
+APIENTRY
+ 
+gluNurbsCÆlback
+ (
+GLUnurbs
+* 
+nurb
+, 
+GLíum
+ 
+which
+, 
+_GLUfun˝å
+ 
+CÆlBackFunc
+);
+
+252 
+GLAPI
+ 
+APIENTRY
+ 
+gluNurbsCurve
+ (
+GLUnurbs
+* 
+nurb
+, 
+GLöt
+ 
+knŸCou¡
+, 
+GLÊﬂt
+ *
+knŸs
+, GLöà
+°ride
+, GLÊﬂà*
+c⁄åﬁ
+, GLöà
+‹dî
+, 
+GLíum
+ 
+ty≥
+);
+
+253 
+GLAPI
+ 
+APIENTRY
+ 
+gluNurbsPr›îty
+ (
+GLUnurbs
+* 
+nurb
+, 
+GLíum
+ 
+¥›îty
+, 
+GLÊﬂt
+ 
+vÆue
+);
+
+254 
+GLAPI
+ 
+APIENTRY
+ 
+gluNurbsSurÁ˚
+ (
+GLUnurbs
+* 
+nurb
+, 
+GLöt
+ 
+sKnŸCou¡
+, 
+GLÊﬂt
+* 
+sKnŸs
+, GLöà
+tKnŸCou¡
+, GLÊﬂt* 
+tKnŸs
+, GLöà
+sSåide
+, GLöà
+tSåide
+, GLÊﬂt* 
+c⁄åﬁ
+, GLöà
+sOrdî
+, GLöà
+tOrdî
+, 
+GLíum
+ 
+ty≥
+);
+
+255 
+GLAPI
+ 
+APIENTRY
+ 
+gluOπho2D
+ (
+GLdoubÀ
+ 
+À·
+, GLdoubÀ 
+right
+, GLdoubÀ 
+bŸtom
+, GLdoubÀ 
+t›
+);
+
+256 
+GLAPI
+ 
+APIENTRY
+ 
+gluP¨tülDisk
+ (
+GLUquadric
+* 
+quad
+, 
+GLdoubÀ
+ 
+ö√r
+, GLdoubÀ 
+ouãr
+, 
+GLöt
+ 
+¶i˚s
+, GLöà
+lo›s
+, GLdoubÀ 
+°¨t
+, GLdoubÀ 
+swìp
+);
+
+257 
+GLAPI
+ 
+APIENTRY
+ 
+gluPî•e˘ive
+ (
+GLdoubÀ
+ 
+fovy
+, GLdoubÀ 
+a•e˘
+, GLdoubÀ 
+zNór
+, GLdoubÀ 
+zF¨
+);
+
+258 
+GLAPI
+ 
+APIENTRY
+ 
+gluPickM©rix
+ (
+GLdoubÀ
+ 
+x
+, GLdoubÀ 
+y
+, GLdoubÀ 
+dñX
+, GLdoubÀ 
+dñY
+, 
+GLöt
+ *
+võwp‹t
+);
+
+259 
+GLAPI
+ 
+GLöt
+ 
+APIENTRY
+ 
+gluProje˘
+ (
+GLdoubÀ
+ 
+objX
+, GLdoubÀ 
+objY
+, GLdoubÀ 
+objZ
+, c⁄° GLdoubÀ *
+modñ
+, c⁄° GLdoubÀ *
+¥oj
+, c⁄° GLöà*
+võw
+, GLdoubÀ* 
+wöX
+, GLdoubÀ* 
+wöY
+, GLdoubÀ* 
+wöZ
+);
+
+260 
+GLAPI
+ 
+APIENTRY
+ 
+gluPwlCurve
+ (
+GLUnurbs
+* 
+nurb
+, 
+GLöt
+ 
+cou¡
+, 
+GLÊﬂt
+* 
+d©a
+, GLöà
+°ride
+, 
+GLíum
+ 
+ty≥
+);
+
+261 
+GLAPI
+ 
+APIENTRY
+ 
+gluQuadricCÆlback
+ (
+GLUquadric
+* 
+quad
+, 
+GLíum
+ 
+which
+, 
+_GLUfun˝å
+ 
+CÆlBackFunc
+);
+
+262 
+GLAPI
+ 
+APIENTRY
+ 
+gluQuadricDøwStyÀ
+ (
+GLUquadric
+* 
+quad
+, 
+GLíum
+ 
+døw
+);
+
+263 
+GLAPI
+ 
+APIENTRY
+ 
+gluQuadricN‹mÆs
+ (
+GLUquadric
+* 
+quad
+, 
+GLíum
+ 
+n‹mÆ
+);
+
+264 
+GLAPI
+ 
+APIENTRY
+ 
+gluQuadricOrõ¡©i⁄
+ (
+GLUquadric
+* 
+quad
+, 
+GLíum
+ 
+‹õ¡©i⁄
+);
+
+265 
+GLAPI
+ 
+APIENTRY
+ 
+gluQuadricTextuª
+ (
+GLUquadric
+* 
+quad
+, 
+GLboﬁón
+ 
+ãxtuª
+);
+
+266 
+GLAPI
+ 
+GLöt
+ 
+APIENTRY
+ 
+gluSˇÀImage
+ (
+GLíum
+ 
+f‹m©
+, 
+GLsizei
+ 
+wIn
+, GLsizeò
+hIn
+, GLíum 
+ty≥In
+, c⁄° *
+d©aIn
+, GLsizeò
+wOut
+, GLsizeò
+hOut
+, GLíum 
+ty≥Out
+, 
+GLvoid
+* 
+d©aOut
+);
+
+267 
+GLAPI
+ 
+APIENTRY
+ 
+gluSphîe
+ (
+GLUquadric
+* 
+quad
+, 
+GLdoubÀ
+ 
+ødius
+, 
+GLöt
+ 
+¶i˚s
+, GLöà
+°acks
+);
+
+268 
+GLAPI
+ 
+APIENTRY
+ 
+gluTessBegöC⁄tour
+ (
+GLUãs£œt‹
+* 
+ãss
+);
+
+269 
+GLAPI
+ 
+APIENTRY
+ 
+gluTessBegöPﬁyg⁄
+ (
+GLUãs£œt‹
+* 
+ãss
+, 
+GLvoid
+* 
+d©a
+);
+
+270 
+GLAPI
+ 
+APIENTRY
+ 
+gluTessCÆlback
+ (
+GLUãs£œt‹
+* 
+ãss
+, 
+GLíum
+ 
+which
+, 
+_GLUfun˝å
+ 
+CÆlBackFunc
+);
+
+271 
+GLAPI
+ 
+APIENTRY
+ 
+gluTessEndC⁄tour
+ (
+GLUãs£œt‹
+* 
+ãss
+);
+
+272 
+GLAPI
+ 
+APIENTRY
+ 
+gluTessEndPﬁyg⁄
+ (
+GLUãs£œt‹
+* 
+ãss
+);
+
+273 
+GLAPI
+ 
+APIENTRY
+ 
+gluTessN‹mÆ
+ (
+GLUãs£œt‹
+* 
+ãss
+, 
+GLdoubÀ
+ 
+vÆueX
+, GLdoubÀ 
+vÆueY
+, GLdoubÀ 
+vÆueZ
+);
+
+274 
+GLAPI
+ 
+APIENTRY
+ 
+gluTessPr›îty
+ (
+GLUãs£œt‹
+* 
+ãss
+, 
+GLíum
+ 
+which
+, 
+GLdoubÀ
+ 
+d©a
+);
+
+275 
+GLAPI
+ 
+APIENTRY
+ 
+gluTessVîãx
+ (
+GLUãs£œt‹
+* 
+ãss
+, 
+GLdoubÀ
+ *
+loˇti⁄
+, 
+GLvoid
+* 
+d©a
+);
+
+276 
+GLAPI
+ 
+GLöt
+ 
+APIENTRY
+ 
+gluUnProje˘
+ (
+GLdoubÀ
+ 
+wöX
+, GLdoubÀ 
+wöY
+, GLdoubÀ 
+wöZ
+, c⁄° GLdoubÀ *
+modñ
+, c⁄° GLdoubÀ *
+¥oj
+, c⁄° GLöà*
+võw
+, GLdoubÀ* 
+objX
+, GLdoubÀ* 
+objY
+, GLdoubÀ* 
+objZ
+);
+
+277 
+GLAPI
+ 
+GLöt
+ 
+APIENTRY
+ 
+gluUnProje˘4
+ (
+GLdoubÀ
+ 
+wöX
+, GLdoubÀ 
+wöY
+, GLdoubÀ 
+wöZ
+, GLdoubÀ 
+˛ùW
+, c⁄° GLdoubÀ *
+modñ
+, c⁄° GLdoubÀ *
+¥oj
+, c⁄° GLöà*
+võw
+, GLdoubÀ 
+√¨VÆ
+, GLdoubÀ 
+ÁrVÆ
+, GLdoubÀ* 
+objX
+, GLdoubÀ* 
+objY
+, GLdoubÀ* 
+objZ
+, GLdoubÀ* 
+objW
+);
+
+279 #ifde‡
+UNICODE
+
+280 
+	#gluEº‹SåögWIN
+ 
+gluEº‹UnicodeSåögEXT
+
+	)
+
+282 
+	#gluEº‹SåögWIN
+ 
+gluEº‹Såög
+
+	)
+
+285 #ifde‡
+__˝lu•lus
+
+	@
+0
+1
+.
+1
+/usr/include
+4
+74
+blend.c
+/usr/include/GL/glut.h
+/usr/include/GL/gl.h
+/usr/include/GL/glu.h
