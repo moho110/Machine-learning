@@ -1,0 +1,78 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MachineLearning - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPC72A.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/MachineLearning.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"F:\cpp\ai\MachineLearning\MachineLearning.cpp"
+"F:\cpp\ai\MachineLearning\Data.cpp"
+"F:\cpp\ai\MachineLearning\Kmean.cpp"
+"F:\cpp\ai\MachineLearning\Bayes.cpp"
+"F:\cpp\ai\MachineLearning\SVM.cpp"
+"F:\cpp\ai\MachineLearning\EM.cpp"
+"F:\cpp\ai\MachineLearning\AdaBoost.cpp"
+"F:\cpp\ai\MachineLearning\Knn.cpp"
+"F:\cpp\ai\MachineLearning\Logistics.cpp"
+"F:\cpp\ai\MachineLearning\DecisionTree.cpp"
+"F:\cpp\ai\MachineLearning\Classifier.cpp"
+"F:\cpp\ai\MachineLearning\RecommandSys.cpp"
+"F:\cpp\ai\MachineLearning\Lda.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPC72A.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPC72B.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/MachineLearning.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"F:\cpp\ai\MachineLearning\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPC72B.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPC72C.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/MachineLearning.pdb" /debug /machine:I386 /out:"Debug/MachineLearning.exe" /pdbtype:sept 
+.\Debug\StdAfx.obj
+.\Debug\MachineLearning.obj
+.\Debug\Data.obj
+.\Debug\Kmean.obj
+.\Debug\Bayes.obj
+.\Debug\SVM.obj
+.\Debug\EM.obj
+.\Debug\AdaBoost.obj
+.\Debug\Knn.obj
+.\Debug\Logistics.obj
+.\Debug\DecisionTree.obj
+.\Debug\Classifier.obj
+.\Debug\RecommandSys.obj
+.\Debug\Lda.obj
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPC72C.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+MachineLearning.cpp
+Data.cpp
+Kmean.cpp
+Bayes.cpp
+SVM.cpp
+EM.cpp
+AdaBoost.cpp
+Knn.cpp
+Logistics.cpp
+DecisionTree.cpp
+Classifier.cpp
+RecommandSys.cpp
+Lda.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+MachineLearning.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
